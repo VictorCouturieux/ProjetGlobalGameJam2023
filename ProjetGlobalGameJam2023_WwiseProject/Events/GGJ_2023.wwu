@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="GGJ_2023" ID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="UI" ID="{1ECA0BC2-4AF4-4965-B551-E85A37D30B3D}" PersistMode="Reference"/>
+				<WorkUnit Name="Environnement" ID="{D1A28E75-F97B-4BEB-9B24-6B3F0A0BC326}" PersistMode="Reference"/>
+				<WorkUnit Name="Player" ID="{26889D89-9DD7-4B31-B2B2-A8BC313BA385}" PersistMode="Reference"/>
+				<Event Name="TEST_EVENT" ID="{35C37B21-0D60-4F9E-AFAB-564569975F12}">
+					<ChildrenList>
+						<Action Name="" ID="{304444E7-0D69-4B8B-B5D9-10881DA3DF8B}" ShortID="699737343">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TEST" ID="{DB85412F-7CAF-42BA-A045-CDD5BC8087BD}" WorkUnitID="{6B74E2AC-9703-4EE0-900C-41F687105513}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

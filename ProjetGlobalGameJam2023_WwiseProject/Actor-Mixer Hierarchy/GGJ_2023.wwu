@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3F3785C9-41CF-463D-B7B5-F955B1A41044}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="GGJ_2023" ID="{3F3785C9-41CF-463D-B7B5-F955B1A41044}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="Player" ID="{2F1B8198-A6A1-4318-A5BC-FA308A00BEF0}" PersistMode="Reference"/>
+				<WorkUnit Name="UI" ID="{C7DBEAE4-D506-4360-B3C1-AB0BDF3D7823}" PersistMode="Reference"/>
+				<WorkUnit Name="environement" ID="{6B74E2AC-9703-4EE0-900C-41F687105513}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
