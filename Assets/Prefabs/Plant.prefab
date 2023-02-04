@@ -66,6 +66,7 @@ MonoBehaviour:
     type: 3}
   _smashedPlant: {fileID: 2664993106561228714, guid: 08c946ee5fd14c9419ae749385221d4e,
     type: 3}
+  endLifeVegetable: {fileID: 11400000, guid: f068655c605e138459b54df66c3d57bb, type: 2}
 --- !u!1001 &6863777105927621879
 PrefabInstance:
   m_ObjectHideFlags: 0

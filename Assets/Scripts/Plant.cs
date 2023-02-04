@@ -18,6 +18,8 @@ public class Plant : MonoBehaviour
     [SerializeField] private SphereCollider _pickUpCollider;
     [SerializeField] private GameObject _plantProjectile;
     [SerializeField] private GameObject _smashedPlant;
+    
+    [SerializeField] private EndLifeVegeEvent endLifeVegetable;
 
     private Animator _animator;
 
@@ -54,6 +56,7 @@ public class Plant : MonoBehaviour
 
     private void DispawnPlant()
     {
+        endLifeVegetable.Call(gameObject);
         Destroy(gameObject);
     }
 
@@ -64,6 +67,7 @@ public class Plant : MonoBehaviour
 
     public Plant PickUp()
     {
+        endLifeVegetable.Call(gameObject);
         Destroy(_pickUpCollider);
         Destroy(transform.Find("PlantMesh").gameObject);
         Instantiate(_plantProjectile, gameObject.transform);
