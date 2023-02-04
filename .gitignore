@@ -89,3 +89,4 @@ Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
 #    then, it's OK to ignore this file.
 # 
 # Assets/Wwise/Editor/ProjectData.meta
+.vsconfig
