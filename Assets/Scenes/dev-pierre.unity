@@ -883,7 +883,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462263099}
-  m_LocalRotation: {x: -0.0010280904, y: 0, z: 0, w: 0.9999995}
+  m_LocalRotation: {x: -0.0010562834, y: 0, z: 0, w: 0.9999995}
   m_LocalPosition: {x: 0, y: 4.34, z: -7.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -919,7 +919,7 @@ PrefabInstance:
     - target: {fileID: 2664993106561228714, guid: 3e37152361dfc7648b0904ace8ca1d49,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2664993106561228718, guid: 3e37152361dfc7648b0904ace8ca1d49,
         type: 3}
@@ -1406,5 +1406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player2
       objectReference: {fileID: 0}
+    - target: {fileID: 4151269186886688832, guid: 15f67b450b288b5429e1dae7758fa8c2,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1462263104}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15f67b450b288b5429e1dae7758fa8c2, type: 3}
