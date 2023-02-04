@@ -5,6 +5,17 @@
 			<ChildrenList>
 				<SoundBank Name="GGJ_2023" ID="{10B0A98E-A14C-43DC-A370-F3DEE5227A85}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_throw" ID="{964211D8-FB63-41BE-9811-7C360498BF2E}" WorkUnitID="{26889D89-9DD7-4B31-B2B2-A8BC313BA385}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Bulle_patate" ID="{19D41EED-A056-431E-B95D-22A89F739573}" WorkUnitID="{1ECA0BC2-4AF4-4965-B551-E85A37D30B3D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_environement_props_pousse_lvl3" ID="{E64FCE35-04EA-4520-958A-82FA73267E7E}" WorkUnitID="{D1A28E75-F97B-4BEB-9B24-6B3F0A0BC326}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Patate_Explosion_blend" ID="{96463784-B529-45B4-AF0E-781A3E682388}" WorkUnitID="{26889D89-9DD7-4B31-B2B2-A8BC313BA385}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_environement_props_pousse_lvl1" ID="{532FBC3C-2726-46B5-9F3E-85C962044DE4}" WorkUnitID="{D1A28E75-F97B-4BEB-9B24-6B3F0A0BC326}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Dash" ID="{55DF40A6-7F24-47A2-A4A5-3C7AA3ABDFD0}" WorkUnitID="{26889D89-9DD7-4B31-B2B2-A8BC313BA385}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ui_throw_load" ID="{249BD97C-2B95-47EA-87B6-C7A57F1A5175}" WorkUnitID="{1ECA0BC2-4AF4-4965-B551-E85A37D30B3D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Click" ID="{D1E00EC3-2996-48BA-B8B8-52887D9FEE98}" WorkUnitID="{1ECA0BC2-4AF4-4965-B551-E85A37D30B3D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_environement_props_pousse_moisie" ID="{A1A2D2B0-3634-495D-9C3B-ACBFD981E856}" WorkUnitID="{D1A28E75-F97B-4BEB-9B24-6B3F0A0BC326}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_environement_amb_garden" ID="{11207303-A102-4BE9-B746-DDFC1E5239E2}" WorkUnitID="{D1A28E75-F97B-4BEB-9B24-6B3F0A0BC326}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_uproot" ID="{8CEAF33A-A22D-4E52-9661-B34F74265C08}" WorkUnitID="{26889D89-9DD7-4B31-B2B2-A8BC313BA385}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TEST_EVENT" ID="{35C37B21-0D60-4F9E-AFAB-564569975F12}" WorkUnitID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

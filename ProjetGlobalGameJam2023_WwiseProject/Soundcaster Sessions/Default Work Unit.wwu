@@ -14,10 +14,6 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Bulle_patate" ID="{19D41EED-A056-431E-B95D-22A89F739573}" WorkUnitID="{1ECA0BC2-4AF4-4965-B551-E85A37D30B3D}"/>
-							<Position X="0" Y="2"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_environement_props_pousse_lvl1" ID="{532FBC3C-2726-46B5-9F3E-85C962044DE4}" WorkUnitID="{D1A28E75-F97B-4BEB-9B24-6B3F0A0BC326}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -49,8 +45,21 @@
 							<ObjectRef Name="Play_uproot" ID="{8CEAF33A-A22D-4E52-9661-B34F74265C08}" WorkUnitID="{26889D89-9DD7-4B31-B2B2-A8BC313BA385}"/>
 							<Position X="3" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_Bulle_patate" ID="{19D41EED-A056-431E-B95D-22A89F739573}" WorkUnitID="{1ECA0BC2-4AF4-4965-B551-E85A37D30B3D}"/>
+							<Position X="3" Y="2"/>
+						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Volume" ID="{F7F113A7-CE60-4275-97FF-546AACBB943F}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_loading_throw_value" ID="{84077182-C482-4F81-B3B3-89A8469450F3}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
