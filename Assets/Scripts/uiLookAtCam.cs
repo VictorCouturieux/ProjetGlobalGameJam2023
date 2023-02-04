@@ -18,5 +18,9 @@ public class uiLookAtCam : MonoBehaviour
         {
             transform.rotation = myCam.transform.rotation;
         }
+        else if (!myCam.orthographic)
+        {
+            transform.LookAt(myCam.transform);
+        }
     }
 }
