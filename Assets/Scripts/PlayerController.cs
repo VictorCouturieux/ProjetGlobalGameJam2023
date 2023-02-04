@@ -34,16 +34,20 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         _rigidbody.velocity = transform.TransformDirection(new Vector3(_inputVector.x, 0, _inputVector.y));
+
+        /*
         if(_inputVector != Vector2.zero) 
             Mesh.LookAt(Mesh.position + new Vector3(_inputVector.x, 0, _inputVector.y));
+        */
     }
 
     public void Move(InputAction.CallbackContext context)
     {
         _inputVector = context.ReadValue<Vector2>() * 10;
-        _animator.SetBool("Run", _inputVector != Vector2.zero);
+        //_animator.SetBool("Run", _inputVector != Vector2.zero);
     }
 
+    bool hasReleaseButtonAfterPickUp = false;
     public void Fire(InputAction.CallbackContext context)
     {
         if (context.started)
@@ -54,14 +58,17 @@ public class PlayerController : MonoBehaviour
 
         if (context.canceled)
         {
-            _animator.SetTrigger("Shoot");
+            //_animator.SetTrigger("Shoot");
             
             _isPressingFire = false;
-            if(_playerPickUp.CanPickUpPlant())
-                _playerPickUp.CancelPickUp();
-            else if (_playerPickUp.IsHoldingPlant())
-                _playerPickUp.CancelThrow();
+
+            if (_playerPickUp.IsHoldingPlant() && !hasReleaseButtonAfterPickUp)
+                hasReleaseButtonAfterPickUp = true;
+            else if (_playerPickUp.IsHoldingPlant() && hasReleaseButtonAfterPickUp)
+                ThrowPlant();
+
             StopCoroutine(PickUpUI);
+            
             _playerPickUp.Update(0);
         }
     }
@@ -73,6 +80,7 @@ public class PlayerController : MonoBehaviour
             Plant plant = _playerPickUp.GetPlant();
             Vector3 bulletForce = Mathf.Clamp(_timerPressLength, 0f, 3f) * (shootingNormaliseDirection * Vector3.right + Vector3.up) * 10f;
             plant.Launch(bulletForce);
+            _playerPickUp.OnThrowPlant();
         }
     }
 

@@ -90,11 +90,8 @@ public class PlayerPickUp : MonoBehaviour
         }
         else if (IsHoldingPlant())
         {
-            Debug.Log("IS HOLDING PLANT");
             if (timer <= 1)
-            {
                 _interactionWidget.SetThrowMaskValue(timer / 1);
-            }
         }
     }
 
@@ -105,9 +102,7 @@ public class PlayerPickUp : MonoBehaviour
         else if (IsHoldingPlant())
         {
             _playerController.ThrowPlant();
-            _state = InteractionState.DEFAULT;
-            CancelPickUp();
-            CancelThrow();
+            OnThrowPlant();
         }
     }
 
@@ -119,6 +114,13 @@ public class PlayerPickUp : MonoBehaviour
     public void CancelThrow()
     {
         _interactionWidget.SetThrowMaskValue(0);
+    }
+
+    public void OnThrowPlant()
+    {
+        _state = InteractionState.DEFAULT;
+        CancelPickUp();
+        CancelThrow();
     }
 
     public bool IsHoldingPlant()
