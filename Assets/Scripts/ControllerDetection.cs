@@ -30,6 +30,11 @@ public class ControllerDetection : MonoBehaviour
 	        p2PlayerInput.SwitchCurrentControlScheme("Gamepad", Gamepad.all[1]);
 	        p2Device = Gamepad.all[1];
         }
+        // else if (Gamepad.all.Count == 1) {
+	       //  p1PlayerInput.SwitchCurrentControlScheme("Gamepad", Gamepad.all[0]);
+	       //  p1Device = Gamepad.all[0];
+	       //  p2PlayerInput.SwitchCurrentControlScheme("",null);
+        // }
         InputSystem.onDeviceChange += (device, change) => InputDeviceChange(device, change);
     }
 

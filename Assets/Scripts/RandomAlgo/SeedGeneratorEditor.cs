@@ -43,7 +43,7 @@ public class SeedGeneratorEditor : Editor
                 using (new EditorGUILayout.HorizontalScope()) {
                     SerializedProperty property = serializedObject.FindProperty("range");
                     Vector2 range = property.vector2Value;
-                    float min = 1f, max = 80;
+                    float min = 0.1f, max = 5;
                     EditorGUILayout.MinMaxSlider(
                         new GUIContent("Random range:"),
                         ref range.x, ref range.y,
