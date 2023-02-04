@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{26889D89-9DD7-4B31-B2B2-A8BC313BA385}" SchemaVersion="110" RootDocumentID="{7B057113-4B91-4752-85C4-CB476B6CA49A}" ParentDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}">
+<WwiseDocument Type="WorkUnit" ID="{26889D89-9DD7-4B31-B2B2-A8BC313BA385}" SchemaVersion="110" RootDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" ParentDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}">
 	<Events>
-		<WorkUnit Name="Player" ID="{26889D89-9DD7-4B31-B2B2-A8BC313BA385}" OwnerID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" PersistMode="Nested"/>
+		<WorkUnit Name="Player" ID="{26889D89-9DD7-4B31-B2B2-A8BC313BA385}" OwnerID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_throw" ID="{964211D8-FB63-41BE-9811-7C360498BF2E}">
+					<ChildrenList>
+						<Action Name="" ID="{E412291B-2275-4FA5-A7E4-7E0AF45CFC2A}" ShortID="646539132">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="throw" ID="{AD3F2746-9310-475E-ADF7-D4C155A7E8EA}" WorkUnitID="{2F1B8198-A6A1-4318-A5BC-FA308A00BEF0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Patate_Explosion_blend" ID="{96463784-B529-45B4-AF0E-781A3E682388}">
+					<ChildrenList>
+						<Action Name="" ID="{30838B02-9B18-4951-8FA6-A3684DA66CBE}" ShortID="531884715">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Patate_Explosion_blend" ID="{C717AB66-1BA4-43C5-B903-AA48172F534B}" WorkUnitID="{2F1B8198-A6A1-4318-A5BC-FA308A00BEF0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_uproot" ID="{8CEAF33A-A22D-4E52-9661-B34F74265C08}">
+					<ChildrenList>
+						<Action Name="" ID="{9C708A73-C001-4795-B5AD-00BA69580FA0}" ShortID="567646531">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="uproot" ID="{CB4591A2-3E38-4C34-BFD8-6821BE8ABC73}" WorkUnitID="{2F1B8198-A6A1-4318-A5BC-FA308A00BEF0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Dash" ID="{55DF40A6-7F24-47A2-A4A5-3C7AA3ABDFD0}">
+					<ChildrenList>
+						<Action Name="" ID="{7E5E3B99-6943-4903-97E9-D9C4CE46FEBC}" ShortID="921840199">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dash" ID="{1F07950E-F47B-47DA-85F5-621841656C9D}" WorkUnitID="{2F1B8198-A6A1-4318-A5BC-FA308A00BEF0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

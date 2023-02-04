@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C4B87F54-6257-4682-8ECC-42D7B7A8B1AF}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="GGJ_2023" ID="{C4B87F54-6257-4682-8ECC-42D7B7A8B1AF}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="RTPC_loading_throw_value" ID="{84077182-C482-4F81-B3B3-89A8469450F3}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

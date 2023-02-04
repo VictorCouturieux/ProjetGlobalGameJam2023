@@ -3,7 +3,19 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{CF576B47-61B7-4198-AB54-D6136598D40F}">
 			<PropertyList>
+				<Property Name="Event Action List\{11207303-A102-4BE9-B746-DDFC1E5239E2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{19D41EED-A056-431E-B95D-22A89F739573}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{249BD97C-2B95-47EA-87B6-C7A57F1A5175}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{35C37B21-0D60-4F9E-AFAB-564569975F12}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{532FBC3C-2726-46B5-9F3E-85C962044DE4}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{55DF40A6-7F24-47A2-A4A5-3C7AA3ABDFD0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8CEAF33A-A22D-4E52-9661-B34F74265C08}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{964211D8-FB63-41BE-9811-7C360498BF2E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{96463784-B529-45B4-AF0E-781A3E682388}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A1A2D2B0-3634-495D-9C3B-ACBFD981E856}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D1E00EC3-2996-48BA-B8B8-52887D9FEE98}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D5852FD4-A45E-4C93-B753-B31352D64A0B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E64FCE35-04EA-4520-958A-82FA73267E7E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -21,6 +33,7 @@
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
+				<Property Name="General\SourceControlPluginID" Type="string" Value="{C403A906-0C19-4ED5-808E-748707065301}"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="jqmwEEyh3EOjcPPe5SJ6hQ=="/>
@@ -38,6 +51,10 @@
 				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value=""/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{031E1E2C-DC25-4332-80C3-FFCC371AC803}" Type="string" Value=""/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{86F3C43C-174F-41D9-A54D-5E36C2268648}" Type="string" Value="ewAwADkANABBAEEAOABFADAALQAzADMANgBCAC0ANAAzAEIANAAtAEEAQgBDAEMALQBEADYANQBBADcAQwBGADgAOQA2ADkANwB9AAAAAAI="/>
+				<Property Name="OverrideCacheFolder\Active" Type="bool" Value="False"/>
+				<Property Name="OverrideCacheFolder\Path" Type="string" Value=".cache"/>
+				<Property Name="OverrideOriginalFolder\Active" Type="bool" Value="False"/>
+				<Property Name="OverrideOriginalFolder\Path" Type="string" Value="Originals"/>
 				<Property Name="ProjectExplorer\AudioSelectionChannel1\ProjectExplorer2LastScrollState" Type="int32" Value="0"/>
 				<Property Name="ProjectExplorer\AudioSelectionChannel1\x64_ProjectExplorer2LastExpandedState" Type="string" Value="iC8JJ1oiVBFnJcijTz1EgsF2Qj8OTshHscg1wSW7OHDq2ogjdZfGRqLtxSIqOXdWwf85DPfFck6hxYfXJ0qQOfi7p17AZFBKiCGgfoviHWhm0/5JMLWoQpk7kkhzqrcH"/>
 				<Property Name="ProjectExplorer\AudioSelectionChannel2\ProjectExplorer2LastScrollState" Type="int32" Value="0"/>
@@ -106,6 +123,7 @@
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{B8E802CF-60CE-4891-B46A-504F79AFFF2E}"/>
 			</PropertyList>
 		</UserProjectSettings>
 	</UserProjectSettingsInfo>

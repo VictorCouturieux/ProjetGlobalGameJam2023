@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{837DB0B6-031F-4367-96F5-8F472FA6FF4D}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="GGJ_2023" ID="{837DB0B6-031F-4367-96F5-8F472FA6FF4D}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="17"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
