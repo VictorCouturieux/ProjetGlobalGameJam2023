@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        _inputVector = context.ReadValue<Vector2>() * 5;
+        _inputVector = context.ReadValue<Vector2>() * 10;
         _animator.SetBool("Run", _inputVector != Vector2.zero);
     }
 
