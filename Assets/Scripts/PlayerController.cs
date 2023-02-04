@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        _inputVector = context.ReadValue<Vector2>() * 5;
+        _inputVector = context.ReadValue<Vector2>() * 10;
     }
 
     public void Fire(InputAction.CallbackContext context)
