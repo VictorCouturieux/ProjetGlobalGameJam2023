@@ -42,14 +42,17 @@ public class PlayerController : MonoBehaviour
     {
         if (context.started)
         {
+            _isPressingFire = true;
             PickUpUI = StartCoroutine(PickUpUICoroutine());
         }
 
         if (context.canceled)
         {
             _isPressingFire = false;
-            _playerPickUp.TryCancelPickUp();
-            _playerPickUp.TryCancelThrow();
+            if(_playerPickUp.CanPickUpPlant())
+                _playerPickUp.CancelPickUp();
+            else if (_playerPickUp.IsHoldingPlant())
+                _playerPickUp.CancelThrow();
             StopCoroutine(PickUpUI);
             _playerPickUp.Update(0);
         }
@@ -82,5 +85,4 @@ public class PlayerController : MonoBehaviour
     {
         return Hand;
     }
-
 }

@@ -74,15 +74,16 @@ public class PlayerPickUp : MonoBehaviour
     {
         if (CanPickUpPlant())
         {
-            Debug.Log("CAN PICK UP PLANT");
             if (timer <= 1)
                 _interactionWidget.SetPickUpMaskValue(timer / 1);
         }
         else if (IsHoldingPlant())
         {
-            Debug.Log("IS HOLDING PLANT UPDATE");
+            Debug.Log("IS HOLDING PLANT");
             if (timer <= 1)
+            {
                 _interactionWidget.SetThrowMaskValue(timer / 1);
+            }
         }
     }
 
@@ -94,19 +95,14 @@ public class PlayerPickUp : MonoBehaviour
             _playerController.ThrowPlant();
     }
 
-    public void TryCancelPickUp()
+    public void CancelPickUp()
     {
-        if(_plantPlayerCanInteractWith == null)
-            _interactionWidget.SetPickUpMaskValue(0);
+        _interactionWidget.SetPickUpMaskValue(0);
     }
 
-    public void TryCancelThrow()
+    public void CancelThrow()
     {
-        if (IsHoldingPlant())
-        {
-            _playerController.ThrowPlant();
-            //_interactionWidget.SetThrowMaskValue(0);
-        }
+        _interactionWidget.SetThrowMaskValue(0);
     }
 
     public bool IsHoldingPlant()
@@ -116,7 +112,7 @@ public class PlayerPickUp : MonoBehaviour
 
     public bool CanPickUpPlant()
     {
-        return _plantPlayerCanInteractWith != null;
+        return _plantPlayerCanInteractWith != null && _plant == null;
     }
 
     public Plant GetPlant()
