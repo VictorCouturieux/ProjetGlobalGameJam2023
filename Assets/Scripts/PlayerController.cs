@@ -9,14 +9,17 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Transform Hand;
     [SerializeField] private List<GameObject> BulletPrefabs;
-    
+
     private Vector2 _inputVector;
     private float _bulletTimer;
     private Rigidbody _rigidbody;
 
+    private PlayerPickUp _playerPickUp;
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        _playerPickUp = GetComponent<PlayerPickUp>();
     }
 
     private void Update()
@@ -31,14 +34,23 @@ public class PlayerController : MonoBehaviour
 
     public void Fire(InputAction.CallbackContext context)
     {
+        if (!_playerPickUp.HasPlant())
+            return;
+
         if (context.started)
             _bulletTimer = Time.time;
+
         if (context.canceled)
         {
-            GameObject Bullet = Instantiate(BulletPrefabs[Random.Range(0, BulletPrefabs.Count - 1)], Hand.position, Quaternion.identity);
-            Vector3 bulletForce = Mathf.Clamp(Time.time - _bulletTimer, 0f, 5f) * (-Vector3.right + Vector3.up / 2) * 10f;
-            Bullet.GetComponent<Rigidbody>().AddForce(bulletForce, ForceMode.Impulse);
+            Plant plant = _playerPickUp.GetPlant();
+            Vector3 bulletForce = Mathf.Clamp(Time.time - _bulletTimer, 0f, 3f) * (-Vector3.right + Vector3.up) * 10f;
+            plant.Launch(bulletForce);
         }
+    }
+
+    public Transform getHandTransform()
+    {
+        return Hand;
     }
 
 }
