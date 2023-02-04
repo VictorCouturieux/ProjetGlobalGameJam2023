@@ -35,16 +35,14 @@ public class PlayerController : MonoBehaviour
     {
         _rigidbody.velocity = transform.TransformDirection(new Vector3(_inputVector.x, 0, _inputVector.y));
 
-        /*
         if(_inputVector != Vector2.zero) 
             Mesh.LookAt(Mesh.position + new Vector3(_inputVector.x, 0, _inputVector.y));
-        */
     }
 
     public void Move(InputAction.CallbackContext context)
     {
         _inputVector = context.ReadValue<Vector2>() * 10;
-        //_animator.SetBool("Run", _inputVector != Vector2.zero);
+        _animator.SetBool("Run", _inputVector != Vector2.zero);
     }
 
     bool hasReleaseButtonAfterPickUp = false;
@@ -58,7 +56,7 @@ public class PlayerController : MonoBehaviour
 
         if (context.canceled)
         {
-            //_animator.SetTrigger("Shoot");
+            _animator.SetTrigger("Shoot");
             
             _isPressingFire = false;
 
