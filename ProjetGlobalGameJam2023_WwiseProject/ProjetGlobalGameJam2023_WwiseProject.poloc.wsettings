@@ -3,6 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{CF576B47-61B7-4198-AB54-D6136598D40F}">
 			<PropertyList>
+				<Property Name="Event Action List\{35C37B21-0D60-4F9E-AFAB-564569975F12}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -20,6 +21,9 @@
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
+				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="jqmwEEyh3EOjcPPe5SJ6hQ=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups_v2" Type="string" Value="hG2Q9H7jj0iwaqtr+sWQpgEAuKagAAAAwKTo+v5/AAAIw7NlpwEAAAAAAACnAQAAwKTo+v5/AAAEkhj7/n8AAMDGGHenAQAAAAAAAKcBAAAIAAAAAAAAAOjiuKagAAAAAAAt+/5/AAAfAS37/n8AAAAALfv+fwAAwKTo+v5/AADApOj6/n8AAAjDs2WnAQAAAQAAAHiZmEQQq8hKuaztdr8L/QcBALimoAAAAMCk6Pr+fwAACMOzZacBAAAAAAAApwEAAMCk6Pr+fwAABJIY+/5/AADAxhh3pwEAAAAAAACnAQAACAAAAAAAAADo4rimoAAAAAAALfv+fwAAHwEt+/5/AAAAAC37/n8AAMCk6Pr+fwAAwKTo+v5/AAAIw7NlpwEAAAEAAAA="/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>

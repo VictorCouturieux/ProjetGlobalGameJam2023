@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6B74E2AC-9703-4EE0-900C-41F687105513}" SchemaVersion="110" RootDocumentID="{3F3785C9-41CF-463D-B7B5-F955B1A41044}" ParentDocumentID="{3F3785C9-41CF-463D-B7B5-F955B1A41044}">
+	<AudioObjects>
+		<WorkUnit Name="environement" ID="{6B74E2AC-9703-4EE0-900C-41F687105513}" OwnerID="{3F3785C9-41CF-463D-B7B5-F955B1A41044}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="TEST" ID="{38A22D0C-E58C-4B6D-80FD-BAA2C57AC45C}" ShortID="556220717">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="TEST" ID="{DB85412F-7CAF-42BA-A045-CDD5BC8087BD}" ShortID="885946366">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_dash_loaded" ID="{6AB1BE93-9136-4FF8-BB84-315DD214CA5B}" ShortID="928268474">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_dash_loaded" ID="{84FF651C-231C-448D-B990-35E0B3E52195}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_dash_loaded.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="941070222"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_dash_loaded" ID="{84FF651C-231C-448D-B990-35E0B3E52195}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

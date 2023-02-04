@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4258653052	TEST_EVENT			\GGJ_2023\TEST_EVENT	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	941070222	sfx_dash_loaded	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Mac\SFX\sfx_dash_loaded_10C4C929.wem		\Actor-Mixer Hierarchy\GGJ_2023\environement\TEST\TEST\sfx_dash_loaded		137198
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9F5F66E2-1D5F-40CD-AB00-8A55E862A6DE}" SchemaVersion="110">
+	<SoundBanks>
+		<WorkUnit Name="GGJ_2023" ID="{9F5F66E2-1D5F-40CD-AB00-8A55E862A6DE}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="GGJ_2023" ID="{10B0A98E-A14C-43DC-A370-F3DEE5227A85}">
+					<ObjectInclusionList>
+						<ObjectRef Name="TEST_EVENT" ID="{35C37B21-0D60-4F9E-AFAB-564569975F12}" WorkUnitID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{D06BD9AA-F6E9-A12E-18C3-B7377D65C88E}">
+			<ShortName>GGJ_2023</ShortName>
+			<Path>GGJ_2023.bnk</Path>
+			<Media>
+				<File Id="941070222" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_dash_loaded.wav</ShortName>
+					<CachePath>SFX/sfx_dash_loaded_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4258653052" Name="TEST_EVENT" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="941070222"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{15C3448F-E7E6-E4F2-BF21-3ECE2A818A30}</FileHash>
+</SoundBanksInfo>
