@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2664993106561228714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.22, y: 1.5, z: 2.6841757}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -124,6 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7a349bc770a8c43bdda15abc7d10ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeToGrow: 2
+  timeToFade: 10
   _pickUpCollider: {fileID: 2664993106561228713}
+  _plantProjectile: {fileID: 0}
   _smashedPlant: {fileID: 2664993106561228714, guid: 08c946ee5fd14c9419ae749385221d4e,
     type: 3}

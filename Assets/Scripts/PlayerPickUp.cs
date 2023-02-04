@@ -32,7 +32,10 @@ public class PlayerPickUp : MonoBehaviour
         if (plant == null)
             return;
 
-        if (_plant != null)
+        if (HasPlant())
+            return;
+
+        if (!plant.CanBePickUp())
             return;
 
         PickUpPlant(plant);
