@@ -3,7 +3,22 @@ guid: faf1ec049b0e67f4984f9be46c982d32
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Flower_Mat
+    second: {fileID: 2100000, guid: 305ea0e7caa25a34892a9b5c641e4c7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PumpkinStems_Mat
+    second: {fileID: 2100000, guid: 088ec5a41cc62204395f255e561ed418, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: depositphotos_59305197-stock-photo-soil-seamless-texture
+    second: {fileID: 2800000, guid: 63251d46be5dee247aec91a125968635, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
