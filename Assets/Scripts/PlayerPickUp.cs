@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+enum InteractionState {
+    DEFAULT,
+    CAN_PICK_UP,
+    CAN_THROW,
+}
 public class PlayerPickUp : MonoBehaviour
 {
     [SerializeField] private InteractionWidget _interactionWidget;
@@ -11,6 +16,8 @@ public class PlayerPickUp : MonoBehaviour
     private Plant _plantPlayerCanInteractWith;
     private Plant _plant;
 
+    private InteractionState _state;
+
     private void Awake()
     {
         _playerController = GetComponent<PlayerController>();
@@ -19,7 +26,7 @@ public class PlayerPickUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        _state = InteractionState.DEFAULT;
     }
 
     // Update is called once per frame
@@ -42,6 +49,7 @@ public class PlayerPickUp : MonoBehaviour
             return;
 
         _plantPlayerCanInteractWith = plant;
+        _state = InteractionState.CAN_PICK_UP;
 
         _interactionWidget.Show();
     }
@@ -59,6 +67,8 @@ public class PlayerPickUp : MonoBehaviour
         if (_plantPlayerCanInteractWith != plant)
             return;
 
+        _state = InteractionState.DEFAULT;
+
         _interactionWidget.Hide();
     }
 
@@ -68,6 +78,7 @@ public class PlayerPickUp : MonoBehaviour
         _plant.gameObject.transform.SetParent(_playerController.getHandTransform());
         _plant.gameObject.transform.position = _playerController.getHandTransform().position;
         _plantPlayerCanInteractWith = null;
+        _state = InteractionState.CAN_THROW;
     }
 
     public void Update(float timer)
@@ -92,7 +103,12 @@ public class PlayerPickUp : MonoBehaviour
         if(CanPickUpPlant())
             PickUpPlant(_plantPlayerCanInteractWith);
         else if (IsHoldingPlant())
+        {
             _playerController.ThrowPlant();
+            _state = InteractionState.DEFAULT;
+            CancelPickUp();
+            CancelThrow();
+        }
     }
 
     public void CancelPickUp()
@@ -107,12 +123,14 @@ public class PlayerPickUp : MonoBehaviour
 
     public bool IsHoldingPlant()
     {
-        return _plant != null;
+        //return _plant != null;
+        return _state == InteractionState.CAN_THROW;
     }
 
     public bool CanPickUpPlant()
     {
-        return _plantPlayerCanInteractWith != null && _plant == null;
+        //return _plantPlayerCanInteractWith != null && _plant == null;
+        return _state == InteractionState.CAN_PICK_UP;
     }
 
     public Plant GetPlant()
