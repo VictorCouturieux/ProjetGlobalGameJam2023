@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: 7ab5656e1ac4d6646a5d573409afcac4
 ModelImporter:
   serializedVersion: 21300
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -2882658152867522451
+    second: PlantGrowth
   externalObjects: {}
   materials:
     materialImportMode: 2
