@@ -32,7 +32,12 @@ public class PlayerController : MonoBehaviour
         if(_inputVector != Vector2.zero) 
             Mesh.LookAt(Mesh.position + new Vector3(_inputVector.x, 0, _inputVector.y));
     }
-
+    
+    public void Taunt(InputAction.CallbackContext context)
+    {
+        _animator.SetTrigger("Taunt");
+    }
+    
     public void Move(InputAction.CallbackContext context)
     {
         _inputVector = context.ReadValue<Vector2>() * 10;
