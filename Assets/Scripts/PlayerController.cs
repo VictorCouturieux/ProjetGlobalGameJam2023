@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Transform Hand;
     [SerializeField] private List<GameObject> BulletPrefabs;
+    [SerializeField] private float shootingNormaliseDirection = 1;
 
     private Vector2 _inputVector;
     private float _bulletTimer;
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
 
     public void Fire(InputAction.CallbackContext context)
     {
+        Debug.Log("Fire");
         if (!_playerPickUp.HasPlant())
             return;
 
@@ -43,7 +45,7 @@ public class PlayerController : MonoBehaviour
         if (context.canceled)
         {
             Plant plant = _playerPickUp.GetPlant();
-            Vector3 bulletForce = Mathf.Clamp(Time.time - _bulletTimer, 0f, 3f) * (-Vector3.right + Vector3.up) * 10f;
+            Vector3 bulletForce = Mathf.Clamp(Time.time - _bulletTimer, 0f, 3f) * (shootingNormaliseDirection*Vector3.right + Vector3.up) * 10f;
             plant.Launch(bulletForce);
         }
     }
