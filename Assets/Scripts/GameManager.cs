@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
     }
     
     private void OnCreditGame() {
-        SceneManager.LoadScene(gameScene);
+        SceneManager.LoadScene(scoreMenuScene);
     }
     
     private void OnExitGame() {
