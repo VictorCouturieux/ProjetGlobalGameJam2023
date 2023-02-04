@@ -65,7 +65,10 @@ public class PlayerController : MonoBehaviour
             if (_playerPickUp.IsHoldingPlant() && !hasReleaseButtonAfterPickUp)
                 hasReleaseButtonAfterPickUp = true;
             else if (_playerPickUp.IsHoldingPlant() && hasReleaseButtonAfterPickUp)
+            {
                 ThrowPlant();
+                hasReleaseButtonAfterPickUp = false;
+            }
 
             StopCoroutine(PickUpUI);
             
