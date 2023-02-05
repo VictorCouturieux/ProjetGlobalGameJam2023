@@ -52,6 +52,7 @@ public class PlayerPickUp : MonoBehaviour
     /// </summary>
     public void PickUpPlant()
     {
+        AudioManager.Instance.PlayerUproot(gameObject);
         _projectile = _plant.PickUp(_player);
         _projectile.transform.SetParent(_player.getHandTransform());
         _projectile.transform.position = _player.getHandTransform().position;
