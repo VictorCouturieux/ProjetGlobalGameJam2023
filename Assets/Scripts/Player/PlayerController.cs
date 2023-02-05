@@ -78,6 +78,12 @@ public class PlayerController : MonoBehaviour
         // Only use to throw plants
         if (context.canceled)
         {
+            // Si le player pouvait plus bouger, c'est qu'il ramassait une plante
+            if (!CanMove)
+            {
+                CanMove = true;
+                _animator.SetTrigger("Cancel");
+            }
             if(PickUpUI != null)
                 StopCoroutine(PickUpUI);
             if (_playerPickUp.NeedReload)
@@ -106,6 +112,12 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator PickUpUICoroutine()
     {
+        if (_playerPickUp.EmptyHands())
+        {
+            CanMove = false;
+            _rigidbody.velocity = Vector3.zero;
+            _animator.SetTrigger("PickUp");
+        }
         _timerPressHold = 0f;
         while(_timerPressHold < 1f)
         {
@@ -136,6 +148,7 @@ public class PlayerController : MonoBehaviour
         {
             _animator.SetTrigger("Hurt");
             CanMove = false;
+            _rigidbody.velocity = Vector3.zero;
         }
     }
 
