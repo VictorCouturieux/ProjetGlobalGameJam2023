@@ -10,9 +10,14 @@ public class TrajectoryHelper : MonoBehaviour
 	public float minApex = 5;
 	public float maxApex = 5;
 
-	private float gravity = -9.81f;
+	[SerializeField] private float gravity = -50f;
 
 	public bool debugPath;
+
+    void Start()
+    {
+		Physics.gravity = new Vector3(0, gravity, 0);    
+    }
 
     private void OnDrawGizmos()
     {
