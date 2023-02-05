@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float shootingNormaliseDirection = 1;
     [SerializeField] private Transform Mesh;
     [SerializeField] private float MaxLife = 100f;
+    [SerializeField] private float DashForce = 5f;
 
     [System.NonSerialized]
     public bool CanMove = true;
@@ -41,14 +42,24 @@ public class PlayerController : MonoBehaviour
         {
             _rigidbody.velocity = transform.TransformDirection(new Vector3(_inputVector.x, 0, _inputVector.y));
 
-            if(_inputVector != Vector2.zero) 
+            if (_inputVector != Vector2.zero)
                 Mesh.LookAt(Mesh.position + new Vector3(_inputVector.x, 0, _inputVector.y));
         }
     }
     
+    public void Dash(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            CanMove = false;
+            _animator.SetTrigger("Dash");
+            _rigidbody.AddForce(Mesh.forward * DashForce, ForceMode.Impulse);
+        }
+    }
     public void Taunt(InputAction.CallbackContext context)
     {
-        _animator.SetTrigger("Taunt");
+        if(context.performed)
+            _animator.SetTrigger("Taunt");
     }
     
     public void Move(InputAction.CallbackContext context)
