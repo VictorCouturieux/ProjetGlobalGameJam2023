@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float shootingNormaliseDirection = 1;
     [SerializeField] private Transform Mesh;
     [SerializeField] private float MaxLife = 100f;
-    [SerializeField] private float DashForce = 5f;
+    [SerializeField] private float DashForce = 3f;
 
     [System.NonSerialized]
     public bool CanMove = true;
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
     
     public void Move(InputAction.CallbackContext context)
     {
-        _inputVector = context.ReadValue<Vector2>() * 10;
+        _inputVector = context.ReadValue<Vector2>() * 6;
         _animator.SetBool("Run", _inputVector != Vector2.zero);
     }
     public void Fire(InputAction.CallbackContext context)
@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour
             Projectile projectile = _playerPickUp.GetProjectile();
             projectile.transform.parent = null;
             
-            Vector3 bulletForce = Mathf.Clamp(_timerPressHold, 0f, 3f) * (shootingNormaliseDirection * Vector3.right + Vector3.up) * 10f;
+            Vector3 bulletForce = Mathf.Clamp(_timerPressHold, 0f, 3f) * (shootingNormaliseDirection * Vector3.right + Vector3.up) * 20f;
             projectile.Launch(bulletForce);
             _playerPickUp.OnThrowPlant();
         }
@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
             _animator.SetTrigger("PickUp");
         }
         _timerPressHold = 0f;
-        while(_timerPressHold < 1f)
+        while(_timerPressHold < 0.5f)
         {
             _playerPickUp.UpdateUI(_timerPressHold);
             yield return new WaitForSeconds(Time.deltaTime);
