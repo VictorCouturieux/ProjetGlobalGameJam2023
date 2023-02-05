@@ -2,90 +2,84 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-enum InteractionState {
-    DEFAULT,
-    CAN_PICK_UP,
-    CAN_THROW,
-}
 public class PlayerPickUp : MonoBehaviour
 {
     [SerializeField] private InteractionWidget _interactionWidget;
 
-    private PlayerController _playerController;
-
-    private Plant _plantPlayerCanInteractWith;
+    private PlayerController _player;
     private Plant _plant;
+    private Projectile _projectile;
 
-    private InteractionState _state;
+    [System.NonSerialized] public bool NeedReload = false;
+
 
     private void Awake()
     {
-        _playerController = GetComponent<PlayerController>();
+        _player = GetComponent<PlayerController>();
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        _state = InteractionState.DEFAULT;
-    }
-
+    
     private void OnTriggerEnter(Collider other)
     {
         Plant plant = other.GetComponent<Plant>();
 
-        if (plant == null || IsHoldingPlant() || !plant.CanBePickUp())
+        if (plant == null || IsHoldingPlant())
             return;
 
-        _plantPlayerCanInteractWith = plant;
-        _state = InteractionState.CAN_PICK_UP;
-
+        _plant = plant;
         _interactionWidget.Show();
     }
 
     private void OnTriggerExit(Collider other)
     {
+        if (_player.PickUpUI != null)
+        {
+            _player.StopCoroutine(_player.PickUpUI);
+            UpdateUI(0);
+        }
         Plant plant = other.GetComponent<Plant>();
 
-        if (plant == null || IsHoldingPlant() || _plantPlayerCanInteractWith != plant)
+        if (plant == null || IsHoldingPlant())
             return;
 
-        _state = InteractionState.DEFAULT;
-
+        _plant = null;
         _interactionWidget.Hide();
     }
 
-    public void PickUpPlant(Plant plant)
+    /// <summary>
+    /// Call when the plant is picked up and projectile created
+    /// </summary>
+    public void PickUpPlant()
     {
-        _plant = _plantPlayerCanInteractWith.PickUp();
-        _plant.gameObject.transform.SetParent(_playerController.getHandTransform());
-        _plant.gameObject.transform.position = _playerController.getHandTransform().position;
-        _plantPlayerCanInteractWith = null;
-        _state = InteractionState.CAN_THROW;
+        _projectile = _plant.PickUp(_player);
+        _projectile.transform.SetParent(_player.getHandTransform());
+        _projectile.transform.position = _player.getHandTransform().position;
+        _player.StopCoroutine(_player.PickUpUI);
+        UpdateUI(0);
+        Destroy(_plant);
+        _plant = null;
+        NeedReload = true;
     }
 
     public void UpdateUI(float timer)
     {
-        if (CanPickUpPlant())
+        if (_interactionWidget.enabled && timer <= 1f)
         {
-            if (timer <= 1)
+            if (!IsHoldingPlant())
                 _interactionWidget.SetPickUpMaskValue(timer / 1);
-        }
-        else if (IsHoldingPlant())
-        {
-            if (timer <= 1)
+            else if (IsHoldingPlant())
                 _interactionWidget.SetThrowMaskValue(timer / 1);
         }
     }
 
     public void Interact()
     {
-        if(CanPickUpPlant())
-            PickUpPlant(_plantPlayerCanInteractWith);
-        else if (IsHoldingPlant())
+        if (IsHoldingPlant())
         {
-            _playerController.ThrowPlant();
+            _player.ThrowPlant();
             OnThrowPlant();
-        }
+        } 
+        else 
+            PickUpPlant();
     }
 
     public void CancelPickUp()
@@ -100,28 +94,28 @@ public class PlayerPickUp : MonoBehaviour
 
     public void OnThrowPlant()
     {
-        _state = InteractionState.DEFAULT;
         CancelPickUp();
         CancelThrow();
+        _projectile = null;
     }
 
     public bool IsHoldingPlant()
     {
-        //return _plant != null;
-        return _state == InteractionState.CAN_THROW;
+        return _projectile != null;
     }
 
-    public bool CanPickUpPlant()
+    public bool EmptyHands()
     {
-        //return _plantPlayerCanInteractWith != null && _plant == null;
-        return _state == InteractionState.CAN_PICK_UP;
+        return _plant != null && _projectile == null;
     }
 
     public Plant GetPlant()
     {
-        if (!IsHoldingPlant())
-            Debug.LogError("Error - get plant was called but plant is null");
-
         return _plant;
+    }
+
+    public Projectile GetProjectile()
+    {
+        return _projectile;
     }
 }

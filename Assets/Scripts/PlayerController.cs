@@ -15,16 +15,14 @@ public class PlayerController : MonoBehaviour
 
     private float CurrentLife;
     private Vector2 _inputVector;
-    private float _startPressTimer;
     private Rigidbody _rigidbody;
     private Animator _animator;
 
     private PlayerPickUp _playerPickUp;
+    private float _timerPressHold;
 
-    private bool _isPressingFire = false;
-    private float _timerPressLength;
-
-    private Coroutine PickUpUI;
+    [System.NonSerialized]
+    public Coroutine PickUpUI;
     public GameEvent<float> LifeEvent;
 
     private void Awake()
@@ -53,32 +51,26 @@ public class PlayerController : MonoBehaviour
         _inputVector = context.ReadValue<Vector2>() * 10;
         _animator.SetBool("Run", _inputVector != Vector2.zero);
     }
-
-    bool hasReleaseButtonAfterPickUp = false;
     public void Fire(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (context.performed &&
+            (_playerPickUp.EmptyHands() || _playerPickUp.IsHoldingPlant()))
         {
-            _isPressingFire = true;
             PickUpUI = StartCoroutine(PickUpUICoroutine());
         }
 
+        // Only use to throw plants
         if (context.canceled)
         {
-            _animator.SetTrigger("Shoot");
-            
-            _isPressingFire = false;
-
-            if (_playerPickUp.IsHoldingPlant() && !hasReleaseButtonAfterPickUp)
-                hasReleaseButtonAfterPickUp = true;
-            else if (_playerPickUp.IsHoldingPlant() && hasReleaseButtonAfterPickUp)
+            if(PickUpUI != null)
+                StopCoroutine(PickUpUI);
+            if (_playerPickUp.NeedReload)
+                _playerPickUp.NeedReload = false;
+            else if (_playerPickUp.IsHoldingPlant())
             {
                 ThrowPlant();
-                hasReleaseButtonAfterPickUp = false;
+                _animator.SetTrigger("Shoot");
             }
-
-            StopCoroutine(PickUpUI);
-            
             _playerPickUp.UpdateUI(0);
         }
     }
@@ -87,23 +79,23 @@ public class PlayerController : MonoBehaviour
     {
         if (_playerPickUp.IsHoldingPlant())
         {
-            GameObject projectile = _playerPickUp.GetPlant().GetProjectile();
-            projectile.layer = gameObject.layer;
+            Projectile projectile = _playerPickUp.GetProjectile();
             projectile.transform.parent = null;
-            Vector3 bulletForce = Mathf.Clamp(_timerPressLength, 0f, 3f) * (-shootingNormaliseDirection * Vector3.right + Vector3.up) * 10f;
-            projectile.GetComponent<Projectile>().Launch(bulletForce);
+            
+            Vector3 bulletForce = Mathf.Clamp(_timerPressHold, 0f, 3f) * (shootingNormaliseDirection * Vector3.right + Vector3.up) * 10f;
+            projectile.Launch(bulletForce);
             _playerPickUp.OnThrowPlant();
         }
     }
 
     private IEnumerator PickUpUICoroutine()
     {
-        _timerPressLength = 0f;
-        while(_isPressingFire && _timerPressLength < 1f)
+        _timerPressHold = 0f;
+        while(_timerPressHold < 1f)
         {
-            _playerPickUp.UpdateUI(_timerPressLength);
+            _playerPickUp.UpdateUI(_timerPressHold);
             yield return new WaitForSeconds(Time.deltaTime);
-            _timerPressLength += Time.deltaTime;
+            _timerPressHold += Time.deltaTime;
         }
 
         _playerPickUp.Interact();

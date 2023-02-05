@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class VegiesAnimEvent : MonoBehaviour
 {
+    [SerializeField] private Plant _plant;
     public ParticleSystem flies;
     public bool isDecaying;
     private ParticleSystem.EmissionModule emission;
@@ -22,14 +23,7 @@ public class VegiesAnimEvent : MonoBehaviour
 
     public void DestroyThisVeggie() 
     {
-        if (transform.parent != null) 
-        {
-            Destroy(transform.parent.gameObject);
-        }
-        else 
-        {
-            Destroy(gameObject);
-        }
+        _plant.DestroyPlant();
     }
 
     public void StartToDecay() 

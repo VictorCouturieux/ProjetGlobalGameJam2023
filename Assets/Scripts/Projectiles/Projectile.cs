@@ -10,24 +10,29 @@ public class Projectile : MonoBehaviour
     
     [SerializeField]
     protected Collider ExplosionTrigger;
+
+    protected Rigidbody _rigidbody;
     
 
     private void Awake()
     {
         ExplosionTrigger.enabled = false;
+        _rigidbody = GetComponent<Rigidbody>();
+        _rigidbody.isKinematic = true;
     }
 
-    public void Explode()
+    public virtual void Explode()
     {
         ExplosionTrigger.enabled = true;
+        Destroy(_rigidbody);
         Destroy(gameObject, 2f);
     }
     
     
     public void Launch(Vector3 bulletForce)
     {
-        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
-        rb.AddForce(bulletForce, ForceMode.Impulse);
+        _rigidbody.isKinematic = false;
+        _rigidbody.AddForce(bulletForce, ForceMode.Impulse);
     }
 
     public void OnCollisionEnter(Collision collision)
