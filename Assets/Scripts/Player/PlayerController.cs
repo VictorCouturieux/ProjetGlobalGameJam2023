@@ -13,6 +13,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform Mesh;
     [SerializeField] private float MaxLife = 100f;
 
+    [System.NonSerialized]
+    public bool CanMove = true;
+    [System.NonSerialized]
+    public Coroutine PickUpUI;
+    public GameEvent<float> LifeEvent;
     private float CurrentLife;
     private Vector2 _inputVector;
     private Rigidbody _rigidbody;
@@ -21,9 +26,6 @@ public class PlayerController : MonoBehaviour
     private PlayerPickUp _playerPickUp;
     private float _timerPressHold;
 
-    [System.NonSerialized]
-    public Coroutine PickUpUI;
-    public GameEvent<float> LifeEvent;
 
     private void Awake()
     {
@@ -35,10 +37,13 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        _rigidbody.velocity = transform.TransformDirection(new Vector3(_inputVector.x, 0, _inputVector.y));
+        if (CanMove)
+        {
+            _rigidbody.velocity = transform.TransformDirection(new Vector3(_inputVector.x, 0, _inputVector.y));
 
-        if(_inputVector != Vector2.zero) 
-            Mesh.LookAt(Mesh.position + new Vector3(_inputVector.x, 0, _inputVector.y));
+            if(_inputVector != Vector2.zero) 
+                Mesh.LookAt(Mesh.position + new Vector3(_inputVector.x, 0, _inputVector.y));
+        }
     }
     
     public void Taunt(InputAction.CallbackContext context)
@@ -116,5 +121,11 @@ public class PlayerController : MonoBehaviour
         {
             //TODO : Die / End
         }
+        else
+        {
+            _animator.SetTrigger("Hurt");
+            CanMove = false;
+        }
     }
+
 }
