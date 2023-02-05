@@ -34,7 +34,7 @@ public class HudManager : MonoBehaviour
     }
 
     private void Update() {
-        if (pRightLifeBarre.fillAmount <= 0.0f || pLeftLifeBarre.fillAmount <= 0.0f ) {
+        if (pRightLifeBarre.fillAmount <= 0.01f || pLeftLifeBarre.fillAmount <= 0.01f ) {
             mainMenuEvent.Call();
         }
     }
