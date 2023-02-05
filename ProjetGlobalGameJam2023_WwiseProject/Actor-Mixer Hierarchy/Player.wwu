@@ -8,6 +8,9 @@
 			</PropertyList>
 			<ChildrenList>
 				<ActorMixer Name="Player" ID="{F11AD63B-8FE1-485D-B21D-345D6AD0CA56}" ShortID="382263026">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>

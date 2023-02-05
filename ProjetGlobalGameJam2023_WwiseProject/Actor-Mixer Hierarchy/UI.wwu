@@ -239,6 +239,10 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<BlendContainer Name="ui_throw_load" ID="{F2A95E32-44C9-4B19-9416-5AD9345B6B8B}" ShortID="730555197">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>

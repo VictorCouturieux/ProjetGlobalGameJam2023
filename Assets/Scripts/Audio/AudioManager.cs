@@ -80,63 +80,63 @@ public class AudioManager : MonoBehaviour
 
     //POUSSES
 
-    public void PousseApparition()
+    public void PousseApparition(GameObject go)
     {
-        _pousseApparition.Post(gameObject);
+        _pousseApparition.Post(go);
     }
-    public void PousseUsable()
+    public void PousseUsable(GameObject go)
     {
-        _pousseUsable.Post(gameObject);
+        _pousseUsable.Post(go);
     }
 
-    public void PousseMoisted()
+    public void PousseMoisted(GameObject go)
     {
-        _pousseMoisted.Post(gameObject);
+        _pousseMoisted.Post(go);
     }
 
     //Player Abilities
 
-    public void PlayerThrow()
+    public void PlayerThrow(GameObject go)
     {
-        _playerThrow.Post(gameObject);
+        _playerThrow.Post(go);
     }
 
-    public void PlayerDash()
+    public void PlayerDash(GameObject go)
     {
-        _playerDash.Post(gameObject);
+        _playerDash.Post(go);
     }
-    public void PlayerUproot()
+    public void PlayerUproot(GameObject go)
     {
-        _playerUproot.Post(gameObject);
+        _playerUproot.Post(go);
     }
 
-    public void ExplosionPatate()
+    public void ExplosionPatate(GameObject go)
     {
-        _explosionPatate.Post(gameObject);
+        _explosionPatate.Post(go);
     }
    
     //Voices
 
-    public void HitPlayer1()
+    public void HitPlayer1(GameObject go)
     {
-        _hitPlayer1.Post(gameObject);
+        _hitPlayer1.Post(go);
     }
-    public void HitPlayer2()
+    public void HitPlayer2(GameObject go)
     {
-        _hitPlayer2.Post(gameObject);
+        _hitPlayer2.Post(go);
     }
 
 
 
     //UI
-    public void UiThrowLoad()
+    public void UiThrowLoad(GameObject go)
     {
-        _uiThrowLoad.Post(gameObject);
+        _uiThrowLoad.Post(go);
     }
 
-    public void UiThrowLoadMax()
+    public void UiThrowLoadMax(GameObject go)
     {
-        _uiThrowLoadMax.Post(gameObject);
+        _uiThrowLoadMax.Post(go);
     }
     public void UiGenericClick()
     {

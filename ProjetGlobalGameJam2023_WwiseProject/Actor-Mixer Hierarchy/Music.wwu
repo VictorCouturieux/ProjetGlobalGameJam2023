@@ -40,7 +40,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="GGJ_Reggae_withoutLyrics" ID="{1DC69566-2BEA-442D-8FF5-B2B90A0DEFFD}" ShortID="919841465">
+								<Sound Name="Reggae_withoutLyrics" ID="{1DC69566-2BEA-442D-8FF5-B2B90A0DEFFD}" ShortID="919841465">
 									<PropertyList>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
@@ -51,7 +51,7 @@
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>46</Value>
+												<Value>50</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -78,6 +78,48 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="GGJ_Reggae_withoutLyrics" ID="{79683E38-004A-4BC2-B132-8FF836C35019}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="IngameWithoutlyrics" ID="{0E528DC9-D9B0-4DCB-B98B-3068DB628C35}" ShortID="405283459">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Ingame_Reggae_withoutLyrics" ID="{2C857DDB-4E1B-491B-9D65-A410CC4E0225}" ShortID="524470905">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="MUSIC" ID="{0C7339A8-38B5-4DCD-8B67-592383DDA897}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GGJ_Reggae_withoutLyrics" ID="{C96A0B8A-19EE-46EC-88ED-2D209B594723}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="191.999019673082"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>GGJ_Reggae_withoutLyrics.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="846071124"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GGJ_Reggae_withoutLyrics" ID="{C96A0B8A-19EE-46EC-88ED-2D209B594723}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

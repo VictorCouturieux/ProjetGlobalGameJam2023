@@ -6,7 +6,9 @@
 				<SoundBank Name="GGJ_2023" ID="{10B0A98E-A14C-43DC-A370-F3DEE5227A85}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_throw" ID="{964211D8-FB63-41BE-9811-7C360498BF2E}" WorkUnitID="{26889D89-9DD7-4B31-B2B2-A8BC313BA385}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ingame_Reggae_withoutLyrics" ID="{B6150EE2-7208-421E-9F6C-B78B7F2DE9D2}" WorkUnitID="{62A7F43B-F6AE-4476-8DBB-CD07B98CB5E9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Bulle_patate" ID="{19D41EED-A056-431E-B95D-22A89F739573}" WorkUnitID="{1ECA0BC2-4AF4-4965-B551-E85A37D30B3D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_menu_Reggae_withoutLyrics" ID="{8805DAA0-4956-44D0-904B-0C68377BEF29}" WorkUnitID="{62A7F43B-F6AE-4476-8DBB-CD07B98CB5E9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_environement_props_pousse_lvl3" ID="{E64FCE35-04EA-4520-958A-82FA73267E7E}" WorkUnitID="{D1A28E75-F97B-4BEB-9B24-6B3F0A0BC326}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Patate_Explosion_blend" ID="{96463784-B529-45B4-AF0E-781A3E682388}" WorkUnitID="{26889D89-9DD7-4B31-B2B2-A8BC313BA385}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_environement_props_pousse_lvl1" ID="{532FBC3C-2726-46B5-9F3E-85C962044DE4}" WorkUnitID="{D1A28E75-F97B-4BEB-9B24-6B3F0A0BC326}" Origin="Manual" Filter="7"/>

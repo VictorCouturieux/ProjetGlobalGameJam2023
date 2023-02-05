@@ -30,4 +30,11 @@ public class VegiesAnimEvent : MonoBehaviour
     {
         isDecaying = true;
     }
+
+    public void SoundPlantApparitionEvent()
+    {
+        AudioManager.Instance.PousseApparition(gameObject);
+        Debug.Log("sonnnnn");
+    }
+
 }

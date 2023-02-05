@@ -38,7 +38,7 @@
 				<GameParameter Id="3709237862" Name="RTPC_loading_throw_value"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{3D7ABE8F-FCEB-EFF0-CDB4-12DC47778972}">
+		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{8E32C266-E317-E790-60D2-345D2B8BD076}">
 			<ShortName>GGJ_2023</ShortName>
 			<Path>GGJ_2023.bnk</Path>
 			<Media>
@@ -254,22 +254,27 @@
 						<MediaRef Id="231759120"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="278818673" Name="Play_environement_props_pousse_lvl1" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.3721937" DurationMax="1.4537885">
+				<Event Id="278818673" Name="Play_environement_props_pousse_lvl1" DurationType="OneShot" DurationMin="1.3721937" DurationMax="1.4537885">
 					<MediaRefs>
 						<MediaRef Id="435181012"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="278818675" Name="Play_environement_props_pousse_lvl3" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.5229771" DurationMax="1.595005">
+				<Event Id="278818675" Name="Play_environement_props_pousse_lvl3" DurationType="OneShot" DurationMin="1.5229771" DurationMax="1.595005">
 					<MediaRefs>
 						<MediaRef Id="321772272"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1204696932" Name="Play_environement_props_pousse_moisie" MaxAttenuation="100" DurationType="OneShot" DurationMin="2.1738741" DurationMax="2.3719964">
+				<Event Id="1204696932" Name="Play_environement_props_pousse_moisie" DurationType="OneShot" DurationMin="2.1738741" DurationMax="2.3719964">
 					<MediaRefs>
 						<MediaRef Id="993248513"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2581323775" Name="Play_GGJ_Reggae_withoutLyrics" DurationType="Infinite">
+				<Event Id="266045666" Name="Play_Ingame_Reggae_withoutLyrics" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="846071124"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4007629040" Name="Play_menu_Reggae_withoutLyrics" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="846071124"/>
 					</MediaRefs>
@@ -332,5 +337,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{23B7B7D0-A9F0-70FE-B4D9-B95071A3DBC5}</FileHash>
+	<FileHash>{FAB51C46-627D-8D55-842D-A5936C73D6D2}</FileHash>
 </SoundBanksInfo>

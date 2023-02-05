@@ -85,8 +85,6 @@ public class RTPC_manager : MonoBehaviour
         _sfxVolumeRTPC.SetGlobalValue(100f);
         _musicVolumeRTPC.SetGlobalValue(100f);
 
-        AudioManager.Instance.ReggaeMusic(true);
-
     }
 
 

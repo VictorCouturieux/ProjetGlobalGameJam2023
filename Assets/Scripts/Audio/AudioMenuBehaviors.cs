@@ -10,7 +10,7 @@ public class AudioMenuBehaviors : MonoBehaviour
         AudioManager.Instance.ReggaeMusicMenu(true);
     }
 
-    private void OnDisable()
+    void OnDisable()
     {
         AudioManager.Instance.ReggaeMusicMenu(false);
     }

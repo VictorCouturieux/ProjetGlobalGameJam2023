@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	266045666	Play_Ingame_Reggae_withoutLyrics			\GGJ_2023\Music\Play_Ingame_Reggae_withoutLyrics	
 	278818673	Play_environement_props_pousse_lvl1			\GGJ_2023\Environnement\Play_environement_props_pousse_lvl1	
 	278818675	Play_environement_props_pousse_lvl3			\GGJ_2023\Environnement\Play_environement_props_pousse_lvl3	
 	311910498	Play_Click			\GGJ_2023\UI\Play_Click	
@@ -8,9 +9,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	1977644338	Play_throw			\GGJ_2023\Player\Play_throw	
 	2211787386	Play_Dash			\GGJ_2023\Player\Play_Dash	
 	2449850384	Play_Bulle_patate			\GGJ_2023\UI\Play_Bulle_patate	
-	2581323775	Play_GGJ_Reggae_withoutLyrics			\GGJ_2023\Music\Play_GGJ_Reggae_withoutLyrics	
 	2634688093	Play_environement_amb_garden			\GGJ_2023\Environnement\Play_environement_amb_garden	
 	3701552796	Play_ui_throw_load			\GGJ_2023\UI\Play_ui_throw_load	
+	4007629040	Play_menu_Reggae_withoutLyrics			\GGJ_2023\Music\Play_menu_Reggae_withoutLyrics	
 	4258653052	TEST_EVENT			\GGJ_2023\TEST_EVENT	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -54,7 +55,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	793785906	sfx_player_ability_uproot_01	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Mac\SFX\sfx_player_ability_uproot_01_23367234.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Uproot\uproot\uproot_base\sfx_player_ability_uproot_01		238656
 	811308933	sfx_player_ability_throw_whoosh_01	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Mac\SFX\sfx_player_ability_throw_whoosh_01_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Throw\throw\throw_whoosh\sfx_player_ability_throw_whoosh_01		232020
 	817193670	sfx_player_ability_uproot_tail_06	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Mac\SFX\sfx_player_ability_uproot_tail_06_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Uproot\uproot\uproot_tail\sfx_player_ability_uproot_tail_06		331372
-	846071124	GGJ_Reggae_withoutLyrics	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Mac\SFX\GGJ_Reggae_withoutLyrics_F72DF301.wem		\Actor-Mixer Hierarchy\GGJ_2023\Music\Music\Menu\GGJ_Reggae_withoutLyrics		33868772
+	846071124	Ingame_Reggae_withoutLyrics	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Mac\SFX\GGJ_Reggae_withoutLyrics_F72DF301.wem		\Actor-Mixer Hierarchy\GGJ_2023\Music\Music\IngameWithoutlyrics\Ingame_Reggae_withoutLyrics		33868772
 	872118337	sfx_player_ability_patate_explosion_base_03	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Mac\SFX\sfx_player_ability_patate_explosion_base_03_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Patate\Patate_Explosion\Patate_Explosion_blend\Patate_Explosion_base\sfx_player_ability_patate_explosion_base_03		526416
 	893982485	sfx_player_ability_Dash_02	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Mac\SFX\sfx_player_ability_Dash_02_B4CAA00C.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Dash\sfx_player_ability_Dash_02		76164
 	897915018	sfx_player_ability_uproot_tail_04	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Mac\SFX\sfx_player_ability_uproot_tail_04_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Uproot\uproot\uproot_tail\sfx_player_ability_uproot_tail_04		303440
