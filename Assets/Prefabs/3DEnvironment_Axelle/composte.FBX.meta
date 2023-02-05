@@ -3,7 +3,27 @@ guid: 9048247fadc98af4284a6961828ac9ad
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Composte_Mat
+    second: {fileID: 2100000, guid: 189cf97b09c444d41a768b65207c6345, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Palettes_Mat
+    second: {fileID: 2100000, guid: 80764a449f51093488faa6f0cd5d1304, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: seamless-forest-gravel-ground-texture-little-grass-seamless-forest-gravel-ground-texture-215571654
+    second: {fileID: 2800000, guid: 1bf2bb4a5d9e2274aa38da48e95db626, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2800000, guid: d937b56ed668ce340ba898cb77a96448, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
