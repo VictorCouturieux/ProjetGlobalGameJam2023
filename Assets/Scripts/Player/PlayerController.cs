@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private Animator _animator;
 
     private PlayerPickUp _playerPickUp;
+    private TrajectoryHelper _trajectoryHelper;
     private float _timerPressHold;
 
 
@@ -33,6 +34,7 @@ public class PlayerController : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
         _playerPickUp = GetComponent<PlayerPickUp>();
         _animator = GetComponentInChildren<Animator>();
+        _trajectoryHelper = GetComponentInChildren<TrajectoryHelper>();
         CurrentLife = MaxLife;
     }
 
@@ -103,9 +105,11 @@ public class PlayerController : MonoBehaviour
         {
             Projectile projectile = _playerPickUp.GetProjectile();
             projectile.transform.parent = null;
-            
-            Vector3 bulletForce = Mathf.Clamp(_timerPressHold, 0f, 3f) * (shootingNormaliseDirection * Vector3.right + Vector3.up) * 20f;
-            projectile.Launch(bulletForce);
+
+            //Vector3 bulletForce = Mathf.Clamp(_timerPressHold, 0f, 3f) * (shootingNormaliseDirection * Vector3.right + Vector3.up) * 20f;
+            float throwPercentage = Math.Clamp(_timerPressHold / _playerPickUp.GetTimeToThrow(), 0, 1);
+            Vector3 velocity = _trajectoryHelper.CalculateVelocity(throwPercentage);
+            projectile.Launch(velocity);
             _playerPickUp.OnThrowPlant();
         }
     }
