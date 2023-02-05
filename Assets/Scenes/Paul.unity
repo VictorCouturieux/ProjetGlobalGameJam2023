@@ -304,11 +304,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88ca0dc0c986ac4ba264f22d4122df4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _menuMusic:
+  _rockMusic:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
-  _Lvl1Music:
+  _reggaeMusic:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
@@ -317,6 +317,58 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 3cc8f73ff2279dc46a0b8595d6892515,
       type: 2}
+  _uiThrowLoad:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  _uiThrowLoadMax:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  _uiGenericClick:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  _uiGenericTransition:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  _pousseApparition:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  _pousseUsable:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  _pousseMoisted:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  _playerThrow:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  _playerDash:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  _playerUproot:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  _hitPlayer1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  _hitPlayer2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  _explosionPatate:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!4 &337952729
 Transform:
   m_ObjectHideFlags: 0
@@ -349,6 +401,11 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: af349b51b0bf1b54fbd9cd6628e1d831,
       type: 2}
+  _musicVolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: da9c1b34ebc8e8a488064c3b04576b32,
+      type: 2}
   _pitchLoadRTPC:
     idInternal: 0
     valueGuidInternal: 
@@ -356,6 +413,7 @@ MonoBehaviour:
       type: 2}
   _pitchLoad: 0
   _sfxVolume: 100
+  _musicVolume: 100
 --- !u!1 &532821130
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,10 @@ public class RTPC_manager : MonoBehaviour
     [SerializeField]
     private AK.Wwise.RTPC _sfxVolumeRTPC = null;
     [SerializeField]
+    private AK.Wwise.RTPC _musicVolumeRTPC = null;
+    [SerializeField]
     private AK.Wwise.RTPC _pitchLoadRTPC = null;
+
 
     [SerializeField]
     [Range(0f, 100f)]
@@ -23,7 +26,13 @@ public class RTPC_manager : MonoBehaviour
     [Range(0f, 100f)]
     private float _sfxVolume = 100f;
 
-   
+    [SerializeField]
+    [Range(0f, 100f)]
+    private float _musicVolume = 100f;
+
+
+
+
 
     public float _SFXsetVolume
     {
@@ -50,12 +59,28 @@ public class RTPC_manager : MonoBehaviour
 
     }
 
+    public float _setMusicVolumeRTPC
+    {
+        get => _musicVolume;
+        set
+        {
+            _musicVolume = value;
+            _musicVolumeRTPC.SetGlobalValue(value);
+        }
+
+    }
+
     private void Start()
     {
         _pitchLoadRTPC.SetGlobalValue(0f);
         _sfxVolumeRTPC.SetGlobalValue(100f);
+        _musicVolumeRTPC.SetGlobalValue(100f);
+
+        AudioManager.Instance.ReggaeMusic(true);
 
     }
 
+
+    
 
 }

@@ -6,6 +6,9 @@ public class AudioManager : MonoBehaviour
 {
     private static AudioManager instance;
     public static AudioManager Instance => instance;
+
+
+    //can call event with AudioManager.Instance.FunctionName(...);
     private void Awake()
     {
         if (instance != null)
@@ -14,37 +17,122 @@ public class AudioManager : MonoBehaviour
 
         DontDestroyOnLoad(this.gameObject);
     }
-    [SerializeField] AK.Wwise.Event _menuMusic = null;
-    [SerializeField] AK.Wwise.Event _Lvl1Music = null;
+    [SerializeField] AK.Wwise.Event _rockMusic = null;
+    [SerializeField] AK.Wwise.Event _reggaeMusic = null;
     [SerializeField] AK.Wwise.Event _ambSound = null;
+    [SerializeField] AK.Wwise.Event _uiThrowLoad = null;
+    [SerializeField] AK.Wwise.Event _uiThrowLoadMax = null;
+    [SerializeField] AK.Wwise.Event _uiGenericClick = null;
+    [SerializeField] AK.Wwise.Event _uiGenericTransition = null;
+    [SerializeField] AK.Wwise.Event _pousseApparition = null;
+    [SerializeField] AK.Wwise.Event _pousseUsable = null;
+    [SerializeField] AK.Wwise.Event _pousseMoisted = null;
+
+    [SerializeField] AK.Wwise.Event _playerThrow = null;
+    [SerializeField] AK.Wwise.Event _playerDash = null;
+    [SerializeField] AK.Wwise.Event _playerUproot = null;
+    [SerializeField] AK.Wwise.Event _hitPlayer1 = null;
+    [SerializeField] AK.Wwise.Event _hitPlayer2 = null;
+    [SerializeField] AK.Wwise.Event _explosionPatate = null;
 
     // Musics
 
-    public void MusicMenu(bool play)
+    public void RockMusic(bool play)
     {
         if (play)
         {
-            _menuMusic.Post(gameObject);
+            _rockMusic.Post(gameObject);
         }
         else
         {
-            _menuMusic.Stop(gameObject, 200);
+            _rockMusic.Stop(gameObject, 200);
         }
         
     }
 
-    public void Lvl1Music(bool play)
+    public void ReggaeMusic(bool play)
     {
         if (play)
         {
-            _Lvl1Music.Post(gameObject);
+            _reggaeMusic.Post(gameObject);
         }
         else
         {
-            _Lvl1Music.Stop(gameObject, 200);
+            _reggaeMusic.Stop(gameObject, 200);
         }
+        
 
     }
+
+    //POUSSES
+
+    public void PousseApparition()
+    {
+        _pousseApparition.Post(gameObject);
+    }
+    public void PousseUsable()
+    {
+        _pousseUsable.Post(gameObject);
+    }
+
+    public void PousseMoisted()
+    {
+        _pousseMoisted.Post(gameObject);
+    }
+
+    //Player Abilities
+
+    public void PlayerThrow()
+    {
+        _playerThrow.Post(gameObject);
+    }
+
+    public void PlayerDash()
+    {
+        _playerDash.Post(gameObject);
+    }
+    public void PlayerUproot()
+    {
+        _playerUproot.Post(gameObject);
+    }
+
+    public void ExplosionPatate()
+    {
+        _explosionPatate.Post(gameObject);
+    }
+   
+    //Voices
+
+    public void HitPlayer1()
+    {
+        _hitPlayer1.Post(gameObject);
+    }
+    public void HitPlayer2()
+    {
+        _hitPlayer2.Post(gameObject);
+    }
+
+
+
+    //UI
+    public void UiThrowLoad()
+    {
+        _uiThrowLoad.Post(gameObject);
+    }
+
+    public void UiThrowLoadMax()
+    {
+        _uiThrowLoadMax.Post(gameObject);
+    }
+    public void UiGenericClick()
+    {
+        _uiGenericClick.Post(gameObject);
+    }
+    public void UiGenericTransition()
+    {
+        _uiGenericTransition.Post(gameObject);
+    }
+
 
 
     // Amb
