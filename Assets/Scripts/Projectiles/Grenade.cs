@@ -7,7 +7,7 @@ public class Grenade : Projectile
     public ParticleSystem GrenadeExplosion;
     public override void Explode()
     {
-        base.Explode();
         GrenadeExplosion.Play();
+        base.Explode();
     }
 }
