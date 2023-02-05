@@ -945,6 +945,7 @@ Transform:
   - {fileID: 8859502985999467206}
   - {fileID: 4731069793785893816}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 1164475902}
   - {fileID: 5178838741265255112}
   - {fileID: 6001433001509829710}
@@ -956,11 +957,16 @@ Transform:
   - {fileID: 5440551923829663907}
   - {fileID: 973163236391694051}
 =======
+=======
+>>>>>>> abd27b2ac11b738413930e63a8e8001db3ea189f
   - {fileID: 9114875337266188766}
   - {fileID: 4045116522228178390}
   - {fileID: 1318786857263928346}
   - {fileID: 7737938365130258483}
+<<<<<<< HEAD
 >>>>>>> abd27b2 (terrain habillé !)
+=======
+>>>>>>> abd27b2ac11b738413930e63a8e8001db3ea189f
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1508,6 +1514,7 @@ MeshRenderer:
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &5230187381537748989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +1713,9 @@ BoxCollider:
 =======
 --- !u!1 &3071572280413781454
 >>>>>>> abd27b2 (terrain habillé !)
+=======
+--- !u!1 &3071572280413781454
+>>>>>>> abd27b2ac11b738413930e63a8e8001db3ea189f
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3572,7 +3582,7 @@ PrefabInstance:
     - target: {fileID: 2548624748797484188, guid: 06efef36b3cba7445879b0d48ede632d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 78
+      value: 79
       objectReference: {fileID: 0}
     - target: {fileID: 2548624748797484188, guid: 06efef36b3cba7445879b0d48ede632d,
         type: 3}
