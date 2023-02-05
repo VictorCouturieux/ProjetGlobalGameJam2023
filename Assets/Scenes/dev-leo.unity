@@ -577,6 +577,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1953915676571939037, guid: 91358babf10dc364ba508423d1ec358a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524558419120834082, guid: 91358babf10dc364ba508423d1ec358a,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524558419587482912, guid: 91358babf10dc364ba508423d1ec358a,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524558419587482912, guid: 91358babf10dc364ba508423d1ec358a,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.009313964
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524558419587482912, guid: 91358babf10dc364ba508423d1ec358a,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524558419587482912, guid: 91358babf10dc364ba508423d1ec358a,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524558419787683016, guid: 91358babf10dc364ba508423d1ec358a,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3602701893839478680, guid: 91358babf10dc364ba508423d1ec358a,
         type: 3}
       propertyPath: m_Name
@@ -636,6 +671,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3985851832896999730, guid: 91358babf10dc364ba508423d1ec358a,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3985851832896999730, guid: 91358babf10dc364ba508423d1ec358a,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3985851832896999730, guid: 91358babf10dc364ba508423d1ec358a,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3985851832896999730, guid: 91358babf10dc364ba508423d1ec358a,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174523357116972694, guid: 91358babf10dc364ba508423d1ec358a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91358babf10dc364ba508423d1ec358a, type: 3}

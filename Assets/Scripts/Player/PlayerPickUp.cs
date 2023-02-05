@@ -60,6 +60,7 @@ public class PlayerPickUp : MonoBehaviour
         Destroy(_plant);
         _plant = null;
         NeedReload = true;
+        _interactionWidget.SetPickedUp();
     }
 
     public void UpdateUI(float timer)
@@ -104,6 +105,7 @@ public class PlayerPickUp : MonoBehaviour
         CancelPickUp();
         CancelThrow();
         _projectile = null;
+        _interactionWidget.Hide();
     }
 
     public bool IsHoldingPlant()
