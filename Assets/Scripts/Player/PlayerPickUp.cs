@@ -62,12 +62,12 @@ public class PlayerPickUp : MonoBehaviour
 
     public void UpdateUI(float timer)
     {
-        if (_interactionWidget.enabled && timer <= 1f)
+        if (_interactionWidget.enabled && timer <= 0.5f)
         {
             if (!IsHoldingPlant())
-                _interactionWidget.SetPickUpMaskValue(timer / 1);
+                _interactionWidget.SetPickUpMaskValue(timer / 0.5f);
             else if (IsHoldingPlant())
-                _interactionWidget.SetThrowMaskValue(timer / 1);
+                _interactionWidget.SetThrowMaskValue(timer / 0.5f);
         }
     }
 
