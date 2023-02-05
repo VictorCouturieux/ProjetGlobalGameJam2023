@@ -72,7 +72,8 @@ MonoBehaviour:
   Mesh: {fileID: 3924296867616656794}
   MaxLife: 40
   DashForce: 9
-  MeshRenderer: {fileID: 0}
+  DashCooldown: 3
+  MeshRenderer: {fileID: 8537095382475620924}
   LifeEvent: {fileID: 11400000, guid: 89e65c541d600754cbf2ad9548aff486, type: 2}
 --- !u!114 &3602701893839478693
 MonoBehaviour:
@@ -901,6 +902,12 @@ MonoBehaviour:
 --- !u!4 &8069665010956972413 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2449276661146297588, guid: 968c82117afd0db49b538223b2d960db,
+    type: 3}
+  m_PrefabInstance: {fileID: 3602701894239480433}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &8537095382475620924 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5153953386039814221, guid: 968c82117afd0db49b538223b2d960db,
     type: 3}
   m_PrefabInstance: {fileID: 3602701894239480433}
   m_PrefabAsset: {fileID: 0}

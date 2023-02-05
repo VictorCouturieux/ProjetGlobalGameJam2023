@@ -43,7 +43,7 @@ public class Projectile : MonoBehaviour
             Explode();
         } else if (collision.gameObject.CompareTag("Player"))
         {
-            
+            Explode();
         }
     }
 
