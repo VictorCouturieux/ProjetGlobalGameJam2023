@@ -59,7 +59,7 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            _reggaeMusic.Stop(gameObject, 200);
+            _reggaeMusic.Stop(gameObject, 0);
         }
         
 
