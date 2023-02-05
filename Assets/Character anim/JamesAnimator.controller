@@ -23,7 +23,7 @@ AnimatorStateMachine:
     m_Position: {x: 321.48828, y: 115.7357, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2490737965593156444}
-    m_Position: {x: 280, y: 10, z: 0}
+    m_Position: {x: 320, y: -50, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 8596109445180418701}
@@ -286,7 +286,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 65da8de4276f6a24697ca107d3546ca9,
+  m_Motion: {fileID: -203655887218126122, guid: 328f69db39ffb6f4a890cb598b216667,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -384,19 +384,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Shoot
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Taunt
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -682,7 +682,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 65da8de4276f6a24697ca107d3546ca9,
+  m_Motion: {fileID: -203655887218126122, guid: 328f69db39ffb6f4a890cb598b216667,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 

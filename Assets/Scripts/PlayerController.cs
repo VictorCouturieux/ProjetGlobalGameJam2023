@@ -11,7 +11,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private List<GameObject> BulletPrefabs;
     [SerializeField] private float shootingNormaliseDirection = 1;
     [SerializeField] private Transform Mesh;
+    [SerializeField] private float MaxLife = 100f;
 
+    private float CurrentLife;
     private Vector2 _inputVector;
     private float _startPressTimer;
     private Rigidbody _rigidbody;
@@ -23,12 +25,14 @@ public class PlayerController : MonoBehaviour
     private float _timerPressLength;
 
     private Coroutine PickUpUI;
+    public GameEvent<float> LifeEvent;
 
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
         _playerPickUp = GetComponent<PlayerPickUp>();
         _animator = GetComponentInChildren<Animator>();
+        CurrentLife = MaxLife;
     }
 
     private void Update()
@@ -75,7 +79,7 @@ public class PlayerController : MonoBehaviour
 
             StopCoroutine(PickUpUI);
             
-            _playerPickUp.Update(0);
+            _playerPickUp.UpdateUI(0);
         }
     }
 
@@ -83,9 +87,11 @@ public class PlayerController : MonoBehaviour
     {
         if (_playerPickUp.IsHoldingPlant())
         {
-            Plant plant = _playerPickUp.GetPlant();
-            Vector3 bulletForce = Mathf.Clamp(_timerPressLength, 0f, 3f) * (shootingNormaliseDirection * Vector3.right + Vector3.up) * 10f;
-            plant.Launch(bulletForce);
+            GameObject projectile = _playerPickUp.GetPlant().GetProjectile();
+            projectile.layer = gameObject.layer;
+            projectile.transform.parent = null;
+            Vector3 bulletForce = Mathf.Clamp(_timerPressLength, 0f, 3f) * (-shootingNormaliseDirection * Vector3.right + Vector3.up) * 10f;
+            projectile.GetComponent<Projectile>().Launch(bulletForce);
             _playerPickUp.OnThrowPlant();
         }
     }
@@ -95,7 +101,7 @@ public class PlayerController : MonoBehaviour
         _timerPressLength = 0f;
         while(_isPressingFire && _timerPressLength < 1f)
         {
-            _playerPickUp.Update(_timerPressLength);
+            _playerPickUp.UpdateUI(_timerPressLength);
             yield return new WaitForSeconds(Time.deltaTime);
             _timerPressLength += Time.deltaTime;
         }
@@ -106,5 +112,17 @@ public class PlayerController : MonoBehaviour
     public Transform getHandTransform()
     {
         return Hand;
+    }
+
+    public void Hurt(float damage)
+    {
+        CurrentLife -= damage;
+        LifeEvent.Call(CurrentLife / MaxLife);
+
+        Debug.Log(CurrentLife / MaxLife);
+        if (CurrentLife <= 0)
+        {
+            //TODO : Die / End
+        }
     }
 }

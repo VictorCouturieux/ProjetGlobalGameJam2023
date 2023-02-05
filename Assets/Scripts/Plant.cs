@@ -11,20 +11,29 @@ enum PlantStates {
     CRASHED_ON_THE_FLOOR,
 }
 
+enum PlantType
+{
+    GRENADE,
+    ROOTS,
+    ICE
+}
+
 public class Plant : MonoBehaviour
 {
     [SerializeField] private float timeToGrow = 2;
     [SerializeField] private float timeToFade = 10;
 
     [SerializeField] private SphereCollider _pickUpCollider;
-    [SerializeField] private GameObject _plantProjectile;
+    [SerializeField] private GameObject ExplosionProjectile;
     [SerializeField] private GameObject _smashedPlant;
     
     [SerializeField] private EndLifeVegeEvent endLifeVegetable;
 
     private Animator _animator;
 
+    private GameObject SpawnedProjectile;
     private PlantStates _state;
+    private PlantType _type = PlantType.GRENADE;
     private float timer;
 
     // Start is called before the first frame update
@@ -74,16 +83,27 @@ public class Plant : MonoBehaviour
         endLifeVegetable.Call(gameObject);
         Destroy(_pickUpCollider);
         Destroy(transform.Find("PlantMesh").gameObject);
-        Instantiate(_plantProjectile, gameObject.transform);
+        SpawnProjectile();
         _state = PlantStates.PICKED_UP;
         return this;
     }
 
-    public void Launch(Vector3 bulletForce)
+    private void SpawnProjectile()
     {
-        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
-        _state = PlantStates.IN_THE_AIR;
-        rb.AddForce(bulletForce, ForceMode.Impulse);
+        switch (_type)
+        {
+            case PlantType.GRENADE:
+                SpawnedProjectile = Instantiate(ExplosionProjectile, gameObject.transform);
+                break;
+            default:
+                break;
+        }
+    }
+    
+    
+    public GameObject GetProjectile()
+    {
+        return SpawnedProjectile;
     }
 
     private void CrashOnTheFloor(Vector3 crashPosition, Vector3 crashNormal)

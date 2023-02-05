@@ -29,23 +29,11 @@ public class PlayerPickUp : MonoBehaviour
         _state = InteractionState.DEFAULT;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         Plant plant = other.GetComponent<Plant>();
 
-        if (plant == null)
-            return;
-
-        if (IsHoldingPlant())
-            return;
-
-        if (!plant.CanBePickUp())
+        if (plant == null || IsHoldingPlant() || !plant.CanBePickUp())
             return;
 
         _plantPlayerCanInteractWith = plant;
@@ -58,13 +46,7 @@ public class PlayerPickUp : MonoBehaviour
     {
         Plant plant = other.GetComponent<Plant>();
 
-        if (plant == null)
-            return;
-
-        if (IsHoldingPlant())
-            return;
-
-        if (_plantPlayerCanInteractWith != plant)
+        if (plant == null || IsHoldingPlant() || _plantPlayerCanInteractWith != plant)
             return;
 
         _state = InteractionState.DEFAULT;
@@ -81,7 +63,7 @@ public class PlayerPickUp : MonoBehaviour
         _state = InteractionState.CAN_THROW;
     }
 
-    public void Update(float timer)
+    public void UpdateUI(float timer)
     {
         if (CanPickUpPlant())
         {
