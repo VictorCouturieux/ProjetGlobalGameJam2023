@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,13 +52,16 @@ public class Plant : MonoBehaviour
     {
         _pickUpCollider.enabled = true;
         _state = PlantStates.READY_TO_PICK_UP;
-        _animator.Play("Pickable");
+        _animator.SetTrigger("NextState");
+        
     }
 
     private void DispawnPlant()
     {
+        _pickUpCollider.enabled = false;
         endLifeVegetable.Call(gameObject);
-        Destroy(gameObject);
+        _animator.SetTrigger("NextState");
+        
     }
 
     public bool CanBePickUp()
