@@ -1,10 +1,13 @@
 using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HudManager : MonoBehaviour
 {
+    [SerializeField] private VoidGameEvent mainMenuEvent;
+    
     [SerializeField] private Image pRightLifeBarre;
     [SerializeField] private Image pLeftLifeBarre;
     
@@ -28,6 +31,12 @@ public class HudManager : MonoBehaviour
     private void OnEnable() {
         pRightLifeCountEvent.AddCallback(PlayerRightLostHp);
         pLeftLifeCountEvent.AddCallback(PlayerLeftLostHp);
+    }
+
+    private void Update() {
+        if (pRightLifeBarre.fillAmount <= 0 || pLeftLifeBarre.fillAmount <= 0) {
+            mainMenuEvent.Call();
+        }
     }
 
     private void PlayerRightLostHp(float newLifeValue) {
