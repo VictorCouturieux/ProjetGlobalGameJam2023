@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class RTPC_manager : MonoBehaviour
 {
+    private static RTPC_manager instance;
+
+    public static RTPC_manager Instance => instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+            Destroy(Instance.gameObject);
+        instance = this;
+
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     /* utilisation : On peut appeler cette classe par -> public RTPC_manager _rtpcManager;
      puis faire un _rtpcManager.
@@ -29,9 +41,6 @@ public class RTPC_manager : MonoBehaviour
     [SerializeField]
     [Range(0f, 100f)]
     private float _musicVolume = 100f;
-
-
-
 
 
     public float _SFXsetVolume

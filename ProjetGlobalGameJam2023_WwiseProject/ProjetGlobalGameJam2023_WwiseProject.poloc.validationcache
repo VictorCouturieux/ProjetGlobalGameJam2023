@@ -51,9 +51,10 @@
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1675529217" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\UI.wwu" DateLow="1675531129" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\Player.wwu" DateLow="1675530519" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\GGJ_2023.wwu" DateLow="1675535490" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\Music.wwu" DateLow="1675595461" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\GGJ_2023.wwu" DateLow="1675595458" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\Environnement.wwu" DateLow="1675535490" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\Default Work Unit.wwu" DateLow="1675531129" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\Default Work Unit.wwu" DateLow="1675595461" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Effects\Factory Effects.wwu" DateLow="1675529981" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1675505286" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1675505286" DateHigh="0"/>
@@ -62,9 +63,10 @@
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1675505286" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1675505286" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1675533162" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="1675535490" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="1675594679" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\Player.wwu" DateLow="1675535490" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\GGJ_2023.wwu" DateLow="1675532579" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\environement.wwu" DateLow="1675539346" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\Music.wwu" DateLow="1675595469" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\GGJ_2023.wwu" DateLow="1675594999" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\environement.wwu" DateLow="1675595240" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1675509236" DateHigh="0"/>
 </ValidationCache>

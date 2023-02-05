@@ -4,6 +4,9 @@
 		<WorkUnit Name="environement" ID="{6B74E2AC-9703-4EE0-900C-41F687105513}" OwnerID="{3F3785C9-41CF-463D-B7B5-F955B1A41044}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="Env" ID="{7677329B-1504-44FB-834D-254A3378D0F2}" ShortID="424224618">
+					<PropertyList>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
@@ -60,6 +63,7 @@
 						<ActorMixer Name="pousse" ID="{3E4E8C69-155B-4DC1-B10B-EBBD32A2178C}" ShortID="125119130">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">

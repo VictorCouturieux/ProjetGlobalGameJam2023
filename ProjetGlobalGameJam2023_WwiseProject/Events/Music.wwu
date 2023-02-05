@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{62A7F43B-F6AE-4476-8DBB-CD07B98CB5E9}" SchemaVersion="110" RootDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" ParentDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}">
+	<Events>
+		<WorkUnit Name="Music" ID="{62A7F43B-F6AE-4476-8DBB-CD07B98CB5E9}" OwnerID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="12"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_GGJ_Reggae_withoutLyrics" ID="{8805DAA0-4956-44D0-904B-0C68377BEF29}">
+					<ChildrenList>
+						<Action Name="" ID="{ED40E2E1-1882-4B4E-9A79-445E4E1AF43A}" ShortID="240176311">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GGJ_Reggae_withoutLyrics" ID="{1DC69566-2BEA-442D-8FF5-B2B90A0DEFFD}" WorkUnitID="{DB720279-3E29-4CA5-8AB0-5E0E219D7117}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -19,6 +19,7 @@ public class AudioManager : MonoBehaviour
     }
     [SerializeField] AK.Wwise.Event _rockMusic = null;
     [SerializeField] AK.Wwise.Event _reggaeMusic = null;
+    [SerializeField] AK.Wwise.Event _reggaeMusicMenu = null;
     [SerializeField] AK.Wwise.Event _ambSound = null;
     [SerializeField] AK.Wwise.Event _uiThrowLoad = null;
     [SerializeField] AK.Wwise.Event _uiThrowLoadMax = null;
@@ -61,6 +62,19 @@ public class AudioManager : MonoBehaviour
             _reggaeMusic.Stop(gameObject, 200);
         }
         
+
+    }
+    public void ReggaeMusicMenu(bool play)
+    {
+        if (play)
+        {
+            _reggaeMusicMenu.Post(gameObject);
+        }
+        else
+        {
+            _reggaeMusicMenu.Stop(gameObject, 200);
+        }
+
 
     }
 
