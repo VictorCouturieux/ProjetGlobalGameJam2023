@@ -8,11 +8,12 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     protected float Damage = 10f;
     
+    [SerializeField] private float timeBeforeDestroy = 1;
+
     [SerializeField]
     protected Collider ExplosionTrigger;
 
     protected Rigidbody _rigidbody;
-    
 
     private void Awake()
     {
@@ -25,7 +26,7 @@ public class Projectile : MonoBehaviour
     {
         ExplosionTrigger.enabled = true;
         Destroy(_rigidbody);
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, timeBeforeDestroy);
     }
     
     
@@ -42,7 +43,7 @@ public class Projectile : MonoBehaviour
             Explode();
         } else if (collision.gameObject.CompareTag("Player"))
         {
-            
+            Explode();
         }
     }
 
