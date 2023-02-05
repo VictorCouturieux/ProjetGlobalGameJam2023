@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: 36f857a964689b44ea83c1414fbfddb3
 ModelImporter:
   serializedVersion: 21300
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -7752615716570652795
+    second: FlyingPumpkin
   externalObjects: {}
   materials:
     materialImportMode: 2

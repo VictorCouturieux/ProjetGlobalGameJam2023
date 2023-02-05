@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: c1486e1995ea5804dad9c759f353dfae
 ModelImporter:
   serializedVersion: 21300
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -2369351089497689461
+    second: IdlePumpkin
   externalObjects: {}
   materials:
     materialImportMode: 2
