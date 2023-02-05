@@ -13,9 +13,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform Mesh;
     [SerializeField] private float MaxLife = 100f;
     [SerializeField] private float DashForce = 3f;
+    [SerializeField] private float DashCooldown = 3f;
+    [SerializeField] private SkinnedMeshRenderer MeshRenderer;
 
     [System.NonSerialized]
     public bool CanMove = true;
+    private bool CanDash = true;
     [System.NonSerialized]
     public Coroutine PickUpUI;
     public GameEvent<float> LifeEvent;
@@ -25,6 +28,7 @@ public class PlayerController : MonoBehaviour
     private Animator _animator;
 
     private PlayerPickUp _playerPickUp;
+    private TrajectoryHelper _trajectoryHelper;
     private float _timerPressHold;
 
 
@@ -33,6 +37,7 @@ public class PlayerController : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
         _playerPickUp = GetComponent<PlayerPickUp>();
         _animator = GetComponentInChildren<Animator>();
+        _trajectoryHelper = GetComponentInChildren<TrajectoryHelper>();
         CurrentLife = MaxLife;
     }
 
@@ -49,13 +54,24 @@ public class PlayerController : MonoBehaviour
     
     public void Dash(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (CanDash && context.performed)
         {
             CanMove = false;
             _animator.SetTrigger("Dash");
             _rigidbody.AddForce(Mesh.forward * DashForce, ForceMode.Impulse);
+            StartCoroutine(DashCooldownCoroutine());
         }
     }
+
+    private IEnumerator DashCooldownCoroutine()
+    {
+        _animator.SetBool("Tired", true);
+        CanDash = false;
+        yield return new WaitForSeconds(DashCooldown);
+        CanDash = true;
+        _animator.SetBool("Tired", false);
+    }
+    
     public void Taunt(InputAction.CallbackContext context)
     {
         if(context.performed)
@@ -103,9 +119,11 @@ public class PlayerController : MonoBehaviour
         {
             Projectile projectile = _playerPickUp.GetProjectile();
             projectile.transform.parent = null;
-            
-            Vector3 bulletForce = Mathf.Clamp(_timerPressHold, 0f, 3f) * (shootingNormaliseDirection * Vector3.right + Vector3.up) * 20f;
-            projectile.Launch(bulletForce);
+
+            //Vector3 bulletForce = Mathf.Clamp(_timerPressHold, 0f, 3f) * (shootingNormaliseDirection * Vector3.right + Vector3.up) * 20f;
+            float throwPercentage = Math.Clamp(_timerPressHold / _playerPickUp.GetTimeToThrow(), 0, 1);
+            Vector3 velocity = _trajectoryHelper.CalculateVelocity(throwPercentage);
+            projectile.Launch(velocity);
             _playerPickUp.OnThrowPlant();
         }
     }
@@ -146,10 +164,32 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            StartCoroutine(BlinkCoroutine(4,.1f));
             _animator.SetTrigger("Hurt");
             CanMove = false;
             _rigidbody.velocity = Vector3.zero;
         }
     }
 
+    private IEnumerator BlinkCoroutine(int times, float duration)
+    {
+        int count = 0;
+        while (count < times)
+        {
+            SetMeshHue(Color.red);
+            yield return new WaitForSeconds(duration);
+            Debug.Log(count);
+            SetMeshHue(Color.white);
+            yield return new WaitForSeconds(duration);
+            count++;
+        }
+    }
+
+    private void SetMeshHue(Color hue)
+    {
+        foreach (Material material in MeshRenderer.materials)
+        {
+            material.color = hue;
+        }
+    }
 }
