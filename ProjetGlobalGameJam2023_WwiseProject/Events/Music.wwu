@@ -29,6 +29,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Ingame_Reggae_withoutLyrics_01" ID="{B3FAF289-CF2B-4A50-8C04-D1EEF89F8274}">
+					<ChildrenList>
+						<Action Name="" ID="{85AB1006-BBE0-4D60-A0A9-68B00591751B}" ShortID="136250417">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ingame_Reggae_withoutLyrics" ID="{2C857DDB-4E1B-491B-9D65-A410CC4E0225}" WorkUnitID="{DB720279-3E29-4CA5-8AB0-5E0E219D7117}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

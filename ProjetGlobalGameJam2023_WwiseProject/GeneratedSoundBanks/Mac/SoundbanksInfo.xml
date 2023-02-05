@@ -38,7 +38,7 @@
 				<GameParameter Id="3709237862" Name="RTPC_loading_throw_value"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{8E32C266-E317-E790-60D2-345D2B8BD076}">
+		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{0502CCD6-BF94-7137-E307-9C524414CC2A}">
 			<ShortName>GGJ_2023</ShortName>
 			<Path>GGJ_2023.bnk</Path>
 			<Media>
@@ -50,14 +50,6 @@
 					<ShortName>sfx_ui_bulle_explosive_potato_01.wav</ShortName>
 					<CachePath>SFX/sfx_ui_bulle_explosive_potato_01_DB21A809.wem</CachePath>
 				</File>
-				<File Id="97418289" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>sfx_player_ability_patate_explosion_base_01.wav</ShortName>
-					<CachePath>SFX/sfx_player_ability_patate_explosion_base_01_DB21A809.wem</CachePath>
-				</File>
-				<File Id="104426240" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>sfx_player_ability_patate_explosion_tail_06.wav</ShortName>
-					<CachePath>SFX/sfx_player_ability_patate_explosion_tail_06_DB21A809.wem</CachePath>
-				</File>
 				<File Id="134832202" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_uproot_03.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_uproot_03_C67C9A35.wem</CachePath>
@@ -65,6 +57,10 @@
 				<File Id="153638423" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_ui_generic_click_03.wav</ShortName>
 					<CachePath>SFX/sfx_ui_generic_click_03_918E7D50.wem</CachePath>
+				</File>
+				<File Id="203897402" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Abitlity_Explosion_Impact-003.wav</ShortName>
+					<CachePath>SFX/Player_Abitlity_Explosion_Impact-003_DB21A809.wem</CachePath>
 				</File>
 				<File Id="228266466" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_uproot_tail_05.wav</ShortName>
@@ -74,13 +70,9 @@
 					<ShortName>sfx_environement_amb_garden.wav</ShortName>
 					<CachePath>SFX/sfx_environement_amb_garden_DDB6CF79.wem</CachePath>
 				</File>
-				<File Id="305155136" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>sfx_player_ability_patate_explosion_base_05.wav</ShortName>
-					<CachePath>SFX/sfx_player_ability_patate_explosion_base_05_DB21A809.wem</CachePath>
-				</File>
-				<File Id="305615058" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>sfx_player_ability_patate_explosion_tail_05.wav</ShortName>
-					<CachePath>SFX/sfx_player_ability_patate_explosion_tail_05_DB21A809.wem</CachePath>
+				<File Id="260800260" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Abitlity_Explosion_Splash-002.wav</ShortName>
+					<CachePath>SFX/Player_Abitlity_Explosion_Splash-002_DB21A809.wem</CachePath>
 				</File>
 				<File Id="321772272" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_environement_props_pousse_lvl3.wav</ShortName>
@@ -94,17 +86,13 @@
 					<ShortName>sfx_ui_generic_click_02.wav</ShortName>
 					<CachePath>SFX/sfx_ui_generic_click_02_63348DE0.wem</CachePath>
 				</File>
-				<File Id="353285147" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>sfx_player_ability_patate_explosion_base_02.wav</ShortName>
-					<CachePath>SFX/sfx_player_ability_patate_explosion_base_02_DB21A809.wem</CachePath>
-				</File>
-				<File Id="363080434" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>sfx_player_ability_patate_explosion_base_06.wav</ShortName>
-					<CachePath>SFX/sfx_player_ability_patate_explosion_base_06_DB21A809.wem</CachePath>
-				</File>
 				<File Id="373183258" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_ui_throw_load.wav</ShortName>
 					<CachePath>SFX/sfx_ui_throw_load_BD5C0C5C.wem</CachePath>
+				</File>
+				<File Id="397407126" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Abitlity_Explosion_Build-003.wav</ShortName>
+					<CachePath>SFX/Player_Abitlity_Explosion_Build-003_DB21A809.wem</CachePath>
 				</File>
 				<File Id="435181012" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_environement_props_pousse_lvl1.wav</ShortName>
@@ -118,13 +106,9 @@
 					<ShortName>sfx_player_ability_throw_tail_03.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_throw_tail_03_DB21A809.wem</CachePath>
 				</File>
-				<File Id="519458279" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>sfx_player_ability_patate_explosion_tail_01.wav</ShortName>
-					<CachePath>SFX/sfx_player_ability_patate_explosion_tail_01_DB21A809.wem</CachePath>
-				</File>
-				<File Id="533964976" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>sfx_player_ability_patate_explosion_tail_02.wav</ShortName>
-					<CachePath>SFX/sfx_player_ability_patate_explosion_tail_02_DB21A809.wem</CachePath>
+				<File Id="535078765" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Abitlity_Explosion_Impact-001.wav</ShortName>
+					<CachePath>SFX/Player_Abitlity_Explosion_Impact-001_DB21A809.wem</CachePath>
 				</File>
 				<File Id="549344832" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_ui_bulle_explosive_potato_02.wav</ShortName>
@@ -134,9 +118,9 @@
 					<ShortName>sfx_player_ability_uproot_tail_01.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_uproot_tail_01_DB21A809.wem</CachePath>
 				</File>
-				<File Id="553068151" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>sfx_player_ability_patate_explosion_base_04.wav</ShortName>
-					<CachePath>SFX/sfx_player_ability_patate_explosion_base_04_DB21A809.wem</CachePath>
+				<File Id="560142908" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Abitlity_Explosion_Splash-003.wav</ShortName>
+					<CachePath>SFX/Player_Abitlity_Explosion_Splash-003_DB21A809.wem</CachePath>
 				</File>
 				<File Id="560676795" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_throw_whoosh_03.wav</ShortName>
@@ -154,10 +138,6 @@
 					<ShortName>sfx_player_ability_uproot_tail_03.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_uproot_tail_03_DB21A809.wem</CachePath>
 				</File>
-				<File Id="681978811" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>sfx_player_ability_patate_explosion_tail_03.wav</ShortName>
-					<CachePath>SFX/sfx_player_ability_patate_explosion_tail_03_DB21A809.wem</CachePath>
-				</File>
 				<File Id="691604165" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_Dash_03.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_Dash_03_0EED00B0.wem</CachePath>
@@ -173,6 +153,10 @@
 				<File Id="757756100" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_throw_tail_04.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_throw_tail_04_DB21A809.wem</CachePath>
+				</File>
+				<File Id="761276351" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Abitlity_Explosion_Build-001.wav</ShortName>
+					<CachePath>SFX/Player_Abitlity_Explosion_Build-001_DB21A809.wem</CachePath>
 				</File>
 				<File Id="793522240" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_Dash_01.wav</ShortName>
@@ -192,11 +176,11 @@
 				</File>
 				<File Id="846071124" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GGJ_Reggae_withoutLyrics.wav</ShortName>
-					<CachePath>SFX/GGJ_Reggae_withoutLyrics_F72DF301.wem</CachePath>
+					<CachePath>SFX/GGJ_Reggae_withoutLyrics_2BD9AA46.wem</CachePath>
 				</File>
-				<File Id="872118337" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>sfx_player_ability_patate_explosion_base_03.wav</ShortName>
-					<CachePath>SFX/sfx_player_ability_patate_explosion_base_03_DB21A809.wem</CachePath>
+				<File Id="893130455" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Abitlity_Explosion_Impact-002.wav</ShortName>
+					<CachePath>SFX/Player_Abitlity_Explosion_Impact-002_DB21A809.wem</CachePath>
 				</File>
 				<File Id="893982485" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_Dash_02.wav</ShortName>
@@ -210,9 +194,13 @@
 					<ShortName>sfx_dash_loaded.wav</ShortName>
 					<CachePath>SFX/sfx_dash_loaded_DB21A809.wem</CachePath>
 				</File>
-				<File Id="987703917" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>sfx_player_ability_patate_explosion_tail_04.wav</ShortName>
-					<CachePath>SFX/sfx_player_ability_patate_explosion_tail_04_DB21A809.wem</CachePath>
+				<File Id="978690032" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Abitlity_Explosion_Splash-001.wav</ShortName>
+					<CachePath>SFX/Player_Abitlity_Explosion_Splash-001_DB21A809.wem</CachePath>
+				</File>
+				<File Id="988036767" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Abitlity_Explosion_Build-002.wav</ShortName>
+					<CachePath>SFX/Player_Abitlity_Explosion_Build-002_DB21A809.wem</CachePath>
 				</File>
 				<File Id="993248513" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_environement_props_pousse_moisie.wav</ShortName>
@@ -279,20 +267,17 @@
 						<MediaRef Id="846071124"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1023383947" Name="Play_Patate_Explosion_blend" DurationType="OneShot" DurationMin="3.4502764" DurationMax="5.531179">
+				<Event Id="1023383947" Name="Play_Patate_Explosion_blend" DurationType="OneShot" DurationMin="1.3491234" DurationMax="1.5619589">
 					<MediaRefs>
-						<MediaRef Id="97418289"/>
-						<MediaRef Id="104426240"/>
-						<MediaRef Id="305155136"/>
-						<MediaRef Id="305615058"/>
-						<MediaRef Id="353285147"/>
-						<MediaRef Id="363080434"/>
-						<MediaRef Id="519458279"/>
-						<MediaRef Id="533964976"/>
-						<MediaRef Id="553068151"/>
-						<MediaRef Id="681978811"/>
-						<MediaRef Id="872118337"/>
-						<MediaRef Id="987703917"/>
+						<MediaRef Id="203897402"/>
+						<MediaRef Id="260800260"/>
+						<MediaRef Id="397407126"/>
+						<MediaRef Id="535078765"/>
+						<MediaRef Id="560142908"/>
+						<MediaRef Id="761276351"/>
+						<MediaRef Id="893130455"/>
+						<MediaRef Id="978690032"/>
+						<MediaRef Id="988036767"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1977644338" Name="Play_throw" DurationType="OneShot" DurationMin="1.3713782" DurationMax="1.5462829">
@@ -337,5 +322,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F2514ECC-6D4B-0F6E-3B1C-507662793267}</FileHash>
+	<FileHash>{EB78CEDF-AE7D-38A6-2A89-EA90600EFA8E}</FileHash>
 </SoundBanksInfo>

@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private VoidGameEvent exitGameEvent;
     [SerializeField] private VoidGameEvent creditGameEvent;
     [SerializeField] private VoidGameEvent mainMenuEvent;
-    
+
     private void Awake() {
         if (instance != null && instance != this) {
             Destroy(this.gameObject);
@@ -39,11 +39,14 @@ public class GameManager : MonoBehaviour
         mainMenuEvent.AddCallback(OnMainMenuGame);
     }
     
-    private void OnMainMenuGame() {
+    private void OnMainMenuGame()
+    {
+        AudioManager.Instance.ReggaeMusic(false);
         SceneManager.LoadScene(mainMenuScene);
     }
     
     private void OnStartGame() {
+        AudioManager.Instance.ReggaeMusic(true);
         SceneManager.LoadScene(gameScene);
     }
     

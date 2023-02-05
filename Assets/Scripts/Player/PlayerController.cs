@@ -160,7 +160,6 @@ public class PlayerController : MonoBehaviour
         Debug.Log(CurrentLife / MaxLife);
         if (CurrentLife <= 0)
         {
-            //TODO : Die / End
         }
         else
         {

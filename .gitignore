@@ -67,11 +67,11 @@ crashlytics-build.properties
 ## ---------------- ##
 
 # project stuff
-nano_WwiseProject/.cache/
-nano_WwiseProject/*.prof
-nano_WwiseProject/*nano_WwiseProject.*.validationcache
-nano_WwiseProject/*nano_WwiseProject.*.wsettings
-nano_WwiseProject/**/*.akd
+ProjetGlobalGameJam2023/.cache/
+ProjetGlobalGameJam2023/*.prof
+ProjetGlobalGameJam2023/*ProjetGlobalGameJam2023_WwiseProject.*.validationcache
+ProjetGlobalGameJam2023/*ProjetGlobalGameJam2023_WwiseProject.*.wsettings
+ProjetGlobalGameJam2023/**/*.akd
 
 # build stuff (unsure?)
 # Assets/Wwise/Deployment/Plugins/Windows/**/*.meta
