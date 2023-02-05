@@ -12,6 +12,8 @@ public class PlayerPickUp : MonoBehaviour
 
     [System.NonSerialized] public bool NeedReload = false;
 
+    [SerializeField] private float _timeToThrow = 0.5f;
+
 
     private void Awake()
     {
@@ -67,8 +69,13 @@ public class PlayerPickUp : MonoBehaviour
             if (!IsHoldingPlant())
                 _interactionWidget.SetPickUpMaskValue(timer / 0.5f);
             else if (IsHoldingPlant())
-                _interactionWidget.SetThrowMaskValue(timer / 0.5f);
+                _interactionWidget.SetThrowMaskValue(timer / _timeToThrow);
         }
+    }
+
+    public float GetTimeToThrow()
+    {
+        return _timeToThrow;
     }
 
     public void Interact()
