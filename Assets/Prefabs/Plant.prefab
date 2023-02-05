@@ -45,7 +45,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1038428611
 MonoBehaviour:
@@ -59,13 +59,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7a349bc770a8c43bdda15abc7d10ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToGrow: 2
-  timeToFade: 10
-  _pickUpCollider: {fileID: 2664993106561228713}
-  _plantProjectile: {fileID: 2664993106561228714, guid: 3c182ccdb4fa378469e575a3c5849173,
+  timeToGrow: 0
+  timeToFade: 50
+  ExplosionProjectile: {fileID: 2664993106561228714, guid: 3c182ccdb4fa378469e575a3c5849173,
     type: 3}
-  _smashedPlant: {fileID: 2664993106561228714, guid: 08c946ee5fd14c9419ae749385221d4e,
-    type: 3}
+  ThornsProjectile: {fileID: 0}
+  IceProjectile: {fileID: 0}
+  endLifeVegetable: {fileID: 11400000, guid: f068655c605e138459b54df66c3d57bb, type: 2}
 --- !u!1001 &6863777105927621879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77,21 +77,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5162560156308411668, guid: b3147909588df8347ba113ec3f86a4e1,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5162560156308411668, guid: b3147909588df8347ba113ec3f86a4e1,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5162560156308411668, guid: b3147909588df8347ba113ec3f86a4e1,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5162560156308411668, guid: b3147909588df8347ba113ec3f86a4e1,
         type: 3}
@@ -143,18 +128,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5162560156308411668, guid: b3147909588df8347ba113ec3f86a4e1,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5162560156308411671, guid: b3147909588df8347ba113ec3f86a4e1,
         type: 3}
       propertyPath: m_Name
       value: PlantMesh
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5162560156308411674, guid: b3147909588df8347ba113ec3f86a4e1, type: 3}
+    - target: {fileID: 9186319051241622579, guid: b3147909588df8347ba113ec3f86a4e1,
+        type: 3}
+      propertyPath: _plant
+      value: 
+      objectReference: {fileID: 1038428611}
+    - target: {fileID: 9186319051241622579, guid: b3147909588df8347ba113ec3f86a4e1,
+        type: 3}
+      propertyPath: endLifeVegetable
+      value: 
+      objectReference: {fileID: 11400000, guid: f068655c605e138459b54df66c3d57bb,
+        type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3147909588df8347ba113ec3f86a4e1, type: 3}
 --- !u!4 &1793578297177627107 stripped
 Transform:

@@ -1,13 +1,14 @@
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-enum PlantStates {
-    SPROUT,
-    READY_TO_PICK_UP,
-    PICKED_UP,
-    IN_THE_AIR,
-    CRASHED_ON_THE_FLOOR,
+enum PlantType
+{
+    GRENADE,
+    THORNS,
+    ICE
 }
 
 public class Plant : MonoBehaviour
@@ -15,86 +16,80 @@ public class Plant : MonoBehaviour
     [SerializeField] private float timeToGrow = 2;
     [SerializeField] private float timeToFade = 10;
 
-    [SerializeField] private SphereCollider _pickUpCollider;
-    [SerializeField] private GameObject _plantProjectile;
-    [SerializeField] private GameObject _smashedPlant;
+    [SerializeField] private GameObject ExplosionProjectile;
+    [SerializeField] private GameObject ThornsProjectile;
+    [SerializeField] private GameObject IceProjectile;
+    [SerializeField] private EndLifeVegeEvent endLifeVegetable;
 
     private Animator _animator;
+    private Collider _pickUpCollider;
+    private PlantType _type = PlantType.GRENADE;
 
-    private PlantStates _state;
-    private float timer;
-
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         _animator = GetComponentInChildren<Animator>();
-        _state = PlantStates.SPROUT;
+        _pickUpCollider = GetComponent<Collider>();
         _pickUpCollider.enabled = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        if(_state == PlantStates.SPROUT || _state == PlantStates.READY_TO_PICK_UP)
-            timer += Time.deltaTime;
+        StartCoroutine(GrowCoroutine());
+    }
 
-        if (_state == PlantStates.SPROUT && timer >= timeToGrow)
-            GrowPlant();
-
-        if (_state == PlantStates.READY_TO_PICK_UP && timer >= (timeToGrow + timeToFade))
-            DispawnPlant();
+    private IEnumerator GrowCoroutine()
+    {
+        yield return new WaitForSeconds(timeToGrow);
+        GrowPlant();
+        yield return new WaitForSeconds(timeToFade);
+        DispawnPlant();
     }
 
     private void GrowPlant()
     {
         _pickUpCollider.enabled = true;
-        _state = PlantStates.READY_TO_PICK_UP;
-        _animator.Play("Pickable");
+        _animator.SetTrigger("NextState");
     }
 
     private void DispawnPlant()
     {
+        _pickUpCollider.enabled = false;
+        _animator.SetTrigger("NextState");
+        
+    }
+
+    public Projectile PickUp(PlayerController owner)
+    {
+        DestroyPlant();
+        return SpawnProjectile(owner);
+    }
+
+    private Projectile SpawnProjectile(PlayerController owner)
+    {
+        GameObject projectile = null;
+        switch (_type)
+        {
+            case PlantType.GRENADE:
+                projectile = Instantiate(ExplosionProjectile, gameObject.transform);
+                break;
+            case PlantType.THORNS:
+                projectile = Instantiate(ThornsProjectile, gameObject.transform);
+                break;
+            case PlantType.ICE:
+                projectile = Instantiate(IceProjectile, gameObject.transform);
+                break;
+            default:
+                break;
+        }
+        
+        projectile.gameObject.layer = owner.gameObject.layer;
+
+        return projectile.GetComponent<Projectile>();
+    }
+
+    public void DestroyPlant()
+    {
+        endLifeVegetable.Call(gameObject);
         Destroy(gameObject);
-    }
-
-    public bool CanBePickUp()
-    {
-        return _state == PlantStates.READY_TO_PICK_UP;
-    }
-
-    public Plant PickUp()
-    {
-        Destroy(_pickUpCollider);
-        Destroy(transform.Find("PlantMesh").gameObject);
-        Instantiate(_plantProjectile, gameObject.transform);
-        _state = PlantStates.PICKED_UP;
-        return this;
-    }
-
-    public void Launch(Vector3 bulletForce)
-    {
-        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
-        _state = PlantStates.IN_THE_AIR;
-        rb.AddForce(bulletForce, ForceMode.Impulse);
-    }
-
-    private void CrashOnTheFloor(Vector3 crashPosition, Vector3 crashNormal)
-    {
-        Rigidbody rb = GetComponent<Rigidbody>();
-        rb.isKinematic = true;
-        rb.useGravity = false;
-
-        //TODO: use crash normal to set rotation
-        Instantiate(_smashedPlant, crashPosition, Quaternion.identity); 
-        _state = PlantStates.CRASHED_ON_THE_FLOOR;
-        Destroy(gameObject);
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        if (_state != PlantStates.IN_THE_AIR)
-            return;
-
-        CrashOnTheFloor(collision.contacts[0].point, collision.contacts[0].normal);
     }
 }
