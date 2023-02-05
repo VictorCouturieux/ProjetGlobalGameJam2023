@@ -69,6 +69,8 @@ MonoBehaviour:
   - {fileID: 2664993106561228714, guid: 4ccba0e463049e842902be32cb7f94c2, type: 3}
   shootingNormaliseDirection: -1
   Mesh: {fileID: 3924296867616656794}
+  MaxLife: 100
+  LifeEvent: {fileID: 11400000, guid: 89e65c541d600754cbf2ad9548aff486, type: 2}
 --- !u!114 &3602701893839478693
 MonoBehaviour:
   m_ObjectHideFlags: 0

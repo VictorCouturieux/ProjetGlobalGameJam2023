@@ -476,6 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e4fa7411201e744aa469e1a81de2d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interactionWidget: {fileID: 0}
 --- !u!1 &552984045
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +1020,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506755309}
-  m_LocalRotation: {x: 0.42430192, y: 0, z: 0, w: 0.9055208}
+  m_LocalRotation: {x: 0.4243014, y: 0, z: 0, w: 0.90552104}
   m_LocalPosition: {x: 0, y: 8.64, z: -7.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1431,6 +1432,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 5e0e3113-aee9-4d70-b37e-23f425c29c9a
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e05fd758-3c94-4490-9cc8-eeaa75c11f8b
+    m_ActionName: Player/Taunt[/Keyboard/t]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player
@@ -1481,6 +1486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e4fa7411201e744aa469e1a81de2d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interactionWidget: {fileID: 0}
 --- !u!1 &1616803382
 GameObject:
   m_ObjectHideFlags: 0

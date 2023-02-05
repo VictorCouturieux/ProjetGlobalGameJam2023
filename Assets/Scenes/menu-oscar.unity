@@ -989,21 +989,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5026776259452608803, guid: 0a7ba8862bcc5c54aafc80d859bda4c0,
-        type: 3}
-      propertyPath: gameScene
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5026776259452608803, guid: 0a7ba8862bcc5c54aafc80d859bda4c0,
-        type: 3}
-      propertyPath: mainMenuScene
-      value: menu-oscar
-      objectReference: {fileID: 0}
-    - target: {fileID: 5026776259452608803, guid: 0a7ba8862bcc5c54aafc80d859bda4c0,
-        type: 3}
-      propertyPath: scoreMenuScene
-      value: Credits
-      objectReference: {fileID: 0}
     - target: {fileID: 7312653752835494528, guid: 0a7ba8862bcc5c54aafc80d859bda4c0,
         type: 3}
       propertyPath: m_RootOrder
