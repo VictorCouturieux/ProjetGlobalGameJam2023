@@ -59,8 +59,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7a349bc770a8c43bdda15abc7d10ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToGrow: 0
-  timeToFade: 50
+  timeToGrow: 10
+  timeToFade: 30
   ExplosionProjectile: {fileID: 2664993106561228714, guid: 3c182ccdb4fa378469e575a3c5849173,
     type: 3}
   ThornsProjectile: {fileID: 0}
