@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform Mesh;
     [SerializeField] private float MaxLife = 100f;
     [SerializeField] private float DashForce = 3f;
+    [SerializeField] private SkinnedMeshRenderer MeshRenderer;
 
     [System.NonSerialized]
     public bool CanMove = true;
@@ -146,10 +147,32 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            StartCoroutine(BlinkCoroutine(4,.1f));
             _animator.SetTrigger("Hurt");
             CanMove = false;
             _rigidbody.velocity = Vector3.zero;
         }
     }
 
+    private IEnumerator BlinkCoroutine(int times, float duration)
+    {
+        int count = 0;
+        while (count < times)
+        {
+            SetMeshHue(Color.red);
+            yield return new WaitForSeconds(duration);
+            Debug.Log(count);
+            SetMeshHue(Color.white);
+            yield return new WaitForSeconds(duration);
+            count++;
+        }
+    }
+
+    private void SetMeshHue(Color hue)
+    {
+        foreach (Material material in MeshRenderer.materials)
+        {
+            material.color = hue;
+        }
+    }
 }
