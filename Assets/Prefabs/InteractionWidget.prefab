@@ -456,10 +456,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   emptyImage: {fileID: 78497973123549502}
   pickUpMask: {fileID: 78497973530516436}
-  pickedUpMask: {fileID: 0}
+  pickedUpMask: {fileID: 481825061208771780}
   throwMask: {fileID: 78497972921260246}
-  previewIcon: {fileID: 0}
-  selectedIcon: {fileID: 0}
+  previewIcon: {fileID: 1181327641257903417}
+  selectedIcon: {fileID: 6569695140478115924}
 --- !u!1 &1558959467994832051
 GameObject:
   m_ObjectHideFlags: 0
