@@ -13,10 +13,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform Mesh;
     [SerializeField] private float MaxLife = 100f;
     [SerializeField] private float DashForce = 3f;
+    [SerializeField] private float DashCooldown = 3f;
     [SerializeField] private SkinnedMeshRenderer MeshRenderer;
 
     [System.NonSerialized]
     public bool CanMove = true;
+    private bool CanDash = true;
     [System.NonSerialized]
     public Coroutine PickUpUI;
     public GameEvent<float> LifeEvent;
@@ -52,13 +54,24 @@ public class PlayerController : MonoBehaviour
     
     public void Dash(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (CanDash && context.performed)
         {
             CanMove = false;
             _animator.SetTrigger("Dash");
             _rigidbody.AddForce(Mesh.forward * DashForce, ForceMode.Impulse);
+            StartCoroutine(DashCooldownCoroutine());
         }
     }
+
+    private IEnumerator DashCooldownCoroutine()
+    {
+        _animator.SetBool("Tired", true);
+        CanDash = false;
+        yield return new WaitForSeconds(DashCooldown);
+        CanDash = true;
+        _animator.SetBool("Tired", false);
+    }
+    
     public void Taunt(InputAction.CallbackContext context)
     {
         if(context.performed)
