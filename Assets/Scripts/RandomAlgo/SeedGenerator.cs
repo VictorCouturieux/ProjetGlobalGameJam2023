@@ -115,7 +115,7 @@ public class SeedGenerator : MonoBehaviour
 			break;
 		}
 	}
-
+/*
 	void OnDrawGizmos() {
 		if (showGizmos) {
 			Gizmos.color = gizmosColor;
@@ -179,5 +179,5 @@ public class SeedGenerator : MonoBehaviour
 			}
 		}
 	}
-
+*/
 }
