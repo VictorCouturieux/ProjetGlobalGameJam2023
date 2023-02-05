@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{D1A28E75-F97B-4BEB-9B24-6B3F0A0BC326}" SchemaVersion="110" RootDocumentID="{7B057113-4B91-4752-85C4-CB476B6CA49A}" ParentDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}">
+<WwiseDocument Type="WorkUnit" ID="{D1A28E75-F97B-4BEB-9B24-6B3F0A0BC326}" SchemaVersion="110" RootDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" ParentDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}">
 	<Events>
-		<WorkUnit Name="Environnement" ID="{D1A28E75-F97B-4BEB-9B24-6B3F0A0BC326}" OwnerID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" PersistMode="Nested"/>
+		<WorkUnit Name="Environnement" ID="{D1A28E75-F97B-4BEB-9B24-6B3F0A0BC326}" OwnerID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_environement_amb_garden" ID="{11207303-A102-4BE9-B746-DDFC1E5239E2}">
+					<ChildrenList>
+						<Action Name="" ID="{88733D04-0A90-4ECD-9934-A6389B314955}" ShortID="942238169">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_environement_amb_garden" ID="{7A67CA96-4EA2-47F5-B808-26CEB72715D5}" WorkUnitID="{6B74E2AC-9703-4EE0-900C-41F687105513}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_environement_props_pousse_lvl1" ID="{532FBC3C-2726-46B5-9F3E-85C962044DE4}">
+					<ChildrenList>
+						<Action Name="" ID="{0FDAC9A8-6096-4CD5-9B83-C7164CB38B15}" ShortID="390578312">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_environement_props_pousse_lvl1" ID="{5BA66D51-315C-4A06-9265-73F02C427511}" WorkUnitID="{6B74E2AC-9703-4EE0-900C-41F687105513}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_environement_props_pousse_lvl3" ID="{E64FCE35-04EA-4520-958A-82FA73267E7E}">
+					<ChildrenList>
+						<Action Name="" ID="{FBA5DE3C-CD94-4452-8101-B5AAEE2557E1}" ShortID="1008764332">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_environement_props_pousse_lvl3" ID="{B2B5E6D8-CA39-4EF0-B11F-D3B925CE6825}" WorkUnitID="{6B74E2AC-9703-4EE0-900C-41F687105513}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_environement_props_pousse_moisie" ID="{A1A2D2B0-3634-495D-9C3B-ACBFD981E856}">
+					<ChildrenList>
+						<Action Name="" ID="{D40B0DDC-E186-44D7-81CC-6266FD03C12C}" ShortID="398766276">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_environement_props_pousse_moisie" ID="{A6439825-80B0-436B-AF7E-B8D5CFD8E33D}" WorkUnitID="{6B74E2AC-9703-4EE0-900C-41F687105513}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

@@ -3,23 +3,22 @@
 	<AudioObjects>
 		<WorkUnit Name="environement" ID="{6B74E2AC-9703-4EE0-900C-41F687105513}" OwnerID="{3F3785C9-41CF-463D-B7B5-F955B1A41044}" PersistMode="Nested">
 			<ChildrenList>
-				<ActorMixer Name="TEST" ID="{38A22D0C-E58C-4B6D-80FD-BAA2C57AC45C}" ShortID="556220717">
+				<ActorMixer Name="Env" ID="{7677329B-1504-44FB-834D-254A3378D0F2}" ShortID="424224618">
+					<PropertyList>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+							<ObjectRef Name="SFX" ID="{A67E8E91-247B-4086-B666-28EFD8E4C51E}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="TEST" ID="{DB85412F-7CAF-42BA-A045-CDD5BC8087BD}" ShortID="885946366">
+						<ActorMixer Name="Ambiance" ID="{1621509F-2AB0-42D2-A4AD-964B3CB2D024}" ShortID="716880079">
 							<PropertyList>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -30,7 +29,10 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="sfx_dash_loaded" ID="{6AB1BE93-9136-4FF8-BB84-315DD214CA5B}" ShortID="928268474">
+								<Sound Name="sfx_environement_amb_garden" ID="{7A67CA96-4EA2-47F5-B808-26CEB72715D5}" ShortID="785757585">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
@@ -40,20 +42,264 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="sfx_dash_loaded" ID="{84FF651C-231C-448D-B990-35E0B3E52195}">
+										<AudioFileSource Name="sfx_environement_amb_garden" ID="{02F1F91A-CFB5-4701-8E7F-B900A4736AAA}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="40.1408081127534"/>
+											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>sfx_dash_loaded.wav</AudioFile>
+											<AudioFile>sfx_environement_amb_garden.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="941070222"/>
+												<MediaID ID="231759120"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="sfx_dash_loaded" ID="{84FF651C-231C-448D-B990-35E0B3E52195}" Platform="Linked"/>
+										<ActiveSource Name="sfx_environement_amb_garden" ID="{02F1F91A-CFB5-4701-8E7F-B900A4736AAA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
-						</RandomSequenceContainer>
+						</ActorMixer>
+						<ActorMixer Name="pousse" ID="{3E4E8C69-155B-4DC1-B10B-EBBD32A2178C}" ShortID="125119130">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Pousse_Attenuation" ID="{D952C45C-38B4-4DF6-BED3-DE9A36410ADC}" WorkUnitID="{CDBB71F6-4B3B-4239-B5AB-D97BB458C1B8}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_environement_props_pousse_lvl3" ID="{B2B5E6D8-CA39-4EF0-B11F-D3B925CE6825}" ShortID="357750174">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{48ED0295-552B-451C-9AE1-06F2F76D060F}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>240</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{34E1B344-F18B-4D01-9324-7DB2559BF1B6}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="40"/>
+															<Property Name="Min" Type="Real64" Value="-40"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_environement_props_pousse_lvl3" ID="{5BAC485C-E372-4960-8AC4-961A24B606F3}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00486754571704735"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0175734751340432"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0127059294169959"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_environement_props_pousse_lvl3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="321772272"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_environement_props_pousse_lvl3" ID="{5BAC485C-E372-4960-8AC4-961A24B606F3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_environement_props_pousse_moisie" ID="{A6439825-80B0-436B-AF7E-B8D5CFD8E33D}" ShortID="858918615">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A6821EC3-A27D-4E92-B27C-1C0C847CA9F8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="15"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6ADFDD41-366B-42FA-BBD6-97CC03E241F7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="51"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_environement_props_pousse_moisie" ID="{B7D3A822-38D9-4D75-BC4C-DEB3A6A604E1}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_environement_props_pousse_moisie.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="993248513"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_environement_props_pousse_moisie" ID="{B7D3A822-38D9-4D75-BC4C-DEB3A6A604E1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_environement_props_pousse_lvl1" ID="{5BA66D51-315C-4A06-9265-73F02C427511}" ShortID="754654463">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>130</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{263DDB11-3D04-425B-BF77-C15C28E1042A}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_environement_props_pousse_lvl1" ID="{3B96F945-726B-4ADE-A554-88285C11D3DA}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0152559529334801"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0427166682137442"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_environement_props_pousse_lvl1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="435181012"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_environement_props_pousse_lvl1" ID="{3B96F945-726B-4ADE-A554-88285C11D3DA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{402B40B2-8455-48AB-A3BE-BD2C2F7A96F5}"/>
+							</PositioningInfo>
+						</ActorMixer>
+						<ActorMixer Name="TEST" ID="{38A22D0C-E58C-4B6D-80FD-BAA2C57AC45C}" ShortID="556220717">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="TEST" ID="{DB85412F-7CAF-42BA-A045-CDD5BC8087BD}" ShortID="885946366">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_dash_loaded" ID="{6AB1BE93-9136-4FF8-BB84-315DD214CA5B}" ShortID="928268474">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_dash_loaded" ID="{84FF651C-231C-448D-B990-35E0B3E52195}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_dash_loaded.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="941070222"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_dash_loaded" ID="{84FF651C-231C-448D-B990-35E0B3E52195}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

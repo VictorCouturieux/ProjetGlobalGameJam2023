@@ -8,7 +8,7 @@ public class Grenade : Projectile
 
     public override void Explode()
     {
-        //GrenadeExplosion.Play();
+        AudioManager.Instance.ExplosionPatate(gameObject);
         Instantiate(GrenadeExplosion, transform.position, transform.rotation);
         base.Explode();
     }
