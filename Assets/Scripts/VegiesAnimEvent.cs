@@ -34,7 +34,6 @@ public class VegiesAnimEvent : MonoBehaviour
     public void SoundPlantApparitionEvent()
     {
         AudioManager.Instance.PousseApparition(gameObject);
-        Debug.Log("sonnnnn");
     }
 
 }
