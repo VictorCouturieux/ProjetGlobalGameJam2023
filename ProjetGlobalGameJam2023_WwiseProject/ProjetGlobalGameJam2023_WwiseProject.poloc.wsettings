@@ -10,6 +10,8 @@
 				<Property Name="Event Action List\{532FBC3C-2726-46B5-9F3E-85C962044DE4}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{55DF40A6-7F24-47A2-A4A5-3C7AA3ABDFD0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{68E0409D-BC12-455B-8221-332833AC43DD}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{705620B6-EFAA-4225-B060-28EA156AC82C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{83591B31-D693-4E72-A35A-2A0C72A55428}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8805DAA0-4956-44D0-904B-0C68377BEF29}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8CEAF33A-A22D-4E52-9661-B34F74265C08}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{964211D8-FB63-41BE-9811-7C360498BF2E}\x64_Expand States" Type="string" Value=""/>
@@ -18,8 +20,10 @@
 				<Property Name="Event Action List\{B3FAF289-CF2B-4A50-8C04-D1EEF89F8274}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B5F0D6EC-B387-4D92-8301-19D828DEEC22}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B6150EE2-7208-421E-9F6C-B78B7F2DE9D2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C45DD756-1FFE-46EB-9763-B0ABD0030220}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D1E00EC3-2996-48BA-B8B8-52887D9FEE98}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D5852FD4-A45E-4C93-B753-B31352D64A0B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{DCF01D3B-29E1-4163-9D8A-513E06EF28E6}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E64FCE35-04EA-4520-958A-82FA73267E7E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>

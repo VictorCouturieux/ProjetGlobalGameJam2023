@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -35,6 +33,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AK.Wwise.Event _hitPlayer1 = null;
     [SerializeField] AK.Wwise.Event _hitPlayer2 = null;
     [SerializeField] AK.Wwise.Event _explosionPatate = null;
+    [SerializeField] AK.Wwise.Event _playerScratch = null;
 
     // Musics
 
@@ -48,7 +47,7 @@ public class AudioManager : MonoBehaviour
         {
             _rockMusic.Stop(gameObject, 200);
         }
-        
+
     }
 
     public void ReggaeMusic(bool play)
@@ -61,7 +60,7 @@ public class AudioManager : MonoBehaviour
         {
             _reggaeMusic.Stop(gameObject, 0);
         }
-        
+
 
     }
     public void ReggaeMusicMenu(bool play)
@@ -85,9 +84,9 @@ public class AudioManager : MonoBehaviour
         _pousseApparition.Post(go);
     }
     public void PousseUsable(GameObject go)
-    {
-        _pousseUsable.Post(go);
-    }
+   {
+     _pousseUsable.Post(go);
+   }
 
     public void PousseMoisted(GameObject go)
     {
@@ -114,7 +113,16 @@ public class AudioManager : MonoBehaviour
     {
         _explosionPatate.Post(go);
     }
-   
+
+    public void PlayerScratch(GameObject go, bool stop = false)
+    {
+        if (!stop)
+            _playerScratch.Post(go);
+
+        else
+            _playerScratch.Stop(go);
+    }
+
     //Voices
 
     public void HitPlayer1(GameObject go)
@@ -129,9 +137,22 @@ public class AudioManager : MonoBehaviour
 
 
     //UI
-    public void UiThrowLoad(GameObject go)
+    public void UiThrowLoad(GameObject go, bool stop = false)
     {
-        _uiThrowLoad.Post(go);
+        if (!stop)
+        {
+            _uiThrowLoad.Post(go);
+            //Debug.Log(go.name);
+        }
+
+        else
+        {
+            _uiThrowLoad.Stop(go);
+            //Debug.Log("stop event");
+        }
+            
+
+
     }
 
     public void UiThrowLoadMax(GameObject go)
@@ -152,7 +173,7 @@ public class AudioManager : MonoBehaviour
     // Amb
     public void AmbSound(bool play)
     {
-        
+
 
         if (play)
         {
@@ -163,7 +184,7 @@ public class AudioManager : MonoBehaviour
         {
             _ambSound.Stop(gameObject, 200);
         }
-       
+
     }
 
 

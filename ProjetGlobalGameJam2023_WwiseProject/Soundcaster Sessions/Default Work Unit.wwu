@@ -60,7 +60,9 @@
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Ingame" ID="{D70C7627-F450-443F-B4AF-FBB7CE348D37}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>

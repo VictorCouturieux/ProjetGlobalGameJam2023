@@ -40,6 +40,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_transition" ID="{83591B31-D693-4E72-A35A-2A0C72A55428}">
+					<ChildrenList>
+						<Action Name="" ID="{0A78D24C-07B0-4B82-8E25-85FB86C7FB7E}" ShortID="484945564">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="transitio" ID="{BCF11709-F72F-4605-971B-6A6A6BA30FA5}" WorkUnitID="{C7DBEAE4-D506-4360-B3C1-AB0BDF3D7823}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

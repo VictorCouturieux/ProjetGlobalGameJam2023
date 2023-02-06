@@ -49,7 +49,7 @@ public class Plant : MonoBehaviour
     {
         _pickUpCollider.enabled = true;
         _animator.SetTrigger("NextState");
-        AudioManager.Instance.PousseUsable(gameObject);
+        
     }
 
     private void DispawnPlant()

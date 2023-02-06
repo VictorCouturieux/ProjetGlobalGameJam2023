@@ -55,6 +55,13 @@
 							</ObjectLists>
 						</Bus>
 						<Bus Name="MUSIC" ID="{0C7339A8-38B5-4DCD-8B67-592383DDA897}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<Reference>

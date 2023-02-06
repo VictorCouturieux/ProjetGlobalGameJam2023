@@ -242,6 +242,11 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -326,6 +331,97 @@
 									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="sfx_ui_throw_load" ID="{DD0FDDA5-DDF3-4C8C-892D-251E04DD17C2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="transitio" ID="{BCF11709-F72F-4605-971B-6A6A6BA30FA5}" ShortID="903877249">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="UI_GenericTransition" ID="{5F697584-19CA-4E21-B329-07CFF6F8E938}" ShortID="35951087">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>15</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>50</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>2100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{A67E8E91-247B-4086-B666-28EFD8E4C51E}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_GenericTransition" ID="{3A710094-4E7D-466B-98CC-9583274E8DD2}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0621672312649756"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.269391335481561"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>UI_GenericTransition.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="609579042"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_GenericTransition" ID="{3A710094-4E7D-466B-98CC-9583274E8DD2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_ui_generic_click_01" ID="{7A1936D5-A134-4B1B-A7E3-0278AF7A6565}" ShortID="278866367">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ui_generic_click_01" ID="{55858636-F79D-4294-BF78-31C64A3CBE7E}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0136051601403414"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.152377793571823"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_ui_generic_click_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="334515031"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ui_generic_click_01" ID="{55858636-F79D-4294-BF78-31C64A3CBE7E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{70A6AC19-064D-5C6C-D7C4-FFE240945D4F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{56B33A57-AF0F-685E-31D4-283ED048017B}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -37,8 +37,17 @@
 				<GameParameter Id="1564184899" Name="SFX_Volume"/>
 				<GameParameter Id="3709237862" Name="RTPC_loading_throw_value"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1811860944" Name="FilterMusic">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="984691642" Name="Ingame"/>
+						<State Id="2607556080" Name="Menu"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{0502CCD6-BF94-7137-E307-9C524414CC2A}">
+		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{03A76BE8-62FC-CD2D-7532-064420EA7EA3}">
 			<ShortName>GGJ_2023</ShortName>
 			<Path>GGJ_2023.bnk</Path>
 			<Media>
@@ -94,6 +103,10 @@
 					<ShortName>Player_Abitlity_Explosion_Build-003.wav</ShortName>
 					<CachePath>SFX/Player_Abitlity_Explosion_Build-003_DB21A809.wem</CachePath>
 				</File>
+				<File Id="432927937" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Abitlity_ScratchGround-001.wav</ShortName>
+					<CachePath>SFX/Player_Abitlity_ScratchGround-001_DB21A809.wem</CachePath>
+				</File>
 				<File Id="435181012" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_environement_props_pousse_lvl1.wav</ShortName>
 					<CachePath>SFX/sfx_environement_props_pousse_lvl1_BD5C71F1.wem</CachePath>
@@ -105,6 +118,14 @@
 				<File Id="479607447" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_throw_tail_03.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_throw_tail_03_DB21A809.wem</CachePath>
+				</File>
+				<File Id="493987187" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Environement_Props_Ronce-001.wav</ShortName>
+					<CachePath>SFX/SFX_Environement_Props_Ronce-001_DB21A809.wem</CachePath>
+				</File>
+				<File Id="524776848" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Abitlity_ScratchGround-002.wav</ShortName>
+					<CachePath>SFX/Player_Abitlity_ScratchGround-002_A95F8732.wem</CachePath>
 				</File>
 				<File Id="535078765" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Abitlity_Explosion_Impact-001.wav</ShortName>
@@ -134,6 +155,10 @@
 					<ShortName>sfx_player_ability_uproot_02.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_uproot_02_57B49ACB.wem</CachePath>
 				</File>
+				<File Id="609579042" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_GenericTransition.wav</ShortName>
+					<CachePath>SFX/UI_GenericTransition_5F05B632.wem</CachePath>
+				</File>
 				<File Id="638676081" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_uproot_tail_03.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_uproot_tail_03_DB21A809.wem</CachePath>
@@ -146,6 +171,10 @@
 					<ShortName>sfx_player_ability_throw_tail_02.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_throw_tail_02_DB21A809.wem</CachePath>
 				</File>
+				<File Id="725562524" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Environement_Props_Ronce-002.wav</ShortName>
+					<CachePath>SFX/SFX_Environement_Props_Ronce-002_DB21A809.wem</CachePath>
+				</File>
 				<File Id="743949506" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_throw_tail_06.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_throw_tail_06_DB21A809.wem</CachePath>
@@ -157,6 +186,10 @@
 				<File Id="761276351" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Abitlity_Explosion_Build-001.wav</ShortName>
 					<CachePath>SFX/Player_Abitlity_Explosion_Build-001_DB21A809.wem</CachePath>
+				</File>
+				<File Id="782576372" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Abitlity_ScratchGround-003.wav</ShortName>
+					<CachePath>SFX/Player_Abitlity_ScratchGround-003_DB21A809.wem</CachePath>
 				</File>
 				<File Id="793522240" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_Dash_01.wav</ShortName>
@@ -193,6 +226,10 @@
 				<File Id="941070222" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_dash_loaded.wav</ShortName>
 					<CachePath>SFX/sfx_dash_loaded_DB21A809.wem</CachePath>
+				</File>
+				<File Id="977253678" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Abitlity_ScratchGround-004.wav</ShortName>
+					<CachePath>SFX/Player_Abitlity_ScratchGround-004_DB21A809.wem</CachePath>
 				</File>
 				<File Id="978690032" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Abitlity_Explosion_Splash-001.wav</ShortName>
@@ -280,6 +317,20 @@
 						<MediaRef Id="988036767"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2454676839" Name="Play_Ronce" DurationType="OneShot" DurationMin="3.3149207" DurationMax="3.3337414">
+					<MediaRefs>
+						<MediaRef Id="493987187"/>
+						<MediaRef Id="725562524"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3394095844" Name="Play_scratch" DurationType="OneShot" DurationMin="0.7011773" DurationMax="0.7747753">
+					<MediaRefs>
+						<MediaRef Id="432927937"/>
+						<MediaRef Id="524776848"/>
+						<MediaRef Id="782576372"/>
+						<MediaRef Id="977253678"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1977644338" Name="Play_throw" DurationType="OneShot" DurationMin="1.3713782" DurationMax="1.5462829">
 					<MediaRefs>
 						<MediaRef Id="452365859"/>
@@ -291,6 +342,12 @@
 						<MediaRef Id="811308933"/>
 						<MediaRef Id="1033996324"/>
 						<MediaRef Id="1043418687"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="895718239" Name="Play_transition" DurationType="OneShot" DurationMin="0.42714944" DurationMax="0.42714944">
+					<MediaRefs>
+						<MediaRef Id="334515031"/>
+						<MediaRef Id="609579042"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3701552796" Name="Play_ui_throw_load" DurationType="Infinite">
@@ -322,5 +379,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1D344623-41FD-4E16-3309-031D254C90A2}</FileHash>
+	<FileHash>{26A4FAA6-C12C-DCDD-AE99-ED59C0171AAB}</FileHash>
 </SoundBanksInfo>

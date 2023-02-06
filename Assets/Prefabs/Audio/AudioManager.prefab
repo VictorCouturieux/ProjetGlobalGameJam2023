@@ -82,7 +82,8 @@ MonoBehaviour:
   _uiGenericTransition:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 65d799cc29d5b9a4884d345714d071ef,
+      type: 2}
   _pousseApparition:
     idInternal: 0
     valueGuidInternal: 
@@ -125,6 +126,11 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: dc114048166ba324bbfb3c6b4fddc12d,
+      type: 2}
+  _playerScratch:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 13e1a12763fce7b418d6a5aea5935f66,
       type: 2}
 --- !u!114 &3720312354412239862
 MonoBehaviour:

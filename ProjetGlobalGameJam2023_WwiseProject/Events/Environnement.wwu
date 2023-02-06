@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Ronce" ID="{DCF01D3B-29E1-4163-9D8A-513E06EF28E6}">
+					<ChildrenList>
+						<Action Name="" ID="{0BB22DCE-9A8A-4055-9631-DABF7C5C91BC}" ShortID="183270178">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ronce" ID="{EAE752BB-9C7C-4760-AF08-7153EC541059}" WorkUnitID="{6B74E2AC-9703-4EE0-900C-41F687105513}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

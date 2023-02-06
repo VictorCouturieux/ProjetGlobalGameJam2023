@@ -23,11 +23,30 @@ namespace AK
         static const AkUniqueID PLAY_INGAME_REGGAE_WITHOUTLYRICS = 266045666U;
         static const AkUniqueID PLAY_MENU_REGGAE_WITHOUTLYRICS = 4007629040U;
         static const AkUniqueID PLAY_PATATE_EXPLOSION_BLEND = 1023383947U;
+        static const AkUniqueID PLAY_RONCE = 2454676839U;
+        static const AkUniqueID PLAY_SCRATCH = 3394095844U;
         static const AkUniqueID PLAY_THROW = 1977644338U;
+        static const AkUniqueID PLAY_TRANSITION = 895718239U;
         static const AkUniqueID PLAY_UI_THROW_LOAD = 3701552796U;
         static const AkUniqueID PLAY_UPROOT = 1350528445U;
         static const AkUniqueID TEST_EVENT = 4258653052U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace FILTERMUSIC
+        {
+            static const AkUniqueID GROUP = 1811860944U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INGAME = 984691642U;
+                static const AkUniqueID MENU = 2607556080U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace FILTERMUSIC
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {

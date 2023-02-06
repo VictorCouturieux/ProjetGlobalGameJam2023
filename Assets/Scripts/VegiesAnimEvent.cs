@@ -33,7 +33,11 @@ public class VegiesAnimEvent : MonoBehaviour
 
     public void SoundPlantApparitionEvent()
     {
-        AudioManager.Instance.PousseApparition(gameObject);
+        AudioManager.Instance.PousseUsable(gameObject);
+    }
+    public void SoundPlantDisparition()
+    {
+        AudioManager.Instance.PousseMoisted(gameObject);
     }
 
 }

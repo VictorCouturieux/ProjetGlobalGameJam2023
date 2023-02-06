@@ -61,6 +61,11 @@
 									</ModifierList>
 								</Property>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1099,6 +1104,146 @@
 								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
+						<RandomSequenceContainer Name="scratch" ID="{A5CD91DC-125E-4A17-8283-26E1EB1664DD}" ShortID="841724986">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4402D23A-EC3F-4C78-AADE-38BEB431532D}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8027E78A-3AD6-4DC8-A343-604B0C21521D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-75"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Player_Abitlity_ScratchGround-001" ID="{07DCB0D6-DC5F-4DB0-BFEE-CC519296AD2B}" ShortID="880986619">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Player_Abitlity_ScratchGround-001" ID="{6B170BEB-9052-4A33-BB12-F128B5DE5EE5}">
+											<Language>SFX</Language>
+											<AudioFile>Player_Abitlity_ScratchGround-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="432927937"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Player_Abitlity_ScratchGround-001" ID="{6B170BEB-9052-4A33-BB12-F128B5DE5EE5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Player_Abitlity_ScratchGround-002" ID="{374AD6D3-32DE-498C-A9E6-1633CBCD0B3B}" ShortID="587808896">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Player_Abitlity_ScratchGround-002" ID="{33916F2A-3CB2-4E2B-AA81-5EC28B4694A4}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0238720410282494"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.740033271875728"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Player_Abitlity_ScratchGround-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="524776848"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Player_Abitlity_ScratchGround-002" ID="{33916F2A-3CB2-4E2B-AA81-5EC28B4694A4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Player_Abitlity_ScratchGround-003" ID="{E5A87415-05B5-4A6C-8483-D686600C944B}" ShortID="528899539">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Player_Abitlity_ScratchGround-003" ID="{7C53EB3B-0FBE-42DB-AD33-AD92C1EAAECE}">
+											<Language>SFX</Language>
+											<AudioFile>Player_Abitlity_ScratchGround-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="782576372"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Player_Abitlity_ScratchGround-003" ID="{7C53EB3B-0FBE-42DB-AD33-AD92C1EAAECE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Player_Abitlity_ScratchGround-004" ID="{220B040B-7B17-4838-81C3-D38F20C608BF}" ShortID="104507722">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Player_Abitlity_ScratchGround-004" ID="{ADD2637A-9D0A-4F33-92A6-B8948CC84CE4}">
+											<Language>SFX</Language>
+											<AudioFile>Player_Abitlity_ScratchGround-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="977253678"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Player_Abitlity_ScratchGround-004" ID="{ADD2637A-9D0A-4F33-92A6-B8948CC84CE4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

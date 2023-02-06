@@ -71,7 +71,18 @@ public class PlayerPickUp : MonoBehaviour
             if (!IsHoldingPlant())
                 _interactionWidget.SetPickUpMaskValue(timer / 0.5f);
             else if (IsHoldingPlant())
+            {
                 _interactionWidget.SetThrowMaskValue(timer / _timeToThrow);
+                  if (timer == Time.deltaTime)
+                  {
+                      AudioManager.Instance.UiThrowLoad(gameObject);
+                    
+                }
+                  RTPC_manager.Instance._SetPitchLoadRTPC = (timer / _timeToThrow * 100);
+                
+
+            }
+
         }
     }
 
@@ -84,6 +95,7 @@ public class PlayerPickUp : MonoBehaviour
     {
         if (IsHoldingPlant())
         {
+            
             _player.ThrowPlant();
             OnThrowPlant();
         } 
@@ -103,6 +115,7 @@ public class PlayerPickUp : MonoBehaviour
 
     public void OnThrowPlant()
     {
+
         CancelPickUp();
         CancelThrow();
         _projectile = null;

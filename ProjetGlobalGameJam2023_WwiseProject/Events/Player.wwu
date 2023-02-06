@@ -51,6 +51,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_scratch" ID="{C45DD756-1FFE-46EB-9763-B0ABD0030220}">
+					<ChildrenList>
+						<Action Name="" ID="{BBEE6DDF-5A38-481D-BD07-66E0FB3F4369}" ShortID="101294073">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="scratch" ID="{A5CD91DC-125E-4A17-8283-26E1EB1664DD}" WorkUnitID="{2F1B8198-A6A1-4318-A5BC-FA308A00BEF0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

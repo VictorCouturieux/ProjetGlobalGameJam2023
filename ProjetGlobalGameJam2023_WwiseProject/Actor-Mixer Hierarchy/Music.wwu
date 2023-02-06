@@ -94,6 +94,11 @@
 							<ChildrenList>
 								<Sound Name="Ingame_Reggae_withoutLyrics" ID="{2C857DDB-4E1B-491B-9D65-A410CC4E0225}" ShortID="524470905">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 									</PropertyList>
@@ -118,6 +123,27 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="FilterMusic" ID="{5EEBC380-3A2D-4564-9DDE-88D966710ABD}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Ingame" ID="{D70C7627-F450-443F-B4AF-FBB7CE348D37}"/>
+												<CustomState Name="" ID="{A9CD4572-C2A4-4BCD-911D-CDEDFB1A009B}" ShortID="167341787"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Menu" ID="{0673186F-DDDF-4B5E-9CED-BB91F81BC80E}"/>
+												<CustomState Name="" ID="{FD01803B-5880-4406-A785-4CFD400DEC4C}" ShortID="772734235">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="-49"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="GGJ_Reggae_withoutLyrics" ID="{C96A0B8A-19EE-46EC-88ED-2D209B594723}" Platform="Linked"/>
 									</ActiveSourceList>
