@@ -10,8 +10,8 @@ public class InteractionWidget : MonoBehaviour
     [SerializeField] private Image pickedUpMask;
     [SerializeField] private Image throwMask;
 
-    [SerializeField] private Image previewIcon;
-    [SerializeField] private Image selectedIcon;
+    [SerializeField] private Image previewImage;
+    [SerializeField] private Image selectedImage;
 
     // Start is called before the first frame update
     void Start()
@@ -25,11 +25,14 @@ public class InteractionWidget : MonoBehaviour
         
     }
 
-    public void Show()
+    public void Show()//Sprite previewSprite, sprite selectedSprite)
     {
         gameObject.SetActive(true);
-        previewIcon.gameObject.SetActive(true);
-        selectedIcon.gameObject.SetActive(false);
+
+        //this.previewImage.sprite = previewSprite;
+        //this.previewImage.sprite = selectedSprite;
+        if (previewImage != null) previewImage.gameObject.SetActive(true);
+        if (selectedImage != null) selectedImage.gameObject.SetActive(false);
     }
 
     public void Hide()
@@ -42,8 +45,8 @@ public class InteractionWidget : MonoBehaviour
     {
         pickedUpMask.gameObject.SetActive(true);
 
-        previewIcon.gameObject.SetActive(false);
-        selectedIcon.gameObject.SetActive(true);
+        if (previewImage != null) previewImage.gameObject.SetActive(false);
+        if (selectedImage != null) selectedImage.gameObject.SetActive(true);
     }
 
     public void SetPickUpMaskValue(float fillValue)

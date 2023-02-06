@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc1d086c20fc324d9837b27cf222e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenuScene: menu-oscar
+  mainMenuScene: menu-oscar DEFINITIVE
   gameScene: GameScene
   scoreMenuScene: Credits
   startGameEvent: {fileID: 11400000, guid: 5da9cadb17af88a4b9f2c6b92c66f601, type: 2}

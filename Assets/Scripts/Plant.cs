@@ -49,6 +49,7 @@ public class Plant : MonoBehaviour
     {
         _pickUpCollider.enabled = true;
         _animator.SetTrigger("NextState");
+        
     }
 
     private void DispawnPlant()

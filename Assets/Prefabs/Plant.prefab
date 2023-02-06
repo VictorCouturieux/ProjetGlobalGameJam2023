@@ -138,12 +138,6 @@ PrefabInstance:
       propertyPath: _plant
       value: 
       objectReference: {fileID: 1038428611}
-    - target: {fileID: 9186319051241622579, guid: b3147909588df8347ba113ec3f86a4e1,
-        type: 3}
-      propertyPath: endLifeVegetable
-      value: 
-      objectReference: {fileID: 11400000, guid: f068655c605e138459b54df66c3d57bb,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3147909588df8347ba113ec3f86a4e1, type: 3}
 --- !u!4 &1793578297177627107 stripped

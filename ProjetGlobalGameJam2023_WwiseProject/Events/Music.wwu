@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{62A7F43B-F6AE-4476-8DBB-CD07B98CB5E9}" SchemaVersion="110" RootDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" ParentDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}">
+	<Events>
+		<WorkUnit Name="Music" ID="{62A7F43B-F6AE-4476-8DBB-CD07B98CB5E9}" OwnerID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="12"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_menu_Reggae_withoutLyrics" ID="{8805DAA0-4956-44D0-904B-0C68377BEF29}">
+					<ChildrenList>
+						<Action Name="" ID="{ED40E2E1-1882-4B4E-9A79-445E4E1AF43A}" ShortID="240176311">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Reggae_withoutLyrics" ID="{1DC69566-2BEA-442D-8FF5-B2B90A0DEFFD}" WorkUnitID="{DB720279-3E29-4CA5-8AB0-5E0E219D7117}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ingame_Reggae_withoutLyrics" ID="{B6150EE2-7208-421E-9F6C-B78B7F2DE9D2}">
+					<ChildrenList>
+						<Action Name="" ID="{843BA3BB-F16A-4F9B-83AE-E427273203A8}" ShortID="1063104430">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ingame_Reggae_withoutLyrics" ID="{2C857DDB-4E1B-491B-9D65-A410CC4E0225}" WorkUnitID="{DB720279-3E29-4CA5-8AB0-5E0E219D7117}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Ingame_Reggae_withoutLyrics_01" ID="{B3FAF289-CF2B-4A50-8C04-D1EEF89F8274}">
+					<ChildrenList>
+						<Action Name="" ID="{85AB1006-BBE0-4D60-A0A9-68B00591751B}" ShortID="136250417">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ingame_Reggae_withoutLyrics" ID="{2C857DDB-4E1B-491B-9D65-A410CC4E0225}" WorkUnitID="{DB720279-3E29-4CA5-8AB0-5E0E219D7117}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -30,4 +30,23 @@ public class Projectile : MonoBehaviour
         _rigidbody.isKinematic = false;
         _rigidbody.AddForce(bulletForce, ForceMode.Impulse);
     }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            Explode();
+        } else if (collision.gameObject.CompareTag("Player"))
+        {
+            Explode();
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            other.GetComponent<PlayerController>().Hurt(Damage);
+        }
+    }
 }

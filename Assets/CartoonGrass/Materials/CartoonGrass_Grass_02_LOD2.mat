@@ -37,6 +37,8 @@ Material:
     m_Floats:
     - GradientHeight: 0.85
     - GradientSmoothness: 1
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
     - BottomColor: {r: 0.32156864, g: 0.57647055, b: 0.25098038, a: 0}
     - TopColor: {r: 0.58431375, g: 0.7647059, b: 0.28235295, a: 0}

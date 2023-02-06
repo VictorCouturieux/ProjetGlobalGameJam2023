@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{1ECA0BC2-4AF4-4965-B551-E85A37D30B3D}" SchemaVersion="110" RootDocumentID="{7B057113-4B91-4752-85C4-CB476B6CA49A}" ParentDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}">
+<WwiseDocument Type="WorkUnit" ID="{1ECA0BC2-4AF4-4965-B551-E85A37D30B3D}" SchemaVersion="110" RootDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" ParentDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}">
 	<Events>
-		<WorkUnit Name="UI" ID="{1ECA0BC2-4AF4-4965-B551-E85A37D30B3D}" OwnerID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" PersistMode="Nested"/>
+		<WorkUnit Name="UI" ID="{1ECA0BC2-4AF4-4965-B551-E85A37D30B3D}" OwnerID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="1"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_ui_throw_load" ID="{249BD97C-2B95-47EA-87B6-C7A57F1A5175}">
+					<ChildrenList>
+						<Action Name="" ID="{C6876CBC-C75D-47CA-89F9-174EDA2F6251}" ShortID="962544609">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui_throw_load" ID="{F2A95E32-44C9-4B19-9416-5AD9345B6B8B}" WorkUnitID="{C7DBEAE4-D506-4360-B3C1-AB0BDF3D7823}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Click" ID="{D1E00EC3-2996-48BA-B8B8-52887D9FEE98}">
+					<ChildrenList>
+						<Action Name="" ID="{96684821-836D-4DD9-90AC-A29F286FF082}" ShortID="439021980">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Click" ID="{0992D63D-E6BD-47FD-84F0-291486CC2457}" WorkUnitID="{C7DBEAE4-D506-4360-B3C1-AB0BDF3D7823}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Bulle_patate" ID="{19D41EED-A056-431E-B95D-22A89F739573}">
+					<ChildrenList>
+						<Action Name="" ID="{90A1F928-C5F3-4177-8E0A-8D498EE21BFC}" ShortID="106160197">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bulle_patate" ID="{0C938AA5-45C5-417A-A98A-4DEC0FEA2A50}" WorkUnitID="{C7DBEAE4-D506-4360-B3C1-AB0BDF3D7823}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_transition" ID="{83591B31-D693-4E72-A35A-2A0C72A55428}">
+					<ChildrenList>
+						<Action Name="" ID="{0A78D24C-07B0-4B82-8E25-85FB86C7FB7E}" ShortID="484945564">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="transitio" ID="{BCF11709-F72F-4605-971B-6A6A6BA30FA5}" WorkUnitID="{C7DBEAE4-D506-4360-B3C1-AB0BDF3D7823}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

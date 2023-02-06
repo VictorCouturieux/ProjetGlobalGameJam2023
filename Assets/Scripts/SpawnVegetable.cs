@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -31,6 +29,8 @@ public class SpawnVegetable : MonoBehaviour
         endLifeVegetable.AddCallback(RemoveSeed);
         
         _timerCountDown = Random.Range(_timerMinSpawnTime, _timerMaxSpawnTime);
+        int index = Random.Range(0, seedGenerator.GetPoints.Count);
+        AddSeed(seedGenerator.GetPoints[index], index);
     }
 
     // Update is called once per frame
@@ -72,7 +72,6 @@ public class SpawnVegetable : MonoBehaviour
         }
     }
     
-
     private bool CheckSeedStack(int index) {
         foreach (Seed seed in _listSeedPlacement) {
             if (index == seed.indexPosition) {

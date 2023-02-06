@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
         {
             CanMove = false;
             _animator.SetTrigger("Dash");
+            AudioManager.Instance.PlayerDash(gameObject);
             _rigidbody.AddForce(Mesh.forward * DashForce, ForceMode.Impulse);
             StartCoroutine(DashCooldownCoroutine());
         }
@@ -99,6 +100,8 @@ public class PlayerController : MonoBehaviour
             {
                 CanMove = true;
                 _animator.SetTrigger("Cancel");
+                AudioManager.Instance.PlayerScratch(gameObject, true);
+            
             }
             
             if(PickUpUI != null)
@@ -110,7 +113,11 @@ public class PlayerController : MonoBehaviour
             else if (_playerPickUp.IsHoldingPlant())
             {
                 ThrowPlant();
+                // Cette anim n'est pas trigg bande de chacals
                 _animator.SetTrigger("Shoot");
+               
+                
+
             }
             _playerPickUp.UpdateUI(0);
         }
@@ -125,6 +132,8 @@ public class PlayerController : MonoBehaviour
 
             if (projectile is Grenade)
             {
+                AudioManager.Instance.UiThrowLoad(gameObject, true);
+                AudioManager.Instance.PlayerThrow(gameObject);
                 //Vector3 bulletForce = Mathf.Clamp(_timerPressHold, 0f, 3f) * (shootingNormaliseDirection * Vector3.right + Vector3.up) * 20f;
                 float throwPercentage = Math.Clamp(_timerPressHold / _playerPickUp.GetTimeToThrow(), 0, 1);
                 Vector3 velocity = _trajectoryHelper.CalculateVelocity(throwPercentage);
@@ -145,6 +154,9 @@ public class PlayerController : MonoBehaviour
             CanMove = false;
             _rigidbody.velocity = Vector3.zero;
             _animator.SetTrigger("PickUp");
+            AudioManager.Instance.PlayerScratch(gameObject);
+            
+
         }
         _timerPressHold = 0f;
         while(_timerPressHold < 0.5f)
@@ -170,7 +182,6 @@ public class PlayerController : MonoBehaviour
         Debug.Log(CurrentLife / MaxLife);
         if (CurrentLife <= 0)
         {
-            //TODO : Die / End
         }
         else
         {
