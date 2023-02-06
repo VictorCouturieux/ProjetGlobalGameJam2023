@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-enum PlantType
+public enum PlantType
 {
     GRENADE,
     THORNS,
@@ -20,10 +20,10 @@ public class Plant : MonoBehaviour
     [SerializeField] private GameObject ThornsProjectile;
     [SerializeField] private GameObject IceProjectile;
     [SerializeField] private EndLifeVegeEvent endLifeVegetable;
+    [SerializeField] private PlantType _type = PlantType.GRENADE;
 
     private Animator _animator;
     private Collider _pickUpCollider;
-    private PlantType _type = PlantType.GRENADE;
 
     void Awake()
     {
@@ -91,5 +91,10 @@ public class Plant : MonoBehaviour
     {
         endLifeVegetable.Call(gameObject);
         Destroy(gameObject);
+    }
+
+    public PlantType GetType()
+    {
+        return _type;
     }
 }

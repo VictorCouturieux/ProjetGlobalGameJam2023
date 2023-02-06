@@ -63,9 +63,11 @@ MonoBehaviour:
   timeToFade: 10
   ExplosionProjectile: {fileID: 2664993106561228714, guid: 3c182ccdb4fa378469e575a3c5849173,
     type: 3}
-  ThornsProjectile: {fileID: 0}
+  ThornsProjectile: {fileID: 8423530363599708316, guid: a7aab384e40b8694b87c00ae01b63ea6,
+    type: 3}
   IceProjectile: {fileID: 0}
   endLifeVegetable: {fileID: 11400000, guid: f068655c605e138459b54df66c3d57bb, type: 2}
+  _type: 1
 --- !u!1001 &551270683439073865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -133,6 +135,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlantMeshChalotte
       objectReference: {fileID: 0}
+    - target: {fileID: 7906654302307795523, guid: fbbd6172584e6cd488b63ae50a4e424d,
+        type: 3}
+      propertyPath: _plant
+      value: 
+      objectReference: {fileID: 3428823576619664821}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbbd6172584e6cd488b63ae50a4e424d, type: 3}
 --- !u!4 &5964402442947252525 stripped

@@ -100,10 +100,13 @@ public class PlayerController : MonoBehaviour
                 CanMove = true;
                 _animator.SetTrigger("Cancel");
             }
+            
             if(PickUpUI != null)
                 StopCoroutine(PickUpUI);
+            
             if (_playerPickUp.NeedReload)
                 _playerPickUp.NeedReload = false;
+            
             else if (_playerPickUp.IsHoldingPlant())
             {
                 ThrowPlant();
@@ -120,10 +123,17 @@ public class PlayerController : MonoBehaviour
             Projectile projectile = _playerPickUp.GetProjectile();
             projectile.transform.parent = null;
 
-            //Vector3 bulletForce = Mathf.Clamp(_timerPressHold, 0f, 3f) * (shootingNormaliseDirection * Vector3.right + Vector3.up) * 20f;
-            float throwPercentage = Math.Clamp(_timerPressHold / _playerPickUp.GetTimeToThrow(), 0, 1);
-            Vector3 velocity = _trajectoryHelper.CalculateVelocity(throwPercentage);
-            projectile.Launch(velocity);
+            if (projectile is Grenade)
+            {
+                //Vector3 bulletForce = Mathf.Clamp(_timerPressHold, 0f, 3f) * (shootingNormaliseDirection * Vector3.right + Vector3.up) * 20f;
+                float throwPercentage = Math.Clamp(_timerPressHold / _playerPickUp.GetTimeToThrow(), 0, 1);
+                Vector3 velocity = _trajectoryHelper.CalculateVelocity(throwPercentage);
+                projectile.Launch(velocity);
+            } else if(projectile is Thorns)
+            {
+                Vector3 direction = Mesh.forward * 10f;
+                projectile.Launch(direction);
+            }
             _playerPickUp.OnThrowPlant();
         }
     }

@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class SpawnVegetable : MonoBehaviour
 {
     [SerializeField] private SeedGenerator seedGenerator;
-    [SerializeField] private GameObject seedPrefab;
+    [SerializeField] private List<GameObject> seedPrefab;
     [SerializeField] private EndLifeVegeEvent endLifeVegetable;
     
 
@@ -51,7 +51,8 @@ public class SpawnVegetable : MonoBehaviour
     }
 
     private void AddSeed(Vector3 position, int index) {
-        GameObject newSeed = Instantiate(seedPrefab, transform);
+        Debug.Log(Random.Range(0, seedPrefab.Count));
+        GameObject newSeed = Instantiate(seedPrefab[Random.Range(0, seedPrefab.Count)], transform);
         newSeed.transform.position = transform.position + position;
         Seed seed = new Seed();
         seed.indexPosition = index;
