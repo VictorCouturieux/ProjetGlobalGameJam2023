@@ -433,6 +433,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1164475898, guid: 3bb221c3f50d01044b5dd6285ecee81b, type: 3}
+      propertyPath: m_TagString
+      value: Separator
+      objectReference: {fileID: 0}
     - target: {fileID: 81964556804834492, guid: 3bb221c3f50d01044b5dd6285ecee81b,
         type: 3}
       propertyPath: m_Name

@@ -43,12 +43,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AppearFactor: 1
+    - _AppearFactor: 0
     - _BlendStrength: 0.5
-    - _DissolveFactor: 0
+    - _DissolveFactor: 0.13
     - _EdgeSize: 0
     - _QueueControl: 0
     - _QueueOffset: -5
+    - _dissolve: 0
     m_Colors:
     - _Albedo_1: {r: 0, g: 0, b: 0, a: 0}
     - _AppearColor: {r: 0.4056604, g: 0.20356928, b: 0, a: 0}

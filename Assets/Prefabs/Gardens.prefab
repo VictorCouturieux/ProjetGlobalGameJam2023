@@ -46,8 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seedGenerator: {fileID: 1729610949221353344}
-  seedPrefab: {fileID: 2664993106561228714, guid: 3e37152361dfc7648b0904ace8ca1d49,
-    type: 3}
+  seedPrefab:
+  - {fileID: 2664993106561228714, guid: 3e37152361dfc7648b0904ace8ca1d49, type: 3}
+  - {fileID: 823690323639219164, guid: 1009c271f8e582a49a0e3c82b7de117f, type: 3}
   endLifeVegetable: {fileID: 11400000, guid: f068655c605e138459b54df66c3d57bb, type: 2}
   _timerMinSpawnTime: 2
   _timerMaxSpawnTime: 5
@@ -133,8 +134,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seedGenerator: {fileID: 1729610950444960852}
-  seedPrefab: {fileID: 2664993106561228714, guid: 3e37152361dfc7648b0904ace8ca1d49,
-    type: 3}
+  seedPrefab:
+  - {fileID: 2664993106561228714, guid: 3e37152361dfc7648b0904ace8ca1d49, type: 3}
+  - {fileID: 823690323639219164, guid: 1009c271f8e582a49a0e3c82b7de117f, type: 3}
   endLifeVegetable: {fileID: 11400000, guid: f068655c605e138459b54df66c3d57bb, type: 2}
   _timerMinSpawnTime: 2
   _timerMaxSpawnTime: 5
