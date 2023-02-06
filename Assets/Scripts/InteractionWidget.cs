@@ -31,13 +31,8 @@ public class InteractionWidget : MonoBehaviour
 
         //this.previewImage.sprite = previewSprite;
         //this.previewImage.sprite = selectedSprite;
-        if (previewImage != null) {
-            this.previewImage.gameObject.SetActive(true);
-        }
-
-        if (selectedImage != null) {
-            this.selectedImage.gameObject.SetActive(false);
-        }
+        if (previewImage != null) previewImage.gameObject.SetActive(true);
+        if (selectedImage != null) selectedImage.gameObject.SetActive(false);
     }
 
     public void Hide()
@@ -50,8 +45,8 @@ public class InteractionWidget : MonoBehaviour
     {
         pickedUpMask.gameObject.SetActive(true);
 
-        previewImage.gameObject.SetActive(false);
-        selectedImage.gameObject.SetActive(true);
+        if (previewImage != null) previewImage.gameObject.SetActive(false);
+        if (selectedImage != null) selectedImage.gameObject.SetActive(true);
     }
 
     public void SetPickUpMaskValue(float fillValue)

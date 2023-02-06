@@ -391,17 +391,17 @@ PrefabInstance:
     - target: {fileID: 1974527575668050203, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.0513304
+      value: 1.004039
       objectReference: {fileID: 0}
     - target: {fileID: 1974527575668050203, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.083647
+      value: 1.0364519
       objectReference: {fileID: 0}
     - target: {fileID: 1974527575668050203, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.2667
+      value: 4.5582
       objectReference: {fileID: 0}
     - target: {fileID: 1974527575668050203, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
@@ -411,7 +411,7 @@ PrefabInstance:
     - target: {fileID: 1974527575668050203, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.3984
+      value: 5.377
       objectReference: {fileID: 0}
     - target: {fileID: 1974527575668050203, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
@@ -466,7 +466,7 @@ PrefabInstance:
     - target: {fileID: 1974527575668050207, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
       propertyPath: gizmosRadius
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1974527575668050207, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
@@ -528,17 +528,17 @@ PrefabInstance:
     - target: {fileID: 1974527575668050203, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.0215077
+      value: 0.9957357
       objectReference: {fileID: 0}
     - target: {fileID: 1974527575668050203, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.0826647
+      value: 1.0612279
       objectReference: {fileID: 0}
     - target: {fileID: 1974527575668050203, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.1178
+      value: 5.8477
       objectReference: {fileID: 0}
     - target: {fileID: 1974527575668050203, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
@@ -548,7 +548,7 @@ PrefabInstance:
     - target: {fileID: 1974527575668050203, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.3937
+      value: 5.501
       objectReference: {fileID: 0}
     - target: {fileID: 1974527575668050203, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
@@ -603,7 +603,7 @@ PrefabInstance:
     - target: {fileID: 1974527575668050207, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}
       propertyPath: gizmosRadius
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1974527575668050207, guid: d7a362de8fa058d478d3a3592c0ee44f,
         type: 3}

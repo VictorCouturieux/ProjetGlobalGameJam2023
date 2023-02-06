@@ -34,7 +34,7 @@ public class HudManager : MonoBehaviour
     }
 
     private void Update() {
-        if (pRightLifeBarre.fillAmount <= 0.01f || pLeftLifeBarre.fillAmount <= 0.01f ) {
+        if (pRightLifeBarre.fillAmount <= 0.05f || pLeftLifeBarre.fillAmount <= 0.05f ) {
             AudioManager.Instance.ReggaeMusic(false);
             mainMenuEvent.Call();
         }
