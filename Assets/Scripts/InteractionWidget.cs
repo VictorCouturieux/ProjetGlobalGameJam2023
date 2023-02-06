@@ -31,9 +31,13 @@ public class InteractionWidget : MonoBehaviour
 
         //this.previewImage.sprite = previewSprite;
         //this.previewImage.sprite = selectedSprite;
+        if (previewImage != null) {
+            this.previewImage.gameObject.SetActive(true);
+        }
 
-        this.previewImage.gameObject.SetActive(true);
-        this.selectedImage.gameObject.SetActive(false);
+        if (selectedImage != null) {
+            this.selectedImage.gameObject.SetActive(false);
+        }
     }
 
     public void Hide()
