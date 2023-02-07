@@ -230,8 +230,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: isMusicPlaying
+  - m_ConditionMode: 1
+    m_ConditionEvent: isMusicStopped
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3698788137450106379}
@@ -328,14 +328,20 @@ AnimatorController:
   m_Name: TitleScreenAnimator
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: isMusicPlaying
+  - m_Name: isRock
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: isRock
-    m_Type: 4
+  - m_Name: isMusicPlaying
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: isMusicStopped
+    m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -581,8 +587,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: isMusicPlaying
+  - m_ConditionMode: 1
+    m_ConditionEvent: isMusicStopped
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3698788137450106379}
