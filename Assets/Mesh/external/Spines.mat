@@ -26,7 +26,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 1fd66c693822a554db9a9a092f9b4c52, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -43,13 +43,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AppearFactor: 1
-    - _BlendStrength: 5
+    - _AppearFactor: 0.66
+    - _BlendStrength: 0.5
     - _DissolveFactor: 0
-    - _EdgeSize: 0
+    - _EdgeSize: 0.05
+    - _GrowFactor: 0.5
     - _QueueControl: 0
     - _QueueOffset: -5
     - _dissolve: 0
+    - _isDissolving: 0
     m_Colors:
     - _Albedo_1: {r: 0, g: 0, b: 0, a: 0}
     - _AppearColor: {r: 0.114357635, g: 0.5849056, b: 0, a: 0}

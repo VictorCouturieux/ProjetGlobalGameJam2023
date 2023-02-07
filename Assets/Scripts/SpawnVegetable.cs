@@ -51,7 +51,6 @@ public class SpawnVegetable : MonoBehaviour
     }
 
     private void AddSeed(Vector3 position, int index) {
-        Debug.Log(Random.Range(0, seedPrefab.Count));
         GameObject newSeed = Instantiate(seedPrefab[Random.Range(0, seedPrefab.Count)], transform);
         newSeed.transform.position = transform.position + position;
         Seed seed = new Seed();

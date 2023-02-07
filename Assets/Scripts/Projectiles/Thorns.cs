@@ -6,7 +6,6 @@ using UnityEngine;
 public class Thorns : Projectile
 {
     public GameObject ThornBranch;
-
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Separator"))
@@ -15,6 +14,10 @@ public class Thorns : Projectile
             Quaternion rot = Quaternion.FromToRotation(Vector3.up, -contact.normal);
             Vector3 pos = contact.point;
             GameObject go = Instantiate(ThornBranch, pos, rot);
+            go.GetComponent<ThornsBranch>().Damage = Damage;
+            Destroy(gameObject);
+        } else if (!collision.gameObject.CompareTag("Ground"))
+        {
             Destroy(gameObject);
         }
     }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,21 +6,29 @@ using UnityEngine;
 public class ThornsBranch : MonoBehaviour
 {
     [SerializeField] private Collider _trigger;
-    [SerializeField] private Collider _collider;
+    private Animator _animator;
 
-    private float Damage = 10f;
-    
-    public void EnableCollider()
+    [NonSerialized] public float Damage;
+
+    private void OnTriggerEnter(Collider other)
     {
-        _trigger.enabled = true;
-        _collider.enabled = true;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerController>().Hurt(Damage);
+        }
     }
 
-    private void OnCollisionStay(Collision collision)
+    // Anim Event
+    // Start dealing damages
+    public void SpinesAppeared()
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            collision.gameObject.GetComponent<PlayerController>().Hurt(Damage);
-        }
+        _trigger.enabled = true;
+    }
+    
+    // Anim Event
+    // Start dealing damages
+    public void DestroyBranch()
+    {
+        Destroy(gameObject);
     }
 }
