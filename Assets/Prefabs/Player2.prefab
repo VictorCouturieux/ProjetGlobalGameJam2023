@@ -96,9 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaa41cd1266c5714d81a8f58e00a5500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRock: 1
   Hand: {fileID: 4074249310570957089}
-  BulletPrefabs:
-  - {fileID: 2664993106561228714, guid: 4ccba0e463049e842902be32cb7f94c2, type: 3}
   shootingNormaliseDirection: 1
   Mesh: {fileID: 4539660671788549034}
   MaxLife: 30
@@ -274,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e4fa7411201e744aa469e1a81de2d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionWidget: {fileID: 4151269186718516578}
+  interactionWidget: {fileID: 4151269186718516578}
   _timeToThrow: 0.5
 --- !u!1001 &724613237
 PrefabInstance:

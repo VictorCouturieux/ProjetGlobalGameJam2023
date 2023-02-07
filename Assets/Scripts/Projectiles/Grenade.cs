@@ -5,41 +5,26 @@ using UnityEngine;
 
 public class Grenade : Projectile
 {
-    [SerializeField]
-    protected Collider ExplosionTrigger;
-    
+    [SerializeField] private float ExplosionRange = 2f;
     public ParticleSystem GrenadeExplosion;
-
-    private void Start()
-    {
-        ExplosionTrigger.enabled = false;
-    }
 
     public override void Explode()
     {
         AudioManager.Instance.ExplosionPatate(gameObject);
-        //GrenadeExplosion.Play();
-        ExplosionTrigger.enabled = true;
         Instantiate(GrenadeExplosion, transform.position, transform.rotation);
+        // Vérification si le joueur est dans la zone d'explosion
+        if (_enemy == null)
+            foreach(GameObject player in GameObject.FindGameObjectsWithTag("Player"))
+                if (player.layer != gameObject.layer)
+                    _enemy = player.GetComponent<PlayerController>();
+        
+        if(Vector3.Distance(_enemy.transform.position, transform.position) <= ExplosionRange)
+            _enemy.Hurt(Damage);
         base.Explode();
     }
-    
-    public void OnCollisionEnter(Collision collision)
+
+    private void OnDrawGizmos()
     {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            Explode();
-        } else if (collision.gameObject.CompareTag("Player"))
-        {
-            
-        }
-    }
-    
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            other.GetComponent<PlayerController>().Hurt(Damage);
-        }
+        Gizmos.DrawSphere(transform.position, ExplosionRange);
     }
 }

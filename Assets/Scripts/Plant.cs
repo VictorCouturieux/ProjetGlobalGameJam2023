@@ -84,6 +84,8 @@ public class Plant : MonoBehaviour
         }
         
         projectile.gameObject.layer = owner.gameObject.layer;
+        for (int i = 0; i < projectile.gameObject.transform.childCount; i++)
+            projectile.gameObject.transform.GetChild(i).gameObject.layer = owner.gameObject.layer;
 
         return projectile.GetComponent<Projectile>();
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerPickUp : MonoBehaviour
 {
-    [SerializeField] private InteractionWidget _interactionWidget;
+    public InteractionWidget interactionWidget;
 
     private PlayerController _player;
     private Plant _plant;
@@ -28,7 +28,7 @@ public class PlayerPickUp : MonoBehaviour
             return;
 
         _plant = plant;
-        _interactionWidget.Show();
+        interactionWidget.Show(true);
     }
 
     private void OnTriggerExit(Collider other)
@@ -44,7 +44,7 @@ public class PlayerPickUp : MonoBehaviour
             return;
 
         _plant = null;
-        _interactionWidget.Hide();
+        interactionWidget.Hide();
     }
 
     /// <summary>
@@ -61,18 +61,18 @@ public class PlayerPickUp : MonoBehaviour
         Destroy(_plant);
         _plant = null;
         NeedReload = true;
-        _interactionWidget.SetPickedUp();
+        interactionWidget.SetPickedUp();
     }
 
     public void UpdateUI(float timer)
     {
-        if (_interactionWidget.enabled && timer <= 0.5f)
+        if (interactionWidget.enabled && timer <= 0.5f)
         {
             if (!IsHoldingPlant())
-                _interactionWidget.SetPickUpMaskValue(timer / 0.5f);
+                interactionWidget.SetPickUpMaskValue(timer / 0.5f);
             else if (IsHoldingPlant())
             {
-                _interactionWidget.SetThrowMaskValue(timer / _timeToThrow);
+                interactionWidget.SetThrowMaskValue(timer / _timeToThrow);
                   if (timer == Time.deltaTime)
                   {
                       AudioManager.Instance.UiThrowLoad(gameObject);
@@ -105,12 +105,12 @@ public class PlayerPickUp : MonoBehaviour
 
     public void CancelPickUp()
     {
-        _interactionWidget.SetPickUpMaskValue(0);
+        interactionWidget.SetPickUpMaskValue(0);
     }
 
     public void CancelThrow()
     {
-        _interactionWidget.SetThrowMaskValue(0);
+        interactionWidget.SetThrowMaskValue(0);
     }
 
     public void OnThrowPlant()
@@ -119,7 +119,7 @@ public class PlayerPickUp : MonoBehaviour
         CancelPickUp();
         CancelThrow();
         _projectile = null;
-        _interactionWidget.Hide();
+        interactionWidget.Hide();
     }
 
     public bool IsHoldingPlant()

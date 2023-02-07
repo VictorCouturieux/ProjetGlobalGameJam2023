@@ -50,7 +50,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 10
   timeBeforeDestroy: 0.1
-  ExplosionTrigger: {fileID: 1038428612}
+  SmashTrigger: {fileID: 1038428612}
+  ExplosionRange: 2
   GrenadeExplosion: {fileID: 6125698187507898182, guid: 4a9dc37e5fae9154bb7f9bfe478bc1f2,
     type: 3}
 --- !u!135 &1038428612

@@ -408,6 +408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 10
   timeBeforeDestroy: 1
+  SmashTrigger: {fileID: 0}
   ThornBranch: {fileID: 4070508102000434001, guid: 97745e4990ab4b342a839777465ccc8d,
     type: 3}
 --- !u!54 &8314489566321881813
