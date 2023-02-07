@@ -51,6 +51,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_ui_throw_load" ID="{705620B6-EFAA-4225-B060-28EA156AC82C}">
+					<ChildrenList>
+						<Action Name="" ID="{CD0E8246-A332-4D50-8BBD-7FD97F5A863A}" ShortID="389065863">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui_throw_load" ID="{F2A95E32-44C9-4B19-9416-5AD9345B6B8B}" WorkUnitID="{C7DBEAE4-D506-4360-B3C1-AB0BDF3D7823}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

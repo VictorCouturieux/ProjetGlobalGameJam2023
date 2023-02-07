@@ -43,6 +43,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_GGJ_Reggae" ID="{50F3B09A-AB4E-48D1-BA1A-140C4192D2C4}">
+					<ChildrenList>
+						<Action Name="" ID="{50265A2D-F52C-4237-B093-1682FB47DE48}" ShortID="625478190">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GGJ_Reggae" ID="{A1979951-69C9-4D58-9B8B-1B5B5851BE04}" WorkUnitID="{DB720279-3E29-4CA5-8AB0-5E0E219D7117}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

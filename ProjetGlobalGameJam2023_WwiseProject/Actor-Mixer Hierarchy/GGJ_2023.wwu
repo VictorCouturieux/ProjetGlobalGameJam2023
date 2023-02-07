@@ -11,6 +11,7 @@
 				<WorkUnit Name="UI" ID="{C7DBEAE4-D506-4360-B3C1-AB0BDF3D7823}" PersistMode="Reference"/>
 				<WorkUnit Name="environement" ID="{6B74E2AC-9703-4EE0-900C-41F687105513}" PersistMode="Reference"/>
 				<WorkUnit Name="Music" ID="{DB720279-3E29-4CA5-8AB0-5E0E219D7117}" PersistMode="Reference"/>
+				<WorkUnit Name="Voices" ID="{45DACAC6-9939-4139-A8D2-4DE57F35D71C}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

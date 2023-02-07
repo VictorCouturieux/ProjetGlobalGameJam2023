@@ -20,15 +20,22 @@ namespace AK
         static const AkUniqueID PLAY_ENVIRONEMENT_PROPS_POUSSE_LVL1 = 278818673U;
         static const AkUniqueID PLAY_ENVIRONEMENT_PROPS_POUSSE_LVL3 = 278818675U;
         static const AkUniqueID PLAY_ENVIRONEMENT_PROPS_POUSSE_MOISIE = 1204696932U;
+        static const AkUniqueID PLAY_GGJ_REGGAE = 698857466U;
+        static const AkUniqueID PLAY_HIT_P1 = 2875246905U;
+        static const AkUniqueID PLAY_HIT_P2 = 2875246906U;
         static const AkUniqueID PLAY_INGAME_REGGAE_WITHOUTLYRICS = 266045666U;
         static const AkUniqueID PLAY_MENU_REGGAE_WITHOUTLYRICS = 4007629040U;
         static const AkUniqueID PLAY_PATATE_EXPLOSION_BLEND = 1023383947U;
         static const AkUniqueID PLAY_RONCE = 2454676839U;
         static const AkUniqueID PLAY_SCRATCH = 3394095844U;
         static const AkUniqueID PLAY_THROW = 1977644338U;
+        static const AkUniqueID PLAY_THROW_BARK_P1 = 1284966515U;
+        static const AkUniqueID PLAY_THROW_BARK_P2 = 1284966512U;
         static const AkUniqueID PLAY_TRANSITION = 895718239U;
         static const AkUniqueID PLAY_UI_THROW_LOAD = 3701552796U;
         static const AkUniqueID PLAY_UPROOT = 1350528445U;
+        static const AkUniqueID PLAY_UPROOT_P1 = 2208807129U;
+        static const AkUniqueID PLAY_UPROOT_P2 = 2208807130U;
         static const AkUniqueID TEST_EVENT = 4258653052U;
     } // namespace EVENTS
 

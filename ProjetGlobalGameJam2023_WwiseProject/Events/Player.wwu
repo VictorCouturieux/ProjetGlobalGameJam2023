@@ -16,6 +16,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{04CBE5CE-8C07-41F0-A73D-07D2A7B7394C}" ShortID="1049495101">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="patate_scream" ID="{2A3B44E5-B690-40C4-B479-CE760A3EFA88}" WorkUnitID="{45DACAC6-9939-4139-A8D2-4DE57F35D71C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_Patate_Explosion_blend" ID="{96463784-B529-45B4-AF0E-781A3E682388}">

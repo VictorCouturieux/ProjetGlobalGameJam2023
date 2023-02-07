@@ -47,10 +47,18 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{03A76BE8-62FC-CD2D-7532-064420EA7EA3}">
+		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{04AC8E1C-B997-A45C-9508-B009EC28D90E}">
 			<ShortName>GGJ_2023</ShortName>
 			<Path>GGJ_2023.bnk</Path>
 			<Media>
+				<File Id="76363785" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_throw_bark_p1_05.wav</ShortName>
+					<CachePath>SFX/sfx_voice_throw_bark_p1_05_DB21A809.wem</CachePath>
+				</File>
+				<File Id="79311239" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_uproot_bark_p2_04.wav</ShortName>
+					<CachePath>SFX/sfx_voice_uproot_bark_p2_04_DB21A809.wem</CachePath>
+				</File>
 				<File Id="88457314" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_ui_bulle_explosive_potato_03.wav</ShortName>
 					<CachePath>SFX/sfx_ui_bulle_explosive_potato_03_DB21A809.wem</CachePath>
@@ -59,17 +67,45 @@
 					<ShortName>sfx_ui_bulle_explosive_potato_01.wav</ShortName>
 					<CachePath>SFX/sfx_ui_bulle_explosive_potato_01_DB21A809.wem</CachePath>
 				</File>
+				<File Id="94902688" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_citrouille_scream_03.wav</ShortName>
+					<CachePath>SFX/sfx_voice_citrouille_scream_03_DB21A809.wem</CachePath>
+				</File>
+				<File Id="120284515" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_hit_04.wav</ShortName>
+					<CachePath>SFX/sfx_voice_hit_04_DB21A809.wem</CachePath>
+				</File>
+				<File Id="124475608" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_throw_bark_p2_03.wav</ShortName>
+					<CachePath>SFX/sfx_voice_throw_bark_p2_03_DB21A809.wem</CachePath>
+				</File>
 				<File Id="134832202" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_uproot_03.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_uproot_03_C67C9A35.wem</CachePath>
+				</File>
+				<File Id="139669641" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_uproot_bark_p2_01.wav</ShortName>
+					<CachePath>SFX/sfx_voice_uproot_bark_p2_01_DB21A809.wem</CachePath>
 				</File>
 				<File Id="153638423" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_ui_generic_click_03.wav</ShortName>
 					<CachePath>SFX/sfx_ui_generic_click_03_918E7D50.wem</CachePath>
 				</File>
+				<File Id="163271259" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_throw_bark_p2_04.wav</ShortName>
+					<CachePath>SFX/sfx_voice_throw_bark_p2_04_DB21A809.wem</CachePath>
+				</File>
+				<File Id="170907570" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_hit_p2_02.wav</ShortName>
+					<CachePath>SFX/sfx_voice_hit_p2_02_DB21A809.wem</CachePath>
+				</File>
 				<File Id="203897402" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Abitlity_Explosion_Impact-003.wav</ShortName>
 					<CachePath>SFX/Player_Abitlity_Explosion_Impact-003_DB21A809.wem</CachePath>
+				</File>
+				<File Id="204887658" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_citrouille_scream_02.wav</ShortName>
+					<CachePath>SFX/sfx_voice_citrouille_scream_02_DB21A809.wem</CachePath>
 				</File>
 				<File Id="228266466" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_uproot_tail_05.wav</ShortName>
@@ -79,9 +115,21 @@
 					<ShortName>sfx_environement_amb_garden.wav</ShortName>
 					<CachePath>SFX/sfx_environement_amb_garden_DDB6CF79.wem</CachePath>
 				</File>
+				<File Id="241679232" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_uproot_bark_p2_02.wav</ShortName>
+					<CachePath>SFX/sfx_voice_uproot_bark_p2_02_DB21A809.wem</CachePath>
+				</File>
+				<File Id="251882603" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_hit_02.wav</ShortName>
+					<CachePath>SFX/sfx_voice_hit_02_DB21A809.wem</CachePath>
+				</File>
 				<File Id="260800260" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Abitlity_Explosion_Splash-002.wav</ShortName>
 					<CachePath>SFX/Player_Abitlity_Explosion_Splash-002_DB21A809.wem</CachePath>
+				</File>
+				<File Id="316347723" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_uproot_bark_p2_03.wav</ShortName>
+					<CachePath>SFX/sfx_voice_uproot_bark_p2_03_DB21A809.wem</CachePath>
 				</File>
 				<File Id="321772272" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_environement_props_pousse_lvl3.wav</ShortName>
@@ -95,13 +143,29 @@
 					<ShortName>sfx_ui_generic_click_02.wav</ShortName>
 					<CachePath>SFX/sfx_ui_generic_click_02_63348DE0.wem</CachePath>
 				</File>
+				<File Id="371012036" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_throw_bark_p1_04.wav</ShortName>
+					<CachePath>SFX/sfx_voice_throw_bark_p1_04_DB21A809.wem</CachePath>
+				</File>
 				<File Id="373183258" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_ui_throw_load.wav</ShortName>
 					<CachePath>SFX/sfx_ui_throw_load_BD5C0C5C.wem</CachePath>
 				</File>
+				<File Id="376434172" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_throw_bark_p2_01.wav</ShortName>
+					<CachePath>SFX/sfx_voice_throw_bark_p2_01_DB21A809.wem</CachePath>
+				</File>
 				<File Id="397407126" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Abitlity_Explosion_Build-003.wav</ShortName>
 					<CachePath>SFX/Player_Abitlity_Explosion_Build-003_DB21A809.wem</CachePath>
+				</File>
+				<File Id="397876057" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_citrouille_scream_05.wav</ShortName>
+					<CachePath>SFX/sfx_voice_citrouille_scream_05_DB21A809.wem</CachePath>
+				</File>
+				<File Id="421829781" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_throw_bark_p2_02.wav</ShortName>
+					<CachePath>SFX/sfx_voice_throw_bark_p2_02_DB21A809.wem</CachePath>
 				</File>
 				<File Id="432927937" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Abitlity_ScratchGround-001.wav</ShortName>
@@ -125,7 +189,7 @@
 				</File>
 				<File Id="524776848" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Abitlity_ScratchGround-002.wav</ShortName>
-					<CachePath>SFX/Player_Abitlity_ScratchGround-002_A95F8732.wem</CachePath>
+					<CachePath>SFX/Player_Abitlity_ScratchGround-002_5B269328.wem</CachePath>
 				</File>
 				<File Id="535078765" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Abitlity_Explosion_Impact-001.wav</ShortName>
@@ -157,7 +221,11 @@
 				</File>
 				<File Id="609579042" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_GenericTransition.wav</ShortName>
-					<CachePath>SFX/UI_GenericTransition_5F05B632.wem</CachePath>
+					<CachePath>SFX/UI_GenericTransition_7BD01896.wem</CachePath>
+				</File>
+				<File Id="620285946" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_hit_03.wav</ShortName>
+					<CachePath>SFX/sfx_voice_hit_03_DB21A809.wem</CachePath>
 				</File>
 				<File Id="638676081" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_uproot_tail_03.wav</ShortName>
@@ -175,9 +243,21 @@
 					<ShortName>SFX_Environement_Props_Ronce-002.wav</ShortName>
 					<CachePath>SFX/SFX_Environement_Props_Ronce-002_DB21A809.wem</CachePath>
 				</File>
+				<File Id="735077040" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_uproot_bark_p1_03.wav</ShortName>
+					<CachePath>SFX/sfx_voice_uproot_bark_p1_03_DB21A809.wem</CachePath>
+				</File>
+				<File Id="736022255" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_throw_bark_p1_01.wav</ShortName>
+					<CachePath>SFX/sfx_voice_throw_bark_p1_01_DB21A809.wem</CachePath>
+				</File>
 				<File Id="743949506" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_throw_tail_06.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_throw_tail_06_DB21A809.wem</CachePath>
+				</File>
+				<File Id="747592143" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_hit_p2_03.wav</ShortName>
+					<CachePath>SFX/sfx_voice_hit_p2_03_DB21A809.wem</CachePath>
 				</File>
 				<File Id="757756100" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_throw_tail_04.wav</ShortName>
@@ -191,6 +271,10 @@
 					<ShortName>Player_Abitlity_ScratchGround-003.wav</ShortName>
 					<CachePath>SFX/Player_Abitlity_ScratchGround-003_DB21A809.wem</CachePath>
 				</File>
+				<File Id="785986525" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_uproot_bark_p1_01.wav</ShortName>
+					<CachePath>SFX/sfx_voice_uproot_bark_p1_01_DB21A809.wem</CachePath>
+				</File>
 				<File Id="793522240" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_Dash_01.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_Dash_01_CAAE54CF.wem</CachePath>
@@ -198,6 +282,10 @@
 				<File Id="793785906" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_uproot_01.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_uproot_01_23367234.wem</CachePath>
+				</File>
+				<File Id="803527828" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GGJ_Reggae.wav</ShortName>
+					<CachePath>SFX/GGJ_Reggae_C243C81E.wem</CachePath>
 				</File>
 				<File Id="811308933" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_throw_whoosh_01.wav</ShortName>
@@ -207,9 +295,29 @@
 					<ShortName>sfx_player_ability_uproot_tail_06.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_uproot_tail_06_DB21A809.wem</CachePath>
 				</File>
+				<File Id="818421632" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_throw_bark_p1_06.wav</ShortName>
+					<CachePath>SFX/sfx_voice_throw_bark_p1_06_DB21A809.wem</CachePath>
+				</File>
+				<File Id="845681904" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_hit_p2_01.wav</ShortName>
+					<CachePath>SFX/sfx_voice_hit_p2_01_DB21A809.wem</CachePath>
+				</File>
 				<File Id="846071124" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GGJ_Reggae_withoutLyrics.wav</ShortName>
 					<CachePath>SFX/GGJ_Reggae_withoutLyrics_2BD9AA46.wem</CachePath>
+				</File>
+				<File Id="850586982" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_citrouille_scream_04.wav</ShortName>
+					<CachePath>SFX/sfx_voice_citrouille_scream_04_DB21A809.wem</CachePath>
+				</File>
+				<File Id="851082245" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_uproot_bark_p1_02.wav</ShortName>
+					<CachePath>SFX/sfx_voice_uproot_bark_p1_02_DB21A809.wem</CachePath>
+				</File>
+				<File Id="874036827" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_throw_bark_p1_03.wav</ShortName>
+					<CachePath>SFX/sfx_voice_throw_bark_p1_03_DB21A809.wem</CachePath>
 				</File>
 				<File Id="893130455" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Abitlity_Explosion_Impact-002.wav</ShortName>
@@ -226,6 +334,10 @@
 				<File Id="941070222" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_dash_loaded.wav</ShortName>
 					<CachePath>SFX/sfx_dash_loaded_DB21A809.wem</CachePath>
+				</File>
+				<File Id="963023355" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_throw_bark_p1_02.wav</ShortName>
+					<CachePath>SFX/sfx_voice_throw_bark_p1_02_DB21A809.wem</CachePath>
 				</File>
 				<File Id="977253678" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Abitlity_ScratchGround-004.wav</ShortName>
@@ -247,9 +359,17 @@
 					<ShortName>sfx_player_ability_throw_tail_01.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_throw_tail_01_DB21A809.wem</CachePath>
 				</File>
+				<File Id="1037797822" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_hit_01.wav</ShortName>
+					<CachePath>SFX/sfx_voice_hit_01_DB21A809.wem</CachePath>
+				</File>
 				<File Id="1043418687" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_throw_tail_05.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_throw_tail_05_DB21A809.wem</CachePath>
+				</File>
+				<File Id="1043594538" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_voice_hit_p2_04.wav</ShortName>
+					<CachePath>SFX/sfx_voice_hit_p2_04_DB21A809.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -294,6 +414,27 @@
 						<MediaRef Id="993248513"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="698857466" Name="Play_GGJ_Reggae" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="803527828"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2875246905" Name="Play_hit_p1" DurationType="OneShot" DurationMin="0.22970521" DurationMax="0.30356008">
+					<MediaRefs>
+						<MediaRef Id="120284515"/>
+						<MediaRef Id="251882603"/>
+						<MediaRef Id="620285946"/>
+						<MediaRef Id="1037797822"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2875246906" Name="Play_hit_p2" DurationType="OneShot" DurationMin="0.2845805" DurationMax="0.818458">
+					<MediaRefs>
+						<MediaRef Id="170907570"/>
+						<MediaRef Id="747592143"/>
+						<MediaRef Id="845681904"/>
+						<MediaRef Id="1043594538"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="266045666" Name="Play_Ingame_Reggae_withoutLyrics" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="846071124"/>
@@ -333,6 +474,9 @@
 				</Event>
 				<Event Id="1977644338" Name="Play_throw" DurationType="OneShot" DurationMin="1.3713782" DurationMax="1.5462829">
 					<MediaRefs>
+						<MediaRef Id="94902688"/>
+						<MediaRef Id="204887658"/>
+						<MediaRef Id="397876057"/>
 						<MediaRef Id="452365859"/>
 						<MediaRef Id="479607447"/>
 						<MediaRef Id="560676795"/>
@@ -340,8 +484,27 @@
 						<MediaRef Id="743949506"/>
 						<MediaRef Id="757756100"/>
 						<MediaRef Id="811308933"/>
+						<MediaRef Id="850586982"/>
 						<MediaRef Id="1033996324"/>
 						<MediaRef Id="1043418687"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1284966515" Name="Play_throw_bark_p1" DurationType="OneShot" DurationMin="0.16780046" DurationMax="0.21090703">
+					<MediaRefs>
+						<MediaRef Id="76363785"/>
+						<MediaRef Id="371012036"/>
+						<MediaRef Id="736022255"/>
+						<MediaRef Id="818421632"/>
+						<MediaRef Id="874036827"/>
+						<MediaRef Id="963023355"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1284966512" Name="Play_throw_bark_p2" DurationType="OneShot" DurationMin="0.2386848" DurationMax="0.35446712">
+					<MediaRefs>
+						<MediaRef Id="124475608"/>
+						<MediaRef Id="163271259"/>
+						<MediaRef Id="376434172"/>
+						<MediaRef Id="421829781"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="895718239" Name="Play_transition" DurationType="OneShot" DurationMin="0.42714944" DurationMax="0.42714944">
@@ -368,6 +531,21 @@
 						<MediaRef Id="897915018"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2208807129" Name="Play_uproot_p1" DurationType="OneShot" DurationMin="0.3698866" DurationMax="0.64526075">
+					<MediaRefs>
+						<MediaRef Id="735077040"/>
+						<MediaRef Id="785986525"/>
+						<MediaRef Id="851082245"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2208807130" Name="Play_uproot_p2" DurationType="OneShot" DurationMin="0.53380954" DurationMax="0.85049886">
+					<MediaRefs>
+						<MediaRef Id="79311239"/>
+						<MediaRef Id="139669641"/>
+						<MediaRef Id="241679232"/>
+						<MediaRef Id="316347723"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4258653052" Name="TEST_EVENT" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="941070222"/>
@@ -379,5 +557,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{26A4FAA6-C12C-DCDD-AE99-ED59C0171AAB}</FileHash>
+	<FileHash>{7FE479B8-2179-4215-91FE-26C57C1A610B}</FileHash>
 </SoundBanksInfo>

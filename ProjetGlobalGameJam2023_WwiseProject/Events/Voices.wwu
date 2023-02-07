@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{81C9B02A-93E6-4DC9-A7B7-C18392C30E2C}" SchemaVersion="110" RootDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" ParentDocumentID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}">
+	<Events>
+		<WorkUnit Name="Voices" ID="{81C9B02A-93E6-4DC9-A7B7-C18392C30E2C}" OwnerID="{2E9C8DC0-CBE3-41D9-8E55-7C411BF83764}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="6"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_throw_bark_p2" ID="{31794CAE-50AB-4F02-B554-95A9247E949B}">
+					<ChildrenList>
+						<Action Name="" ID="{BDE2F286-09F3-4DC9-AA24-ACA8A843B67B}" ShortID="883191449">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="throw bark p2" ID="{0577CE3F-184C-49CB-8802-5123079623A7}" WorkUnitID="{45DACAC6-9939-4139-A8D2-4DE57F35D71C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_throw_bark_p1" ID="{57AA1FE6-8FB2-4B02-AB46-03D5C675C83C}">
+					<ChildrenList>
+						<Action Name="" ID="{8EAF8C63-412E-4D18-B8B8-0155DCEAAA0F}" ShortID="677025810">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="throw bark p1" ID="{5F78C361-027D-449E-B6D2-2F8FDA06308A}" WorkUnitID="{45DACAC6-9939-4139-A8D2-4DE57F35D71C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_hit_p1" ID="{2F0AF959-097B-4CC2-9BD7-750B954DC5F5}">
+					<ChildrenList>
+						<Action Name="" ID="{A3AAC2C7-9C87-482C-AD1E-AF0742FC8274}" ShortID="858256940">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="hit p1" ID="{1F2FFB9A-4AC3-4C11-8F8B-EC95E2A6E8B4}" WorkUnitID="{45DACAC6-9939-4139-A8D2-4DE57F35D71C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_hit_p2" ID="{1B57A66A-DB33-4780-B73B-435D465CFF20}">
+					<ChildrenList>
+						<Action Name="" ID="{5BE276A5-D834-49D0-A676-3F5954549C92}" ShortID="125025927">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="hit p2" ID="{9BC41258-16D1-4149-AB72-6D67931F2796}" WorkUnitID="{45DACAC6-9939-4139-A8D2-4DE57F35D71C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_uproot_p1" ID="{81B9B47F-CA5A-4676-BBA1-41E031EDD0F1}">
+					<ChildrenList>
+						<Action Name="" ID="{93F64D9D-2307-4569-8094-2840685B92F3}" ShortID="616863933">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="uproot p1" ID="{1EE86710-2BB9-42D2-AEFD-BAE2C7575A87}" WorkUnitID="{45DACAC6-9939-4139-A8D2-4DE57F35D71C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_uproot_p2" ID="{2E778C6A-BA56-4343-89C7-7D6423C3A85A}">
+					<ChildrenList>
+						<Action Name="" ID="{B2373BDE-8CEC-4BC7-BE7E-B6EF9B883309}" ShortID="194195196">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="uproot p2" ID="{F1EE53CA-040E-4EC9-9410-4A57FB6D4454}" WorkUnitID="{45DACAC6-9939-4139-A8D2-4DE57F35D71C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
