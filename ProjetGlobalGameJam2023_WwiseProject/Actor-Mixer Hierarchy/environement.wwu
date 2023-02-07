@@ -309,7 +309,17 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.8</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -321,6 +331,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="SFX_Environement_Props_Ronce-001" ID="{0A892F98-ED95-480F-AE4E-5B5DDB3619C6}" ShortID="541804162">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
@@ -343,6 +360,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="SFX_Environement_Props_Ronce-002" ID="{01EAC12E-E37A-4477-8ABD-8D0875361FAB}" ShortID="417814851">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>

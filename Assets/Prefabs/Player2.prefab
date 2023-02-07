@@ -105,6 +105,7 @@ MonoBehaviour:
   DashForce: 9
   DashCooldown: 3
   MeshRenderer: {fileID: 9154728862019144716}
+  IsRock: 1
   LifeEvent: {fileID: 11400000, guid: 8fef31032ea3b464eaaa834881ba4cf9, type: 2}
 --- !u!114 &4074249311009426220
 MonoBehaviour:

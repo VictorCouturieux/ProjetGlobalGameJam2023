@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -34,6 +36,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AK.Wwise.Event _hitPlayer2 = null;
     [SerializeField] AK.Wwise.Event _explosionPatate = null;
     [SerializeField] AK.Wwise.Event _playerScratch = null;
+    [SerializeField] AK.Wwise.Event _ronce = null;
+   
+
 
     // Musics
 
@@ -98,6 +103,7 @@ public class AudioManager : MonoBehaviour
     public void PlayerThrow(GameObject go)
     {
         _playerThrow.Post(go);
+
     }
 
     public void PlayerDash(GameObject go)
@@ -123,17 +129,29 @@ public class AudioManager : MonoBehaviour
             _playerScratch.Stop(go);
     }
 
+    public void Ronce(GameObject go)
+    {
+        _ronce.Post(go);
+
+    }
+
     //Voices
 
-    public void HitPlayer1(GameObject go)
+    public void HitPlayer(GameObject go)
     {
-        _hitPlayer1.Post(go);
-    }
-    public void HitPlayer2(GameObject go)
-    {
-        _hitPlayer2.Post(go);
-    }
+        
+       /* if (IsRock == true)
+        {
+            _hitPlayer1.Post(go);
+        }
 
+
+        else
+        {
+            _hitPlayer2.Post(go);
+        }
+            */
+    }
 
 
     //UI

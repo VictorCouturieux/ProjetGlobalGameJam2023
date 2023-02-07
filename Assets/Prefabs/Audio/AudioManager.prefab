@@ -53,7 +53,7 @@ MonoBehaviour:
   _reggaeMusic:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d88bf8780c575994e8b361a469939cea,
+    WwiseObjectReference: {fileID: 11400000, guid: f1e1052fc6435f8409a71a68dddce7ef,
       type: 2}
   _reggaeMusicMenu:
     idInternal: 0
@@ -117,11 +117,13 @@ MonoBehaviour:
   _hitPlayer1:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 3c74e7cd39aceea4fb7ea1cbc043396e,
+      type: 2}
   _hitPlayer2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c5e5931bf10e7f24a881798b46f0a617,
+      type: 2}
   _explosionPatate:
     idInternal: 0
     valueGuidInternal: 
@@ -131,6 +133,11 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 13e1a12763fce7b418d6a5aea5935f66,
+      type: 2}
+  _ronce:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3cda78dd0e97f3c448e09cd2211d82a5,
       type: 2}
 --- !u!114 &3720312354412239862
 MonoBehaviour:

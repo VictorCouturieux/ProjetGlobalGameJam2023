@@ -23,6 +23,7 @@ public class ThornsBranch : MonoBehaviour
     public void SpinesAppeared()
     {
         _trigger.enabled = true;
+        
     }
     
     // Anim Event
@@ -31,4 +32,5 @@ public class ThornsBranch : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
 }

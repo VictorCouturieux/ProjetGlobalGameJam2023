@@ -47,7 +47,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{04AC8E1C-B997-A45C-9508-B009EC28D90E}">
+		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{07FDC683-B615-8E8A-F2C0-56136BBB4C49}">
 			<ShortName>GGJ_2023</ShortName>
 			<Path>GGJ_2023.bnk</Path>
 			<Media>
@@ -458,7 +458,7 @@
 						<MediaRef Id="988036767"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2454676839" Name="Play_Ronce" DurationType="OneShot" DurationMin="3.3149207" DurationMax="3.3337414">
+				<Event Id="2454676839" Name="Play_Ronce" DurationType="OneShot" DurationMin="4.1149206" DurationMax="4.1337414">
 					<MediaRefs>
 						<MediaRef Id="493987187"/>
 						<MediaRef Id="725562524"/>
@@ -557,5 +557,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7FE479B8-2179-4215-91FE-26C57C1A610B}</FileHash>
+	<FileHash>{AC3C3C34-BBCF-F718-4C82-8669974327B8}</FileHash>
 </SoundBanksInfo>

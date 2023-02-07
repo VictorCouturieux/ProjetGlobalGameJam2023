@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool IsRock = false;
     [SerializeField] private Transform Hand;
     [SerializeField] private List<GameObject> BulletPrefabs;
     [SerializeField] private float shootingNormaliseDirection = 1;
@@ -15,6 +16,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float DashForce = 3f;
     [SerializeField] private float DashCooldown = 3f;
     [SerializeField] private SkinnedMeshRenderer MeshRenderer;
+
+    
 
     [System.NonSerialized]
     public bool CanMove = true;
@@ -187,6 +190,7 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(BlinkCoroutine(4,.1f));
             _animator.SetTrigger("Hurt");
+            AudioManager.Instance.HitPlayer(gameObject);
             CanMove = false;
             _rigidbody.velocity = Vector3.zero;
         }
