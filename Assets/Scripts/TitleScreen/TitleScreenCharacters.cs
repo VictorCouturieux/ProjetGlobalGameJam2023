@@ -2,44 +2,70 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class TitleScreenCharacters : MonoBehaviour
 {
     public bool isRockPlaying;
-    private bool lastMusic;
 
     public CharacterTitleScreen Rocker;
     public CharacterTitleScreen Reggae;
+    public Image leftTriggerImage;
+    public Image rightTriggerImage;
     private void Start()
     {
         isRockPlaying = Random.value >= 0.5;
-        lastMusic = isRockPlaying;
-        
-        if (isRockPlaying)
-            Rocker.Dance();
-        else 
-            Reggae.Dance();
-    }
 
-    private void Update()
-    {
-        if(isRockPlaying != lastMusic)
-            MusicChanged();
+        if (isRockPlaying)
+        {
+            Rocker.Dance();
+            leftTriggerImage.color = Color.white;
+            rightTriggerImage.color = Color.gray;
+        }
+        else
+        {
+            leftTriggerImage.color = Color.gray;
+            rightTriggerImage.color = Color.white;
+            Reggae.Dance();
+        }
     }
 
     private void MusicChanged()
     {
         if (isRockPlaying)
         {
+            // TODO : Call Rock music
             Reggae.Angry();
             Rocker.Dance();
+            leftTriggerImage.color = Color.white;
+            rightTriggerImage.color = Color.gray;
         }
         else
         {
+            // TODO : Call Reggae music
             Reggae.Dance();
             Rocker.Angry();
+            leftTriggerImage.color = Color.gray;
+            rightTriggerImage.color = Color.white;
         }
-        lastMusic = isRockPlaying;
+    }
+
+    public void LeftTrigger(InputAction.CallbackContext context)
+    {
+        if (context.canceled)
+        {
+            isRockPlaying = true;
+            MusicChanged();
+        }
+    }
+    public void RightTrigger(InputAction.CallbackContext context)
+    {
+        if (context.canceled)
+        {
+            isRockPlaying = false;
+            MusicChanged();
+        }
     }
 }
