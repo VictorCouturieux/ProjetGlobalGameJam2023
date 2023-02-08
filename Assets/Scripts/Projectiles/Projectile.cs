@@ -32,7 +32,7 @@ public class Projectile : MonoBehaviour
         }
 
         _rigidbody.isKinematic = true;
-        Destroy(gameObject, timeBeforeDestroy);
+        Destroy(gameObject);
     }
     
     

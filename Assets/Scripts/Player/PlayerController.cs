@@ -123,6 +123,11 @@ public class PlayerController : MonoBehaviour
 
     private void Smash()
     {
+        // Change collision layers
+        _smashProjectile.gameObject.layer = gameObject.layer;
+        for (int i = 0; i < _smashProjectile.gameObject.transform.childCount; i++)
+            _smashProjectile.gameObject.transform.GetChild(i).gameObject.layer = gameObject.layer;
+        
         _animator.SetTrigger("Shoot");
         Vector3 velocity = _trajectoryHelper.CalculateVelocity(0.5f);
         _smashProjectile.Launch(velocity, true);
