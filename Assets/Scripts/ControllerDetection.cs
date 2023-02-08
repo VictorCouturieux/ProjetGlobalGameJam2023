@@ -4,18 +4,15 @@ using UnityEngine.InputSystem;
 
 public class ControllerDetection : MonoBehaviour
 {
-    [SerializeField] private GameObject player1;
-    [SerializeField] private GameObject player2;
-    
-    private PlayerInput p1PlayerInput;
-    private PlayerInput p2PlayerInput;
+	[SerializeField] private PlayerInput p1PlayerInput;
+    [SerializeField] private PlayerInput p2PlayerInput;
     
     private InputDevice p1Device;
     private InputDevice p2Device;
 
     private void Awake() {
-        p1PlayerInput = player1.GetComponent<PlayerInput>();
-        p2PlayerInput = player2.GetComponent<PlayerInput>();
+        //p1PlayerInput = player1.GetComponent<PlayerInput>();
+        //p2PlayerInput = player2.GetComponent<PlayerInput>();
     }
 
     // Start is called before the first frame update
@@ -23,7 +20,6 @@ public class ControllerDetection : MonoBehaviour
     {
         //DisableControlDevice(p1PlayerInput);
         //DisableControlDevice(p2PlayerInput);
-        
         if (Gamepad.all.Count >= 2) {
 	        p1PlayerInput.SwitchCurrentControlScheme("Gamepad", Gamepad.all[0]);
 	        p1Device = Gamepad.all[0];

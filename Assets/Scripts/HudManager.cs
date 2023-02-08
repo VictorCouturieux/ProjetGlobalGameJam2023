@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class HudManager : MonoBehaviour
 {
-    [SerializeField] private VoidGameEvent mainMenuEvent;
+    [SerializeField] private EndGameEvent endGameEvent;
     
     [SerializeField] private Image pRightLifeBarre;
     [SerializeField] private Image pLeftLifeBarre;
@@ -27,6 +27,8 @@ public class HudManager : MonoBehaviour
     private float _pLeftEndValue = 1;
     private float _pLeftLifeValue;
     private IEnumerator pLeftCoroutine;
+
+    private bool _gameEnd = false;
     
     private void OnEnable() {
         pRightLifeCountEvent.AddCallback(PlayerRightLostHp);
@@ -34,10 +36,20 @@ public class HudManager : MonoBehaviour
     }
 
     private void Update() {
-        if (pRightLifeBarre.fillAmount <= 0.05f || pLeftLifeBarre.fillAmount <= 0.05f ) {
-            AudioManager.Instance.ReggaeMusic(false);
-            mainMenuEvent.Call();
+        if (!_gameEnd) {
+            if (pRightLifeBarre.fillAmount <= 0.05f ) {
+                
+                Debug.Log("Stop");
+                endGameEvent.Call(1);
+                _gameEnd = true;
+            } else if (pLeftLifeBarre.fillAmount <= 0.05f ) {
+                
+                Debug.Log("Stop");
+                endGameEvent.Call(2);
+                _gameEnd = true;
+            }
         }
+        
     }
 
     private void PlayerRightLostHp(float newLifeValue) {
