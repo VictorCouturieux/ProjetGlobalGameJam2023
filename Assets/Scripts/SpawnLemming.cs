@@ -17,7 +17,7 @@ public class SpawnLemming : MonoBehaviour
 	private void Update() {
 		_timer -= Time.deltaTime;
 		if (_timer <= 0f) {
-			int roll = Random.Range(1, 20);
+			int roll = Random.Range(1, 8);
 			if (roll == 7) {
 				animLemming.SetTrigger("Anim");
 			}

@@ -20,6 +20,10 @@ public class GameEvent<T> : ScriptableObject
     public void RemoveCallback(Action<T> callback) {
         callbacks.Remove(callback);
     }
+    
+    public int Size() {
+        return callbacks.Count;
+    }
 
     public void Call(T value) {
         if (enabled) {
@@ -53,6 +57,10 @@ public class GameEvent<T, U> : ScriptableObject
     public void RemoveCallback(Action<T, U> callback) {
         callbacks.Remove(callback);
     }
+    
+    public int Size() {
+        return callbacks.Count;
+    }
 
     public void Call(T value1, U value2) {
         if (enabled) {
@@ -85,6 +93,10 @@ public class GameEvent<T, U, V> : ScriptableObject
     
     public void RemoveCallback(Action<T, U, V> callback) {
         callbacks.Remove(callback);
+    }
+
+    public int Size() {
+        return callbacks.Count;
     }
 
     public void Call(T value1, U value2, V value3) {

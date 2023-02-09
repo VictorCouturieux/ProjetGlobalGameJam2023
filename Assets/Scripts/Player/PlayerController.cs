@@ -1,15 +1,12 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
 {
-    public bool IsRock = false;
+    public bool isRock;
     [SerializeField] private Transform Hand;
-    [SerializeField] private List<GameObject> BulletPrefabs;
     [SerializeField] private float shootingNormaliseDirection = 1;
     [SerializeField] private Transform Mesh;
     [SerializeField] private float MaxLife = 100f;
@@ -17,13 +14,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float DashCooldown = 3f;
     [SerializeField] private SkinnedMeshRenderer MeshRenderer;
 
-    
-
-    [System.NonSerialized]
-    public bool CanMove = true;
+    [System.NonSerialized] public bool CanMove = true;
+    [System.NonSerialized] public bool CanSmash = false;
+    [System.NonSerialized] public Projectile _smashProjectile;
     private bool CanDash = true;
-    [System.NonSerialized]
-    public Coroutine PickUpUI;
+    [System.NonSerialized] public Coroutine PickUpUI;
     public GameEvent<float> LifeEvent;
     private float CurrentLife;
     private Vector2 _inputVector;
@@ -89,10 +84,12 @@ public class PlayerController : MonoBehaviour
     }
     public void Fire(InputAction.CallbackContext context)
     {
-        if (context.performed &&
-            (_playerPickUp.EmptyHands() || _playerPickUp.IsHoldingPlant()))
+        if (context.performed)
         {
-            PickUpUI = StartCoroutine(PickUpUICoroutine());
+            if(CanSmash)
+                Smash();
+            else if(_playerPickUp.EmptyHands() || _playerPickUp.IsHoldingPlant())
+                PickUpUI = StartCoroutine(PickUpUICoroutine());
         }
 
         // Only use to throw plants
@@ -117,19 +114,28 @@ public class PlayerController : MonoBehaviour
             {
                 ThrowPlant();
                 // Cette anim n'est pas trigg bande de chacals
-                _animator.SetTrigger("Shoot");
-               
-                
-
             }
             _playerPickUp.UpdateUI(0);
         }
+    }
+
+    private void Smash()
+    {
+        // Change collision layers
+        _smashProjectile.gameObject.layer = gameObject.layer;
+        for (int i = 0; i < _smashProjectile.gameObject.transform.childCount; i++)
+            _smashProjectile.gameObject.transform.GetChild(i).gameObject.layer = gameObject.layer;
+        
+        _animator.SetTrigger("Shoot");
+        Vector3 velocity = _trajectoryHelper.CalculateVelocity(0.5f);
+        _smashProjectile.Launch(velocity, true);
     }
 
     public void ThrowPlant()
     {
         if (_playerPickUp.IsHoldingPlant())
         {
+            _animator.SetTrigger("Shoot");
             Projectile projectile = _playerPickUp.GetProjectile();
             projectile.transform.parent = null;
 
@@ -137,7 +143,6 @@ public class PlayerController : MonoBehaviour
             AudioManager.Instance.PlayerThrow(gameObject);
             if (projectile is Grenade)
             {
-                //Vector3 bulletForce = Mathf.Clamp(_timerPressHold, 0f, 3f) * (shootingNormaliseDirection * Vector3.right + Vector3.up) * 20f;
                 float throwPercentage = Math.Clamp(_timerPressHold / _playerPickUp.GetTimeToThrow(), 0, 1);
                 Vector3 velocity = _trajectoryHelper.CalculateVelocity(throwPercentage);
                 projectile.Launch(velocity);
@@ -182,7 +187,6 @@ public class PlayerController : MonoBehaviour
         CurrentLife -= damage;
         LifeEvent.Call(CurrentLife / MaxLife);
 
-        Debug.Log(CurrentLife / MaxLife);
         if (CurrentLife <= 0)
         {
         }
@@ -203,7 +207,6 @@ public class PlayerController : MonoBehaviour
         {
             SetMeshHue(Color.red);
             yield return new WaitForSeconds(duration);
-            Debug.Log(count);
             SetMeshHue(Color.white);
             yield return new WaitForSeconds(duration);
             count++;
@@ -216,5 +219,10 @@ public class PlayerController : MonoBehaviour
         {
             material.color = hue;
         }
+    }
+
+    public InteractionWidget GetInteractionWidget()
+    {
+        return _playerPickUp.interactionWidget;
     }
 }

@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class InteractionWidget : MonoBehaviour
 {
+    [SerializeField] private GameObject RightTrigger;
+    [SerializeField] private GameObject PlantUI;
+    
     [SerializeField] private Image emptyImage;
     [SerializeField] private Image pickUpMask;
     [SerializeField] private Image pickedUpMask;
@@ -25,9 +28,11 @@ public class InteractionWidget : MonoBehaviour
         
     }
 
-    public void Show()//Sprite previewSprite, sprite selectedSprite)
+    public void Show(bool isPlantUI)//Sprite previewSprite, sprite selectedSprite)
     {
         gameObject.SetActive(true);
+        PlantUI.SetActive(isPlantUI);
+        RightTrigger.SetActive(!isPlantUI);
 
         //this.previewImage.sprite = previewSprite;
         //this.previewImage.sprite = selectedSprite;

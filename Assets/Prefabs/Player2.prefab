@@ -96,16 +96,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaa41cd1266c5714d81a8f58e00a5500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRock: 1
   Hand: {fileID: 4074249310570957089}
-  BulletPrefabs:
-  - {fileID: 2664993106561228714, guid: 4ccba0e463049e842902be32cb7f94c2, type: 3}
   shootingNormaliseDirection: 1
   Mesh: {fileID: 4539660671788549034}
   MaxLife: 30
   DashForce: 9
   DashCooldown: 3
   MeshRenderer: {fileID: 9154728862019144716}
-  IsRock: 1
   LifeEvent: {fileID: 11400000, guid: 8fef31032ea3b464eaaa834881ba4cf9, type: 2}
 --- !u!114 &4074249311009426220
 MonoBehaviour:
@@ -274,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e4fa7411201e744aa469e1a81de2d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionWidget: {fileID: 4151269186718516578}
+  interactionWidget: {fileID: 4151269186718516578}
   _timeToThrow: 0.5
 --- !u!1001 &724613237
 PrefabInstance:
@@ -943,19 +941,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4074249310260814913}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1179444590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3768331981288691984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf67016a289e99f42b8c9582f33395f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 4074249311009426219}
 --- !u!114 &1544072414567703619
 MonoBehaviour:
   m_ObjectHideFlags: 0

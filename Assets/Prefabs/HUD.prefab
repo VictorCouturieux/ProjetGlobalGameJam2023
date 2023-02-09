@@ -635,7 +635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fdea9b53ce7d974bbbbaad5608d28e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenuEvent: {fileID: 11400000, guid: 0f871cf75329406488c89f794c9fd340, type: 2}
+  endGameEvent: {fileID: 11400000, guid: 105b8e33b6f0a1343a4d5bdddaa3cf6a, type: 2}
   pRightLifeBarre: {fileID: 445465354739458938}
   pLeftLifeBarre: {fileID: 445465355595074064}
   pRightLifeCountEvent: {fileID: 11400000, guid: 89e65c541d600754cbf2ad9548aff486,
