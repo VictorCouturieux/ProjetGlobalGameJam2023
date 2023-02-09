@@ -92,3 +92,6 @@ Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
 .vsconfig
 ProjetGlobalGameJam2023_WwiseProject/ProfilingSession7.prof
 *.prof
+*.wem
+*.akd
+*.wav
