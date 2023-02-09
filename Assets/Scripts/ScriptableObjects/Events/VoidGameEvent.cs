@@ -21,6 +21,10 @@ public class VoidGameEvent : ScriptableObject
 	public void RemoveCallback(Action callback) {
 		callbacks.Remove(callback);
 	}
+	
+	public int Size() {
+		return callbacks.Count;
+	}
 
 	public void Call() {
 		if (enabled) {

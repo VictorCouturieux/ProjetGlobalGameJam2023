@@ -21,12 +21,14 @@ public class HudManager : MonoBehaviour
     private float _pRightEndValue = 1;
     private float _pRightLifeValue;
     private IEnumerator pRightCoroutine;
+    private bool pRightIsRunning = false;
     
     private float _pLeftTimeElapsed;
     private float _pLeftStartValue = 1;
     private float _pLeftEndValue = 1;
     private float _pLeftLifeValue;
     private IEnumerator pLeftCoroutine;
+    private bool pLeftIsRunning = false;
 
     private bool _gameEnd = false;
     
@@ -34,26 +36,30 @@ public class HudManager : MonoBehaviour
         pRightLifeCountEvent.AddCallback(PlayerRightLostHp);
         pLeftLifeCountEvent.AddCallback(PlayerLeftLostHp);
     }
+    
+    private void Start() {
+        if (pRightLifeCountEvent.Size() == 0) {
+            pRightLifeCountEvent.AddCallback(PlayerRightLostHp);
+        }
+        if (pRightLifeCountEvent.Size() == 0) {
+            pLeftLifeCountEvent.AddCallback(PlayerLeftLostHp);
+        }
+    }
 
     private void Update() {
         if (!_gameEnd) {
             if (pRightLifeBarre.fillAmount <= 0.05f ) {
-                
-                Debug.Log("Stop");
                 endGameEvent.Call(1);
                 _gameEnd = true;
             } else if (pLeftLifeBarre.fillAmount <= 0.05f ) {
-                
-                Debug.Log("Stop");
                 endGameEvent.Call(2);
                 _gameEnd = true;
             }
         }
-        
     }
 
     private void PlayerRightLostHp(float newLifeValue) {
-        if (pRightCoroutine != null) {
+        if (pRightCoroutine != null && pRightIsRunning) {
             StopCoroutine(pRightCoroutine);
         }
         _pRightTimeElapsed = 0;
@@ -64,7 +70,7 @@ public class HudManager : MonoBehaviour
     }
 
     private void PlayerLeftLostHp(float newLifeValue) {
-        if (pLeftCoroutine != null) {
+        if (pLeftCoroutine != null && pLeftIsRunning) {
             StopCoroutine(pLeftCoroutine);
         }
         _pLeftTimeElapsed = 0;
@@ -74,8 +80,8 @@ public class HudManager : MonoBehaviour
         StartCoroutine(pLeftCoroutine);
     }
 
-    IEnumerator LerpPlayRightLifeCount()
-    {
+    IEnumerator LerpPlayRightLifeCount() {
+        pRightIsRunning = true;
         while (_pRightTimeElapsed < lerpDuration)
         {
             _pRightLifeValue = Mathf.Lerp(_pRightStartValue, _pRightEndValue, _pRightTimeElapsed / lerpDuration);
@@ -84,10 +90,11 @@ public class HudManager : MonoBehaviour
             yield return null;
         }
         _pRightLifeValue = _pRightEndValue;
+        pRightIsRunning = false;
     }
     
-    IEnumerator LerpPlayLeftLifeCount()
-    {
+    IEnumerator LerpPlayLeftLifeCount() {
+        pLeftIsRunning = true;
         while (_pLeftTimeElapsed < lerpDuration)
         {
             _pLeftLifeValue = Mathf.Lerp(_pLeftStartValue, _pLeftEndValue, _pLeftTimeElapsed / lerpDuration);
@@ -96,6 +103,7 @@ public class HudManager : MonoBehaviour
             yield return null;
         }
         _pLeftLifeValue = _pLeftEndValue;
+        pLeftIsRunning = false;
     }
     
     
