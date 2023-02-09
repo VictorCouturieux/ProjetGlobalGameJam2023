@@ -1,10 +1,10 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	1811860944	FilterMusic			\Default Work Unit\FilterMusic	
+	1069431850	Player			\GGJ_2023\Player	
 
 State	ID	Name	State Group			Notes
-	748895195	None	FilterMusic			
-	984691642	Ingame	FilterMusic			
-	2607556080	Menu	FilterMusic			
+	748895195	None	Player			
+	1635194252	p1	Player			
+	1635194255	p2	Player			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1006694123	Music_Volume			\GGJ_2023\Music_Volume	

@@ -458,6 +458,27 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Player" ID="{CA945553-B676-4602-96FD-A26EC461253F}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="p1" ID="{69225FD6-52F8-43BD-9773-55395C5A8B2F}"/>
+												<CustomState Name="" ID="{1676CF88-33B0-413A-9155-D860B620188C}" ShortID="407457592"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="p2" ID="{D86826B3-0345-4EC9-AD4B-859A6E7BBCF5}"/>
+												<CustomState Name="" ID="{EC94D986-57BB-43E3-BF40-095591473240}" ShortID="470068468">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="uproot p1" ID="{1EE86710-2BB9-42D2-AEFD-BAE2C7575A87}" ShortID="424512421">
 									<ReferenceList>
@@ -857,6 +878,27 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Player" ID="{CA945553-B676-4602-96FD-A26EC461253F}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="p1" ID="{69225FD6-52F8-43BD-9773-55395C5A8B2F}"/>
+												<CustomState Name="" ID="{48925F5E-D6D4-45D8-87AE-F578A77CD3C4}" ShortID="734232418">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="p2" ID="{D86826B3-0345-4EC9-AD4B-859A6E7BBCF5}"/>
+												<CustomState Name="" ID="{E4CE9C1E-C455-4F08-8BBB-D8038CB4CE97}" ShortID="812464320"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>

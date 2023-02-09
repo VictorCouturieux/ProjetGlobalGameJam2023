@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{812FCA67-C84E-4642-9675-7DCE89526484}" SchemaVersion="110">
+	<States>
+		<WorkUnit Name="GGJ_2023" ID="{812FCA67-C84E-4642-9675-7DCE89526484}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="17"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<StateGroup Name="Player" ID="{CA945553-B676-4602-96FD-A26EC461253F}">
+					<ChildrenList>
+						<State Name="None" ID="{D5D6BD30-D13B-4CF8-86A5-0F783F9BC8AD}"/>
+						<State Name="p1" ID="{69225FD6-52F8-43BD-9773-55395C5A8B2F}"/>
+						<State Name="p2" ID="{D86826B3-0345-4EC9-AD4B-859A6E7BBCF5}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="p2" ID="{D86826B3-0345-4EC9-AD4B-859A6E7BBCF5}"/>
+							<EndState Name="p1" ID="{69225FD6-52F8-43BD-9773-55395C5A8B2F}"/>
+							<Time>0.05</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

@@ -23,6 +23,20 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{D6EA27A5-77DB-49D4-B5AF-889A227812A8}" ShortID="708735498">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="throw bark p1" ID="{5F78C361-027D-449E-B6D2-2F8FDA06308A}" WorkUnitID="{45DACAC6-9939-4139-A8D2-4DE57F35D71C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D0481CDA-8AB4-4775-83AA-85B5B8AAA3F7}" ShortID="293452388">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="throw bark p2" ID="{0577CE3F-184C-49CB-8802-5123079623A7}" WorkUnitID="{45DACAC6-9939-4139-A8D2-4DE57F35D71C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_Patate_Explosion_blend" ID="{96463784-B529-45B4-AF0E-781A3E682388}">

@@ -61,7 +61,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{20291C12-CF77-45E3-B926-E9BDAADF1359}"/>
+						<CurrentStateRef Name="p1" ID="{69225FD6-52F8-43BD-9773-55395C5A8B2F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

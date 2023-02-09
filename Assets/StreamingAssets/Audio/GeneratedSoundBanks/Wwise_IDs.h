@@ -41,17 +41,17 @@ namespace AK
 
     namespace STATES
     {
-        namespace FILTERMUSIC
+        namespace PLAYER
         {
-            static const AkUniqueID GROUP = 1811860944U;
+            static const AkUniqueID GROUP = 1069431850U;
 
             namespace STATE
             {
-                static const AkUniqueID INGAME = 984691642U;
-                static const AkUniqueID MENU = 2607556080U;
                 static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID P1 = 1635194252U;
+                static const AkUniqueID P2 = 1635194255U;
             } // namespace STATE
-        } // namespace FILTERMUSIC
+        } // namespace PLAYER
 
     } // namespace STATES
 

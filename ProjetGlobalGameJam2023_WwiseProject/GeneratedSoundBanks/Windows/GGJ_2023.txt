@@ -25,15 +25,16 @@ Event	ID	Name			Wwise Object Path	Notes
 	4258653052	TEST_EVENT			\GGJ_2023\TEST_EVENT	
 
 State Group	ID	Name			Wwise Object Path	Notes
-	1811860944	FilterMusic			\Default Work Unit\FilterMusic	
+	1069431850	Player			\GGJ_2023\Player	
 
 State	ID	Name	State Group			Notes
-	748895195	None	FilterMusic			
-	984691642	Ingame	FilterMusic			
-	2607556080	Menu	FilterMusic			
+	748895195	None	Player			
+	1635194252	p1	Player			
+	1635194255	p2	Player			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	772734235	Menu	FilterMusic	\Actor-Mixer Hierarchy\GGJ_2023\Music\Music\IngameWithoutlyrics\Ingame_Reggae_withoutLyrics		
+	470068468	p2	Player	\Actor-Mixer Hierarchy\GGJ_2023\Voices\Voices\p1\throw bark p1		
+	734232418	p1	Player	\Actor-Mixer Hierarchy\GGJ_2023\Voices\Voices\p2\throw bark p2		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3709237862	RTPC_loading_throw_value			\GGJ_2023\RTPC_loading_throw_value	
@@ -97,7 +98,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	785986525	sfx_voice_uproot_bark_p1_01	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_voice_uproot_bark_p1_01_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Voices\Voices\p1\uproot p1\sfx_voice_uproot_bark_p1_01		34694
 	793522240	sfx_player_ability_Dash_01	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_player_ability_Dash_01_CAAE54CF.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Dash\sfx_player_ability_Dash_01		102496
 	793785906	sfx_player_ability_uproot_01	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_player_ability_uproot_01_23367234.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Uproot\uproot\uproot_base\sfx_player_ability_uproot_01		238656
-	803527828	GGJ_Reggae	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\GGJ_Reggae_C243C81E.wem		\Actor-Mixer Hierarchy\GGJ_2023\Music\Music\Ingame\Musics\GGJ_Reggae		33189408
+	803527828	GGJ_Reggae	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\GGJ_Reggae_5165284B.wem		\Actor-Mixer Hierarchy\GGJ_2023\Music\Music\Ingame\Musics\GGJ_Reggae		33189408
 	811308933	sfx_player_ability_throw_whoosh_01	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_player_ability_throw_whoosh_01_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Throw\throw\throw_whoosh\sfx_player_ability_throw_whoosh_01		232020
 	817193670	sfx_player_ability_uproot_tail_06	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_player_ability_uproot_tail_06_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Uproot\uproot\uproot_tail\sfx_player_ability_uproot_tail_06		331372
 	818421632	sfx_voice_throw_bark_p1_06	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_voice_throw_bark_p1_06_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Voices\Voices\p1\throw bark p1\sfx_voice_throw_bark_p1_06		14896

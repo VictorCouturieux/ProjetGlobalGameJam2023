@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FAA53D93-DBDD-4272-5144-684C73A25474}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4F78CEA3-7950-8ACC-885E-830554B88863}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -38,16 +38,16 @@
 				<GameParameter Id="3709237862" Name="RTPC_loading_throw_value"/>
 			</GameParameters>
 			<StateGroups>
-				<StateGroup Id="1811860944" Name="FilterMusic">
+				<StateGroup Id="1069431850" Name="Player">
 					<States>
 						<State Id="748895195" Name="None"/>
-						<State Id="984691642" Name="Ingame"/>
-						<State Id="2607556080" Name="Menu"/>
+						<State Id="1635194252" Name="p1"/>
+						<State Id="1635194255" Name="p2"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{07FDC683-B615-8E8A-F2C0-56136BBB4C49}">
+		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{3BCE02B2-49F0-D859-A67C-D50F24B71D89}">
 			<ShortName>GGJ_2023</ShortName>
 			<Path>GGJ_2023.bnk</Path>
 			<Media>
@@ -285,7 +285,7 @@
 				</File>
 				<File Id="803527828" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GGJ_Reggae.wav</ShortName>
-					<CachePath>SFX/GGJ_Reggae_C243C81E.wem</CachePath>
+					<CachePath>SFX/GGJ_Reggae_5165284B.wem</CachePath>
 				</File>
 				<File Id="811308933" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_player_ability_throw_whoosh_01.wav</ShortName>
@@ -474,17 +474,27 @@
 				</Event>
 				<Event Id="1977644338" Name="Play_throw" DurationType="OneShot" DurationMin="1.3713782" DurationMax="1.5462829">
 					<MediaRefs>
+						<MediaRef Id="76363785"/>
 						<MediaRef Id="94902688"/>
+						<MediaRef Id="124475608"/>
+						<MediaRef Id="163271259"/>
 						<MediaRef Id="204887658"/>
+						<MediaRef Id="371012036"/>
+						<MediaRef Id="376434172"/>
 						<MediaRef Id="397876057"/>
+						<MediaRef Id="421829781"/>
 						<MediaRef Id="452365859"/>
 						<MediaRef Id="479607447"/>
 						<MediaRef Id="560676795"/>
 						<MediaRef Id="697084863"/>
+						<MediaRef Id="736022255"/>
 						<MediaRef Id="743949506"/>
 						<MediaRef Id="757756100"/>
 						<MediaRef Id="811308933"/>
+						<MediaRef Id="818421632"/>
 						<MediaRef Id="850586982"/>
+						<MediaRef Id="874036827"/>
+						<MediaRef Id="963023355"/>
 						<MediaRef Id="1033996324"/>
 						<MediaRef Id="1043418687"/>
 					</MediaRefs>
@@ -557,5 +567,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1B0386EB-71E6-1647-F02F-8AE019230811}</FileHash>
+	<FileHash>{98E68C4B-28AF-957F-CBAC-F13711FF0B26}</FileHash>
 </SoundBanksInfo>
