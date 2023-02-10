@@ -12,14 +12,10 @@ public class AudioManager : MonoBehaviour
     private void Awake()
     {
         if (instance != null)
-        {
             Destroy(Instance.gameObject);
-            instance = this;
-        }
-           
-
-        DontDestroyOnLoad(this.gameObject);
         
+        instance = this;
+        DontDestroyOnLoad(this.gameObject);
     }
     [SerializeField] AK.Wwise.Event _rockMusic = null;
     [SerializeField] AK.Wwise.Event _reggaeMusic = null;
@@ -41,15 +37,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AK.Wwise.Event _explosionPatate = null;
     [SerializeField] AK.Wwise.Event _playerScratch = null;
     [SerializeField] AK.Wwise.Event _ronce = null;
-    public PlayerController _playercontroller;
-
-    private void Start()
-    {
-        _playercontroller = GameObject.Find("Player Controller").GetComponent<PlayerController>();
-    }
-
+    
     // Musics
-
     public void RockMusic(bool play)
     {
         if (play)
@@ -149,7 +138,7 @@ public class AudioManager : MonoBehaviour
     {
         
 
-        if (_playercontroller.isRock == true)
+        if (go.GetComponent<PlayerController>().isRock)
         {
             _hitPlayer1.Post(go);
         }
