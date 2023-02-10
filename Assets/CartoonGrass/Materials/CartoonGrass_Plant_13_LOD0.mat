@@ -52,15 +52,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - GradientHeight: 0.5
-    - GradientSmoothness: 0.7
+    - GradientHeight: 0.35
+    - GradientSmoothness: 0.22
     - WindSpeed: 1
     - WindStrength: 0.1
     - _Offset: 0.3
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - BottomColor: {r: 0.23631357, g: 0.26415092, b: 0.07392901, a: 0}
-    - TopColor: {r: 0.77254903, g: 0.7611023, b: 0.2235294, a: 0}
+    - BottomColor: {r: 0.4666667, g: 0.43137258, b: 0.36078432, a: 0}
+    - TopColor: {r: 0.5019608, g: 0.47450984, b: 0.28627452, a: 1}
     - WindDirection: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

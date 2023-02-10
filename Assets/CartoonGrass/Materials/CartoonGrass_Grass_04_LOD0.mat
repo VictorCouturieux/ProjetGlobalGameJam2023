@@ -44,6 +44,8 @@ Material:
     - WindSpeed: 1
     - WindStrength: 0.25
     - _Offset: 0.34
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
     - BottomColor: {r: 0.2873023, g: 0.4339623, b: 0.12964278, a: 0}
     - TopColor: {r: 0.64834774, g: 0.7735849, b: 0.30286577, a: 0}

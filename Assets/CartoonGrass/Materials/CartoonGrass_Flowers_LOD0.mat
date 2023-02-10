@@ -54,7 +54,7 @@ Material:
     m_Floats:
     - GradientHeight: 1
     - GradientSmoothness: 1
-    - Vector1_2908FDFC: 0
+    - Vector1_2908FDFC: 0.5
     - WindSpeed: 1
     - WindStrength: 0.15
     - _Offset: 0.34

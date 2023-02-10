@@ -43,8 +43,8 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - BottomColor: {r: 0.13773285, g: 0.3018868, b: 0.09227483, a: 0}
-    - TopColor: {r: 1, g: 0.8733957, b: 0, a: 0}
+    - BottomColor: {r: 0.043137256, g: 0.14901961, b: 0, a: 0}
+    - TopColor: {r: 0.58431375, g: 0.58431375, b: 0.36078432, a: 1}
     - WindDirection: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4877210855793231051
