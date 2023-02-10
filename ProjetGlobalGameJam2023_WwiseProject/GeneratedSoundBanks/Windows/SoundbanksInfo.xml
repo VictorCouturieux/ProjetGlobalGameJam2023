@@ -47,7 +47,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{3BCE02B2-49F0-D859-A67C-D50F24B71D89}">
+		<SoundBank Id="2521652281" Type="User" Language="SFX" Hash="{87EB3BED-0A33-4D72-6CD0-E6C15246F97B}">
 			<ShortName>GGJ_2023</ShortName>
 			<Path>GGJ_2023.bnk</Path>
 			<Media>
@@ -162,6 +162,10 @@
 				<File Id="397876057" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_voice_citrouille_scream_05.wav</ShortName>
 					<CachePath>SFX/sfx_voice_citrouille_scream_05_DB21A809.wem</CachePath>
+				</File>
+				<File Id="413027692" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_ui_Go.wav</ShortName>
+					<CachePath>SFX/sfx_ui_Go_DB21A809.wem</CachePath>
 				</File>
 				<File Id="421829781" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_voice_throw_bark_p2_02.wav</ShortName>
@@ -331,6 +335,10 @@
 					<ShortName>sfx_player_ability_uproot_tail_04.wav</ShortName>
 					<CachePath>SFX/sfx_player_ability_uproot_tail_04_DB21A809.wem</CachePath>
 				</File>
+				<File Id="929906078" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GGJ-2023-BritishPunkMusic-WithVoices.wav</ShortName>
+					<CachePath>SFX/GGJ-2023-BritishPunkMusic-WithVoices_DB21A809.wem</CachePath>
+				</File>
 				<File Id="941070222" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_dash_loaded.wav</ShortName>
 					<CachePath>SFX/sfx_dash_loaded_DB21A809.wem</CachePath>
@@ -346,6 +354,10 @@
 				<File Id="978690032" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Abitlity_Explosion_Splash-001.wav</ShortName>
 					<CachePath>SFX/Player_Abitlity_Explosion_Splash-001_DB21A809.wem</CachePath>
+				</File>
+				<File Id="984433058" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_ui_Ready.wav</ShortName>
+					<CachePath>SFX/sfx_ui_Ready_DB21A809.wem</CachePath>
 				</File>
 				<File Id="988036767" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Abitlity_Explosion_Build-002.wav</ShortName>
@@ -373,6 +385,11 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="62303034" Name="Play_BritishPunkMusic_WithVoices" DurationType="OneShot" DurationMin="103.920364" DurationMax="103.920364">
+					<MediaRefs>
+						<MediaRef Id="929906078"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2449850384" Name="Play_Bulle_patate" DurationType="OneShot" DurationMin="1.0593978" DurationMax="1.1301923">
 					<MediaRefs>
 						<MediaRef Id="88457314"/>
@@ -472,6 +489,16 @@
 						<MediaRef Id="977253678"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1375056029" Name="Play_sfx_ui_Go" DurationType="OneShot" DurationMin="0.7685261" DurationMax="0.7685261">
+					<MediaRefs>
+						<MediaRef Id="413027692"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1554282648" Name="Play_sfx_ui_Ready" DurationType="OneShot" DurationMin="1.9950567" DurationMax="1.9950567">
+					<MediaRefs>
+						<MediaRef Id="984433058"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1977644338" Name="Play_throw" DurationType="OneShot" DurationMin="1.3713782" DurationMax="1.5462829">
 					<MediaRefs>
 						<MediaRef Id="76363785"/>
@@ -567,5 +594,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{50FF6FFF-68BC-1232-118E-5BA0F0665E44}</FileHash>
+	<FileHash>{7AE7EE12-2489-1EF1-5C2E-2C11B049EEEB}</FileHash>
 </SoundBanksInfo>

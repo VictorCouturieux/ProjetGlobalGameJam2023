@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f62c613d74b5a74b88162d5b1ccad82, type: 3}
+  m_Name: DAED5C24-485A-47CD-8A3F-62BE3B93D50B
+  m_EditorClassIdentifier: 
+  objectName: Play_sfx_ui_Go
+  id: 1375056029
+  guid: DAED5C24-485A-47CD-8A3F-62BE3B93D50B

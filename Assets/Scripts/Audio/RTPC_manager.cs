@@ -12,6 +12,7 @@ public class RTPC_manager : MonoBehaviour
     {
         if (instance != null)
             Destroy(Instance.gameObject);
+
         instance = this;
 
         DontDestroyOnLoad(this.gameObject);

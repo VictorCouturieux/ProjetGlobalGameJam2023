@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BRITISHPUNKMUSIC_WITHVOICES = 62303034U;
         static const AkUniqueID PLAY_BULLE_PATATE = 2449850384U;
         static const AkUniqueID PLAY_CLICK = 311910498U;
         static const AkUniqueID PLAY_DASH = 2211787386U;
@@ -28,6 +29,8 @@ namespace AK
         static const AkUniqueID PLAY_PATATE_EXPLOSION_BLEND = 1023383947U;
         static const AkUniqueID PLAY_RONCE = 2454676839U;
         static const AkUniqueID PLAY_SCRATCH = 3394095844U;
+        static const AkUniqueID PLAY_SFX_UI_GO = 1375056029U;
+        static const AkUniqueID PLAY_SFX_UI_READY = 1554282648U;
         static const AkUniqueID PLAY_THROW = 1977644338U;
         static const AkUniqueID PLAY_THROW_BARK_P1 = 1284966515U;
         static const AkUniqueID PLAY_THROW_BARK_P2 = 1284966512U;

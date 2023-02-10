@@ -65,6 +65,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_sfx_ui_Go" ID="{DAED5C24-485A-47CD-8A3F-62BE3B93D50B}">
+					<ChildrenList>
+						<Action Name="" ID="{B2EB82B3-8D26-45F5-857C-BAB454EDB443}" ShortID="827708477">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_ui_Go" ID="{12791CAB-7B35-49D5-A3F0-06DEC9855433}" WorkUnitID="{C7DBEAE4-D506-4360-B3C1-AB0BDF3D7823}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_sfx_ui_Ready" ID="{F13F5CA3-4D8C-4469-967E-23D37B9D98A0}">
+					<ChildrenList>
+						<Action Name="" ID="{3DC6C399-B72A-4595-A71B-D51CF3F8155C}" ShortID="1007613640">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_ui_Ready" ID="{7E7ECCEB-D65D-4551-B586-40B303B985DA}" WorkUnitID="{C7DBEAE4-D506-4360-B3C1-AB0BDF3D7823}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

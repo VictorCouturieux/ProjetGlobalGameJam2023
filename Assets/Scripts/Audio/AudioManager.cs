@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
     {
         if (instance != null)
             Destroy(Instance.gameObject);
-        
+
         instance = this;
         DontDestroyOnLoad(this.gameObject);
     }
@@ -37,7 +37,12 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AK.Wwise.Event _explosionPatate = null;
     [SerializeField] AK.Wwise.Event _playerScratch = null;
     [SerializeField] AK.Wwise.Event _ronce = null;
-    
+    [SerializeField] AK.Wwise.Event _readySound = null;
+    [SerializeField] AK.Wwise.Event _goSound = null;
+    [SerializeField] AK.Wwise.Event _throwBarkP1 = null;
+    [SerializeField] AK.Wwise.Event _throwBarkP2 = null;
+
+
     // Musics
     public void RockMusic(bool play)
     {
@@ -86,9 +91,9 @@ public class AudioManager : MonoBehaviour
         _pousseApparition.Post(go);
     }
     public void PousseUsable(GameObject go)
-   {
-     _pousseUsable.Post(go);
-   }
+    {
+        _pousseUsable.Post(go);
+    }
 
     public void PousseMoisted(GameObject go)
     {
@@ -100,6 +105,17 @@ public class AudioManager : MonoBehaviour
     public void PlayerThrow(GameObject go)
     {
         _playerThrow.Post(go);
+
+        if (go.GetComponent<PlayerController>().isRock)
+        {
+            _throwBarkP1.Post(go);
+        }
+
+        else
+        {
+            _throwBarkP2.Post(go);
+        }
+
 
     }
 
@@ -136,7 +152,7 @@ public class AudioManager : MonoBehaviour
 
     public void HitPlayer(GameObject go)
     {
-        
+
 
         if (go.GetComponent<PlayerController>().isRock)
         {
@@ -148,7 +164,7 @@ public class AudioManager : MonoBehaviour
         {
             _hitPlayer2.Post(go);
         }
-            
+
     }
 
 
@@ -166,7 +182,7 @@ public class AudioManager : MonoBehaviour
             _uiThrowLoad.Stop(go);
             //Debug.Log("stop event");
         }
-            
+
 
 
     }
@@ -184,7 +200,16 @@ public class AudioManager : MonoBehaviour
         _uiGenericTransition.Post(gameObject);
     }
 
+    public void UiReadySound()
+    {
+        _readySound.Post(gameObject);
 
+    }
+    public void UiGoSound()
+    {
+        _goSound.Post(gameObject);
+
+    }
 
     // Amb
     public void AmbSound(bool play)

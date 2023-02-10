@@ -9,7 +9,18 @@
 			<ChildrenList>
 				<ActorMixer Name="Music" ID="{BD0A65CF-2CD7-49C7-AC19-E270B859FFAB}" ShortID="824884945">
 					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -20,16 +31,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Music" ID="{535DA2A7-E935-4BAB-A7C5-E4291042D732}" ShortID="332923021">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
-								</Reference>
-							</ReferenceList>
-						</RandomSequenceContainer>
 						<ActorMixer Name="Menu" ID="{F8B9B296-B09C-4F2A-892D-0B3325DB6B95}" ShortID="221329681">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -183,6 +184,35 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<Sound Name="BritishPunkMusic-WithVoices" ID="{5C481727-196A-48CF-8676-AE8CEDC19C0F}" ShortID="444350618">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GGJ-2023-BritishPunkMusic-WithVoices" ID="{80CB5F74-CD4E-48FF-97BC-56A07B859C3F}">
+											<Language>SFX</Language>
+											<AudioFile>GGJ-2023-BritishPunkMusic-WithVoices.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="929906078"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GGJ-2023-BritishPunkMusic-WithVoices" ID="{80CB5F74-CD4E-48FF-97BC-56A07B859C3F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

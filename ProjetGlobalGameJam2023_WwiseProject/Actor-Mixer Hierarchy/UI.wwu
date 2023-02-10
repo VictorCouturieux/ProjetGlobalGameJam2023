@@ -426,6 +426,64 @@
 								</Sound>
 							</ChildrenList>
 						</BlendContainer>
+						<Sound Name="sfx_ui_Go" ID="{12791CAB-7B35-49D5-A3F0-06DEC9855433}" ShortID="329797461">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_ui_Go" ID="{EC03481B-C1D8-4DEC-B199-3CC9D38BAAFE}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_ui_Go.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="413027692"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_ui_Go" ID="{EC03481B-C1D8-4DEC-B199-3CC9D38BAAFE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_ui_Ready" ID="{7E7ECCEB-D65D-4551-B586-40B303B985DA}" ShortID="1056150759">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F3B051-F091-46C2-B1E2-2A6F8C94BAC5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C39FFC1-C5F7-4E72-A1C5-87D7274A9039}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_ui_Ready" ID="{512B2D1A-804A-47E2-9826-C95A937B2992}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_ui_Ready.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="984433058"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_ui_Ready" ID="{512B2D1A-804A-47E2-9826-C95A937B2992}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

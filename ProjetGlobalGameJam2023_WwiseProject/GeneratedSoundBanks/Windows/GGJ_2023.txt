@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	62303034	Play_BritishPunkMusic_WithVoices			\GGJ_2023\Music\Play_BritishPunkMusic_WithVoices	
 	266045666	Play_Ingame_Reggae_withoutLyrics			\GGJ_2023\Music\Play_Ingame_Reggae_withoutLyrics	
 	278818673	Play_environement_props_pousse_lvl1			\GGJ_2023\Environnement\Play_environement_props_pousse_lvl1	
 	278818675	Play_environement_props_pousse_lvl3			\GGJ_2023\Environnement\Play_environement_props_pousse_lvl3	
@@ -10,6 +11,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	1284966512	Play_throw_bark_p2			\GGJ_2023\Voices\Play_throw_bark_p2	
 	1284966515	Play_throw_bark_p1			\GGJ_2023\Voices\Play_throw_bark_p1	
 	1350528445	Play_uproot			\GGJ_2023\Player\Play_uproot	
+	1375056029	Play_sfx_ui_Go			\GGJ_2023\UI\Play_sfx_ui_Go	
+	1554282648	Play_sfx_ui_Ready			\GGJ_2023\UI\Play_sfx_ui_Ready	
 	1977644338	Play_throw			\GGJ_2023\Player\Play_throw	
 	2208807129	Play_uproot_p1			\GGJ_2023\Voices\Play_uproot_p1	
 	2208807130	Play_uproot_p2			\GGJ_2023\Voices\Play_uproot_p2	
@@ -68,6 +71,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	376434172	sfx_voice_throw_bark_p2_01	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_voice_throw_bark_p2_01_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Voices\Voices\p2\throw bark p2\sfx_voice_throw_bark_p2_01		27752
 	397407126	Player_Abitlity_Explosion_Build-003	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\Player_Abitlity_Explosion_Build-003_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Patate\Patate_Explosion\Patate_Explosion_blend\Patate_Explosion_build\Player_Abitlity_Explosion_Build-003		129370
 	397876057	sfx_voice_citrouille_scream_05	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_voice_citrouille_scream_05_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Voices\Voices\patate_scream\sfx_voice_citrouille_scream_05		86544
+	413027692	sfx_ui_Go	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_ui_Go_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\UI\UI\sfx_ui_Go		67880
 	421829781	sfx_voice_throw_bark_p2_02	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_voice_throw_bark_p2_02_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Voices\Voices\p2\throw bark p2\sfx_voice_throw_bark_p2_02		31360
 	432927937	Player_Abitlity_ScratchGround-001	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\Player_Abitlity_ScratchGround-001_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\scratch\Player_Abitlity_ScratchGround-001		63752
 	435181012	sfx_environement_props_pousse_lvl1	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_environement_props_pousse_lvl1_BD5C71F1.wem		\Actor-Mixer Hierarchy\GGJ_2023\environement\Env\pousse\sfx_environement_props_pousse_lvl1		268672
@@ -110,10 +114,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	893130455	Player_Abitlity_Explosion_Impact-002	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\Player_Abitlity_Explosion_Impact-002_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Patate\Patate_Explosion\Patate_Explosion_blend\Patate_Explosion_impact\Player_Abitlity_Explosion_Impact-002		133168
 	893982485	sfx_player_ability_Dash_02	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_player_ability_Dash_02_B4CAA00C.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Dash\sfx_player_ability_Dash_02		76164
 	897915018	sfx_player_ability_uproot_tail_04	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_player_ability_uproot_tail_04_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Uproot\uproot\uproot_tail\sfx_player_ability_uproot_tail_04		303440
+	929906078	BritishPunkMusic-WithVoices	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\GGJ-2023-BritishPunkMusic-WithVoices_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Music\Music\Ingame\BritishPunkMusic-WithVoices		18331648
 	941070222	sfx_dash_loaded	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_dash_loaded_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\environement\Env\TEST\TEST\sfx_dash_loaded		126058
 	963023355	sfx_voice_throw_bark_p1_02	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_voice_throw_bark_p1_02_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Voices\Voices\p1\throw bark p1\sfx_voice_throw_bark_p1_02		15786
 	977253678	Player_Abitlity_ScratchGround-004	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\Player_Abitlity_ScratchGround-004_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\scratch\Player_Abitlity_ScratchGround-004		65534
 	978690032	Player_Abitlity_Explosion_Splash-001	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\Player_Abitlity_Explosion_Splash-001_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Patate\Patate_Explosion\Patate_Explosion_blend\Patate_Explosion_splash\Player_Abitlity_Explosion_Splash-001		121870
+	984433058	sfx_ui_Ready	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_ui_Ready_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\UI\UI\sfx_ui_Ready		176060
 	988036767	Player_Abitlity_Explosion_Build-002	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\Player_Abitlity_Explosion_Build-002_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Patate\Patate_Explosion\Patate_Explosion_blend\Patate_Explosion_build\Player_Abitlity_Explosion_Build-002		133168
 	993248513	sfx_environement_props_pousse_moisie	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_environement_props_pousse_moisie_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\environement\Env\pousse\sfx_environement_props_pousse_moisie		395032
 	1033996324	sfx_player_ability_throw_tail_01	C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\.cache\Windows\SFX\sfx_player_ability_throw_tail_01_DB21A809.wem		\Actor-Mixer Hierarchy\GGJ_2023\Player\Player\Throw\throw\throw_tail\sfx_player_ability_throw_tail_01		259400

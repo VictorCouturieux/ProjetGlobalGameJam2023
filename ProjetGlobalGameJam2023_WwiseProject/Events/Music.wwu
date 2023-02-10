@@ -54,6 +54,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_BritishPunkMusic_WithVoices" ID="{C614EC25-BA7B-4445-B61A-42376CF70822}">
+					<ChildrenList>
+						<Action Name="" ID="{089E6AB4-6C44-41F3-8318-D1850F64C3A1}" ShortID="677900472">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BritishPunkMusic-WithVoices" ID="{5C481727-196A-48CF-8676-AE8CEDC19C0F}" WorkUnitID="{DB720279-3E29-4CA5-8AB0-5E0E219D7117}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

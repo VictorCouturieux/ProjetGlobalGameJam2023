@@ -31,14 +31,15 @@
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1675505286" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Switches\GGJ_2023.wwu" DateLow="1675529476" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1675529065" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\States\Default Work Unit.wwu" DateLow="1675705157" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1675790199" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\States\GGJ_2023.wwu" DateLow="1675959104" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\States\Default Work Unit.wwu" DateLow="1675958090" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1675959305" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\SoundBanks\GGJ_2023.wwu" DateLow="1675785452" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1675505286" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Queries\Factory Queries.wwu" DateLow="1675505286" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1675505286" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\ProjetGlobalGameJam2023_WwiseProject.wproj" DateLow="1675510536" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\ProjetGlobalGameJam2023_WwiseProject.poloc.wsettings" DateLow="1675790253" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\ProjetGlobalGameJam2023_WwiseProject.poloc.wsettings" DateLow="1675959419" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1675505286" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1675505286" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1675505286" DateHigh="0"/>
@@ -51,7 +52,7 @@
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1675529217" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\Voices.wwu" DateLow="1675785081" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\UI.wwu" DateLow="1675785013" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\Player.wwu" DateLow="1675784748" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\Player.wwu" DateLow="1675958157" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\Music.wwu" DateLow="1675785341" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\GGJ_2023.wwu" DateLow="1675785013" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Events\Environnement.wwu" DateLow="1675697227" DateHigh="0"/>
@@ -64,10 +65,10 @@
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1675505286" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1675505286" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1675603700" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\Voices.wwu" DateLow="1675787946" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\Voices.wwu" DateLow="1675959295" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="1675784481" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\Player.wwu" DateLow="1675705460" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\Music.wwu" DateLow="1675785341" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\Music.wwu" DateLow="1675958091" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\GGJ_2023.wwu" DateLow="1675784481" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\environement.wwu" DateLow="1675790199" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\poloc\ProjetGlobalGameJam2023\ProjetGlobalGameJam2023_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1675509236" DateHigh="0"/>

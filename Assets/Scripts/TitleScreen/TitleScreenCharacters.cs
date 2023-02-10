@@ -36,7 +36,8 @@ public class TitleScreenCharacters : MonoBehaviour
     {
         if (isRockPlaying)
         {
-            // TODO : Call Rock music
+            AudioManager.Instance.RockMusic(true);
+            AudioManager.Instance.ReggaeMusic(false);
             Reggae.Angry();
             Rocker.Dance();
             leftTriggerImage.color = Color.white;
@@ -44,7 +45,8 @@ public class TitleScreenCharacters : MonoBehaviour
         }
         else
         {
-            // TODO : Call Reggae music
+            AudioManager.Instance.RockMusic(false);
+            AudioManager.Instance.ReggaeMusic(true);
             Reggae.Dance();
             Rocker.Angry();
             leftTriggerImage.color = Color.gray;
@@ -56,7 +58,7 @@ public class TitleScreenCharacters : MonoBehaviour
     {
         if (context.canceled)
         {
-            // TODO : Call button SFX
+            AudioManager.Instance.UiGenericClick();
             isRockPlaying = true;
             MusicChanged();
         }
@@ -65,7 +67,7 @@ public class TitleScreenCharacters : MonoBehaviour
     {
         if (context.canceled)
         {
-            // TODO : Call button SFX
+            AudioManager.Instance.UiGenericClick();
             isRockPlaying = false;
             MusicChanged();
         }

@@ -49,7 +49,8 @@ MonoBehaviour:
   _rockMusic:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 340d78918dcb8c04a90c13e4ca6f3e03,
+      type: 2}
   _reggaeMusic:
     idInternal: 0
     valueGuidInternal: 
@@ -138,6 +139,26 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 3cda78dd0e97f3c448e09cd2211d82a5,
+      type: 2}
+  _readySound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ef83a891bb636874a88d5d9ff9fd513f,
+      type: 2}
+  _goSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7e739bce0fb144b4f8bbf468715613e3,
+      type: 2}
+  _throwBarkP1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c68ac6ed7eecb244e8e518700525008d,
+      type: 2}
+  _throwBarkP2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cb48e6789d0c1b4469a9a26fdbd42b1b,
       type: 2}
 --- !u!114 &3720312354412239862
 MonoBehaviour:
