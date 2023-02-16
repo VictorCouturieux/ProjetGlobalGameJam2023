@@ -33,17 +33,19 @@ public class HudManager : MonoBehaviour
     private bool _gameEnd = false;
     
     private void OnEnable() {
-        pRightLifeCountEvent.AddCallback(PlayerRightLostHp);
-        pLeftLifeCountEvent.AddCallback(PlayerLeftLostHp);
+        //pRightLifeCountEvent.AddCallback(PlayerRightLostHp);
+        //pLeftLifeCountEvent.AddCallback(PlayerLeftLostHp);
     }
     
     private void Start() {
-        if (pRightLifeCountEvent.Size() == 0) {
-            pRightLifeCountEvent.AddCallback(PlayerRightLostHp);
-        }
-        if (pRightLifeCountEvent.Size() == 0) {
-            pLeftLifeCountEvent.AddCallback(PlayerLeftLostHp);
-        }
+        //if (pRightLifeCountEvent.Size() == 0) {
+        pRightLifeCountEvent.Clear();
+        pRightLifeCountEvent.AddCallback(PlayerRightLostHp);
+        //}
+        //if (pRightLifeCountEvent.Size() == 0) {
+        pLeftLifeCountEvent.Clear();
+        pLeftLifeCountEvent.AddCallback(PlayerLeftLostHp);
+        //}
     }
 
     private void Update() {

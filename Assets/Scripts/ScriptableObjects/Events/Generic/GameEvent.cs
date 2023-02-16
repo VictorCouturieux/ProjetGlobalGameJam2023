@@ -38,6 +38,11 @@ public class GameEvent<T> : ScriptableObject
             }
         }
     }
+
+    public void Clear()
+    {
+        callbacks.Clear();
+    }
 }
 
 public class GameEvent<T, U> : ScriptableObject
@@ -75,6 +80,11 @@ public class GameEvent<T, U> : ScriptableObject
             }
         }
     }
+    
+    public void Clear()
+    {
+        callbacks.Clear();
+    }
 }
 
 public class GameEvent<T, U, V> : ScriptableObject
@@ -111,5 +121,10 @@ public class GameEvent<T, U, V> : ScriptableObject
                 callEnd.Invoke(value1, value2, value3);
             }
         }
+    }
+
+    public void Clear()
+    {
+        callbacks.Clear();
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InGameInit : MonoBehaviour
 {
-    void Start()
+    void OnEnable()
     {
         AudioManager.Instance.AmbSound(true);
 
@@ -12,7 +12,6 @@ public class InGameInit : MonoBehaviour
 
     void OnDisable()
     {
-
         AudioManager.Instance.AmbSound(false);
     }
 

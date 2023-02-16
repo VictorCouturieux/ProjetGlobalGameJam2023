@@ -9,8 +9,8 @@ public class EndGameCinematic : MonoBehaviour
     [SerializeField] private Animator animCam;
     [SerializeField] private Animator animPL;
     [SerializeField] private Animator animPR;
-    [SerializeField] private PlayerInput inputPL;
-    [SerializeField] private PlayerInput inputPR;
+    [SerializeField] private PlayerController player1;
+    [SerializeField] private PlayerController player2;
     
     
     [SerializeField] private GameObject winPL;
@@ -25,19 +25,18 @@ public class EndGameCinematic : MonoBehaviour
     private bool _timerIsRunning = false;
 
     private void OnEnable() {
-        endGameEvent.AddCallback(StartCinematic);
+        //endGameEvent.AddCallback(StartCinematic);
     }
 
     private void Start() {
-        if (endGameEvent.Size() == 0) {
-            endGameEvent.AddCallback(StartCinematic);
-        }
+        endGameEvent.Clear();
+        endGameEvent.AddCallback(StartCinematic);
     }
 
-    void StartCinematic(int numWinner) {
-        Debug.Log("StartCinematic " + inputPL.devices.Count);
-        InputSystem.DisableDevice(inputPL.devices[0]);
-        InputSystem.DisableDevice(inputPR.devices[0]);
+    void StartCinematic(int numWinner)
+    {
+        player1.CanMove = false;
+        player2.CanMove = false;
         if (numWinner == 1) {
             winPL.SetActive(true);
             losePR.SetActive(true);
@@ -70,8 +69,6 @@ public class EndGameCinematic : MonoBehaviour
 
     public void EndGame()
     {
-        InputSystem.EnableDevice(inputPL.devices[0]);
-        InputSystem.EnableDevice(inputPR.devices[0]);
         Debug.Log("EndGame");
         AudioManager.Instance.ReggaeMusic(false);
         mainMenuEvent.Call();

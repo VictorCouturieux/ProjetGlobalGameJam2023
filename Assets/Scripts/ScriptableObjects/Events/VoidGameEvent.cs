@@ -39,4 +39,9 @@ public class VoidGameEvent : ScriptableObject
 			}
 		}
 	}
+	
+	public void Clear()
+	{
+		callbacks.Clear();
+	}
 }

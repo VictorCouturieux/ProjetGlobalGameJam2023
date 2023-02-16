@@ -31,6 +31,8 @@ public class SpawnVegetable : MonoBehaviour
         _timerCountDown = Random.Range(_timerMinSpawnTime, _timerMaxSpawnTime);
         int index = Random.Range(0, seedGenerator.GetPoints.Count);
         AddSeed(seedGenerator.GetPoints[index], index);
+        if (_maxPlantByGarden > seedGenerator.GetPoints.Count)
+            _maxPlantByGarden = seedGenerator.GetPoints.Count;
     }
 
     // Update is called once per frame
@@ -42,6 +44,7 @@ public class SpawnVegetable : MonoBehaviour
             _timerCountDown = Random.Range(_timerMinSpawnTime, _timerMaxSpawnTime);
             if (_listSeedPlacement.Count <= _maxPlantByGarden) {
                 int index = Random.Range(0, seedGenerator.GetPoints.Count);
+                
                 while (!CheckSeedStack(index)) {
                     index = Random.Range(0, seedGenerator.GetPoints.Count);
                 }
