@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/menu-oscar DEFINITIVE.unity
+    path: Assets/Scenes/TitleScreen.unity
     guid: c36eaa50a0e0a8b48b1ef994a8d225a7
   - enabled: 1
-    path: Assets/Scenes/Credits.unity
+    path: Assets/Scenes/Le bordel/Credits.unity
     guid: c3e2c3cc803f0a846ae2e70d54d285cb
   - enabled: 1
     path: Assets/Scenes/GameScene.unity

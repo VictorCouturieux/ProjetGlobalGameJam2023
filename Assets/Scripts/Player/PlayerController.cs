@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour
             else if (_playerPickUp.IsHoldingPlant())
             {
                 ThrowPlant();
-                // Cette anim n'est pas trigg bande de chacals
+                
             }
             _playerPickUp.UpdateUI(0);
         }

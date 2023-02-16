@@ -20,6 +20,8 @@ public class TitleScreenCharacters : MonoBehaviour
 
         if (isRockPlaying)
         {
+            AudioManager.Instance.RockMusic(true);
+            AudioManager.Instance.ReggaeMusic(false);
             Rocker.Dance();
             leftTriggerImage.color = Color.white;
             rightTriggerImage.color = Color.gray;
@@ -29,6 +31,8 @@ public class TitleScreenCharacters : MonoBehaviour
             leftTriggerImage.color = Color.gray;
             rightTriggerImage.color = Color.white;
             Reggae.Dance();
+            AudioManager.Instance.RockMusic(false);
+            AudioManager.Instance.ReggaeMusic(true);
         }
     }
 
