@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1164475899}
   m_Layer: 0
   m_Name: Mid collider
-  m_TagString: Untagged
+  m_TagString: Separator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8930,6 +8930,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 86841546165870205}
     m_Modifications:
+    - target: {fileID: 3305850819627896776, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: isRock
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3639599653754769254, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
         type: 3}
       propertyPath: m_RootOrder
@@ -8985,10 +8990,65 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 38.092
       objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0025
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0035
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50946224
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.60128814
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.23846306
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5674824
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 67
+      objectReference: {fileID: 0}
     - target: {fileID: 4164039884933191132, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
         type: 3}
       propertyPath: m_Name
-      value: Radio
+      value: RockRadio
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699865450483999415, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e8e8a9b2b9b9644da5f081b69579ffc, type: 3}
@@ -14620,11 +14680,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 141.35
       objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0025000947
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00349988
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0050000087
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5422281
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.21346566
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6129789
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5335523
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 155
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026927390609552568, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 4164039884933191132, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
         type: 3}
       propertyPath: m_Name
-      value: Radio (1)
+      value: ReggaeRadio
       objectReference: {fileID: 0}
+    - target: {fileID: 7611049392461201480, guid: 9e8e8a9b2b9b9644da5f081b69579ffc,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8e9f62a8cf445354882d59863962fd06, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e8e8a9b2b9b9644da5f081b69579ffc, type: 3}
 --- !u!4 &6881406420824802832 stripped

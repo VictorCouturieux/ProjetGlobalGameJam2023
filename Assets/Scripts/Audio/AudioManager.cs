@@ -6,6 +6,8 @@ public class AudioManager : MonoBehaviour
 {
     private static AudioManager instance;
     public static AudioManager Instance => instance;
+    
+    public bool isRockPlaying;
 
 
     //can call event with AudioManager.Instance.FunctionName(...);
@@ -14,6 +16,7 @@ public class AudioManager : MonoBehaviour
         if (instance != null)
             Destroy(Instance.gameObject);
 
+        isRockPlaying = Random.value >= 0.5;
         instance = this;
         DontDestroyOnLoad(this.gameObject);
     }

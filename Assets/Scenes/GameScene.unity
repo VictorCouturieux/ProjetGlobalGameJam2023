@@ -590,10 +590,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1164475898, guid: 3bb221c3f50d01044b5dd6285ecee81b, type: 3}
-      propertyPath: m_TagString
-      value: Separator
-      objectReference: {fileID: 0}
     - target: {fileID: 81964556804834492, guid: 3bb221c3f50d01044b5dd6285ecee81b,
         type: 3}
       propertyPath: m_Name
@@ -654,8 +650,62 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4619958718592714430, guid: 3bb221c3f50d01044b5dd6285ecee81b,
+        type: 3}
+      propertyPath: _musicController
+      value: 
+      objectReference: {fileID: 948404300}
+    - target: {fileID: 4763928605688277358, guid: 3bb221c3f50d01044b5dd6285ecee81b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067608749918035114, guid: 3bb221c3f50d01044b5dd6285ecee81b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230343449407952112, guid: 3bb221c3f50d01044b5dd6285ecee81b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374339991090477856, guid: 3bb221c3f50d01044b5dd6285ecee81b,
+        type: 3}
+      propertyPath: _musicController
+      value: 
+      objectReference: {fileID: 948404300}
+    - target: {fileID: 8250580077960306996, guid: 3bb221c3f50d01044b5dd6285ecee81b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bb221c3f50d01044b5dd6285ecee81b, type: 3}
+--- !u!114 &623826793 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4619958718592714430, guid: 3bb221c3f50d01044b5dd6285ecee81b,
+    type: 3}
+  m_PrefabInstance: {fileID: 623826792}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ddbfc9e662b5944b913582f48c9a31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &623826794 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7374339991090477856, guid: 3bb221c3f50d01044b5dd6285ecee81b,
+    type: 3}
+  m_PrefabInstance: {fileID: 623826792}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ddbfc9e662b5944b913582f48c9a31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &674258842
 GameObject:
   m_ObjectHideFlags: 0
@@ -2146,6 +2196,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaa41cd1266c5714d81a8f58e00a5500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &948404299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 948404301}
+  - component: {fileID: 948404300}
+  m_Layer: 0
+  m_Name: MusicController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &948404300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948404299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb203f508f26434c9e20ad7f2774194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RockRadio: {fileID: 623826794}
+  ReggaeRadio: {fileID: 623826793}
+--- !u!4 &948404301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948404299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.908819, y: 2.288977, z: 4.769764}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1139867983
 GameObject:
   m_ObjectHideFlags: 0
