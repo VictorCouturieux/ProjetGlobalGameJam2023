@@ -10,18 +10,11 @@ public class Radio : MonoBehaviour
     [SerializeField] private GameObject _radioEffect;
     [SerializeField] private MusicController _musicController;
 
-    private void Update()
-    {
-        /*if(isPlaying)
-            _radioEffect.transform.LookAt(Camera.main.transform.position, -Vector3.up);*/
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (isPlaying && other.gameObject.GetComponent<Projectile>() != null)
         {
             _musicController.MusicChanged(!isRock);
-            Debug.Log("Change music to : " + (isRock ? "Rock" : "Reggae"));
         }
     }
 
