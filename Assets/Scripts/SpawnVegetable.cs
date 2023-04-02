@@ -45,10 +45,11 @@ public class SpawnVegetable : MonoBehaviour
             if (_listSeedPlacement.Count <= _maxPlantByGarden) {
                 int index = Random.Range(0, seedGenerator.GetPoints.Count);
                 
-                while (!CheckSeedStack(index)) {
+                while (!CheckSeedStack(index) && _listSeedPlacement.Count != _maxPlantByGarden) {
                     index = Random.Range(0, seedGenerator.GetPoints.Count);
                 }
-                AddSeed(seedGenerator.GetPoints[index], index);
+                if(_listSeedPlacement.Count != _maxPlantByGarden)
+                    AddSeed(seedGenerator.GetPoints[index], index);
             }
         }
     }
